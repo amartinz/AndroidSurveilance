@@ -1,0 +1,39 @@
+# view res/layout/activity_picture.xml #generated:2
+-keep class android.view.SurfaceView { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.android.classic.DEBUG { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.android.classic.DEBUG$MyAdmin { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.android.classic.DUMMY { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.android.classic.helper.BootUpReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.android.classic.helper.DEBUGSERVICE { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.android.classic.helper.ScreenReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.android.classic.recording.Audiorecorder { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.android.classic.recording.MakePhotoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.android.classic.recording.MakePhotoActivityBack { <init>(...); }
+
+# view res/layout/input.xml #generated:2
+-keep class com.example.android.softkeyboard.LatinKeyboardView { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.example.android.softkeyboard.SoftKeyboard { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class eu.chainfire.libsuperuser.Application { <init>(...); }
+

