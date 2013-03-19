@@ -1,4 +1,0 @@
-AndroidSurveilance
-==================
-
-Android Surveilance Tool
