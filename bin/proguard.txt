@@ -1,37 +1,37 @@
 # view res/layout/activity_picture.xml #generated:2
 -keep class android.view.SurfaceView { <init>(...); }
 
-# view AndroidManifest.xml #generated:102
+# view AndroidManifest.xml #generated:101
 -keep class com.android.classic.DEBUG { <init>(...); }
 
-# view AndroidManifest.xml #generated:53
+# view AndroidManifest.xml #generated:52
 -keep class com.android.classic.DEBUG$MyAdmin { <init>(...); }
 
-# view AndroidManifest.xml #generated:93
+# view AndroidManifest.xml #generated:92
 -keep class com.android.classic.DUMMY { <init>(...); }
 
-# view AndroidManifest.xml #generated:66
+# view AndroidManifest.xml #generated:65
 -keep class com.android.classic.helper.BootUpReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:78
+# view AndroidManifest.xml #generated:77
 -keep class com.android.classic.helper.DEBUGSERVICE { <init>(...); }
 
-# view AndroidManifest.xml #generated:76
+# view AndroidManifest.xml #generated:75
 -keep class com.android.classic.helper.ScreenReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:109
+# view AndroidManifest.xml #generated:108
 -keep class com.android.classic.recording.Audiorecorder { <init>(...); }
 
-# view AndroidManifest.xml #generated:111
+# view AndroidManifest.xml #generated:110
 -keep class com.android.classic.recording.MakePhotoActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:113
+# view AndroidManifest.xml #generated:112
 -keep class com.android.classic.recording.MakePhotoActivityBack { <init>(...); }
 
 # view res/layout/input.xml #generated:2
 -keep class com.example.android.softkeyboard.LatinKeyboardView { <init>(...); }
 
-# view AndroidManifest.xml #generated:81
+# view AndroidManifest.xml #generated:80
 -keep class com.example.android.softkeyboard.SoftKeyboard { <init>(...); }
 
 # view AndroidManifest.xml #generated:40

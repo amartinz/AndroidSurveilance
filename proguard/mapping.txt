@@ -896,14 +896,15 @@ com.android.classic.helper.DEBUGSERVICE -> com.android.classic.helper.DEBUGSERVI
     boolean isOnline() -> a
     int onStartCommand(android.content.Intent,int,int) -> onStartCommand
     void onCreate() -> onCreate
+    void threadPolicy() -> c
     void doAll() -> b
     java.lang.String entityToString(org.apache.http.HttpEntity) -> a
-    void checkCMD() -> c
-    void checkDevice() -> d
-    void setupAll() -> e
+    void checkCMD() -> d
+    void checkDevice() -> e
+    void setupAll() -> f
     android.os.IBinder onBind(android.content.Intent) -> onBind
-    void screenOff() -> f
-    void screenOn() -> g
+    void screenOff() -> g
+    void screenOn() -> h
 com.android.classic.helper.DEBUGSERVICE$1checkCMDAsync -> com.android.classic.helper.e:
     com.android.classic.helper.DEBUGSERVICE this$0 -> a
     java.lang.Void doInBackground(java.lang.Void[]) -> a
@@ -924,17 +925,20 @@ com.android.classic.helper.GPSTracker -> com.android.classic.helper.f:
     void onProviderEnabled(java.lang.String) -> onProviderEnabled
     void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
     android.os.IBinder onBind(android.content.Intent) -> onBind
+com.android.classic.helper.Methods -> com.android.classic.helper.g:
+    java.lang.String[] cleanCommand -> a
+    void SaveIncludedZippedFileIntoFilesFolder(int,java.lang.String,android.content.Context) -> a
 com.android.classic.helper.ScreenReceiver -> com.android.classic.helper.ScreenReceiver:
     boolean screenOff -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.android.classic.helper.Sender -> com.android.classic.helper.g:
+com.android.classic.helper.Sender -> com.android.classic.helper.h:
     java.lang.String URL -> a
     void onPostExecute(java.lang.String) -> a
     void onPreExecute() -> onPreExecute
     java.lang.String doInBackground(java.lang.String[]) -> a
     void onPostExecute(java.lang.Object) -> onPostExecute
     java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-com.android.classic.helper.Uploader -> com.android.classic.helper.h:
+com.android.classic.helper.Uploader -> com.android.classic.helper.i:
     java.lang.String filePath -> a
     void onPreExecute() -> onPreExecute
     java.lang.Void doInBackground(java.lang.String[]) -> a
@@ -1124,18 +1128,16 @@ com.example.android.softkeyboard.SoftKeyboard -> com.example.android.softkeyboar
 eu.chainfire.libsuperuser.Application -> eu.chainfire.libsuperuser.Application:
     android.os.Handler mApplicationHandler -> a
     void onCreate() -> onCreate
-eu.chainfire.libsuperuser.Debug -> eu.chainfire.libsuperuser.a:
-    void log(java.lang.String) -> a
-eu.chainfire.libsuperuser.Shell -> eu.chainfire.libsuperuser.b:
+eu.chainfire.libsuperuser.Shell -> eu.chainfire.libsuperuser.a:
     java.util.List run(java.lang.String,java.lang.String[],boolean) -> a
-eu.chainfire.libsuperuser.Shell$SH -> eu.chainfire.libsuperuser.c:
+eu.chainfire.libsuperuser.Shell$SH -> eu.chainfire.libsuperuser.b:
     java.util.List run(java.lang.String) -> a
     java.util.List run(java.lang.String[]) -> a
-eu.chainfire.libsuperuser.Shell$SU -> eu.chainfire.libsuperuser.d:
+eu.chainfire.libsuperuser.Shell$SU -> eu.chainfire.libsuperuser.c:
     java.util.List run(java.lang.String) -> a
     java.util.List run(java.lang.String[]) -> a
     boolean available() -> a
-eu.chainfire.libsuperuser.StreamGobbler -> eu.chainfire.libsuperuser.e:
+eu.chainfire.libsuperuser.StreamGobbler -> eu.chainfire.libsuperuser.d:
     java.lang.String shell -> a
     java.io.BufferedReader reader -> b
     java.util.List writer -> c

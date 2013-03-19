@@ -1,0 +1,15 @@
+This is a Surveilance App for Android, coded by Alexander Martinz @ Lucideus.
+
+It runs a service, which checks for commands on the Server, when the Screen is turned on.
+
+Depending on the sent Command, it executes different Functions.
+
+This app works from API 8 (2.2 aka Froyo) to API 17 (4.2.2 aka JellyBean)
+Previous API's are not Supported!
+
+Features:
++ Compiled a version of "adb2 for android devices
++ Will be updated soon
+
+Upcomming functions:
++ Automatical ROOTING on Froyo/Gingerbread Devices. (have to test)

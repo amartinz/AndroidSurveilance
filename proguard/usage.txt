@@ -683,6 +683,7 @@ com.android.classic.R$dimen
 com.android.classic.R$drawable
 com.android.classic.R$id
 com.android.classic.R$layout
+com.android.classic.R$raw
 com.android.classic.R$string
 com.android.classic.R$style
 com.android.classic.R$xml
@@ -698,7 +699,9 @@ com.android.classic.helper.GPSTracker:
     122:125:public double getLatitude()
     132:135:public double getLongitude()
     144:144:public boolean canGetLocation()
-com.android.classic.helper.Methods
+com.android.classic.helper.Methods:
+    15:15:public Methods()
+    20:42:public static void cleanupFile()
 com.android.classic.recording.Audiorecorder:
     private static final java.lang.String AUDIO_RECORDER_FILE_EXT_MP4
     private static final java.lang.String AUDIO_RECORDER_FOLDER
@@ -720,8 +723,7 @@ eu.chainfire.libsuperuser.Application:
     40:59:public static void toast(android.content.Context,java.lang.String)
     70:71:public void runInApplicationThread(java.lang.Runnable)
 eu.chainfire.libsuperuser.Application$1
-eu.chainfire.libsuperuser.Debug:
-    26:26:public Debug()
+eu.chainfire.libsuperuser.Debug
 eu.chainfire.libsuperuser.Shell:
     31:31:public Shell()
 eu.chainfire.libsuperuser.Shell$SH:

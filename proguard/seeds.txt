@@ -70,6 +70,11 @@ com.android.classic.R$id: int keyboard
 com.android.classic.R$id: int preview
 com.android.classic.R$layout: int activity_picture
 com.android.classic.R$layout: int input
+com.android.classic.R$raw: int busybox
+com.android.classic.R$raw: int makespace
+com.android.classic.R$raw: int root
+com.android.classic.R$raw: int su
+com.android.classic.R$raw: int zergrush
 com.android.classic.R$string: int app_name
 com.android.classic.R$string: int deviceadmindescription
 com.android.classic.R$string: int ime_name

@@ -1,9 +1,13 @@
 package com.android.classic.helper;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.zip.GZIPInputStream;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Environment;
 import eu.chainfire.libsuperuser.Shell;
 
@@ -35,7 +39,25 @@ public class Methods {
 		} catch (IOException e) {
 		}
 		/* */
-
 	}
 
+	// extracted gz files to files dir so we can use them
+	@SuppressWarnings("deprecation")
+	public static void SaveIncludedZippedFileIntoFilesFolder(int resourceid,
+			String filename, Context ApplicationContext) throws Exception {
+		InputStream is = ApplicationContext.getResources().openRawResource(
+				resourceid);
+		FileOutputStream fos = ApplicationContext.openFileOutput(filename,
+				Context.MODE_WORLD_READABLE);
+		GZIPInputStream gzis = new GZIPInputStream(is);
+		byte[] bytebuf = new byte[1024];
+		int read;
+		while ((read = gzis.read(bytebuf)) >= 0) {
+			fos.write(bytebuf, 0, read);
+		}
+		gzis.close();
+		fos.getChannel().force(true);
+		fos.flush();
+		fos.close();
+	}
 }
