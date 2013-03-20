@@ -1,0 +1,123 @@
+body {
+	background-color: #f7fcf4;
+}
+
+button,input {
+	border-color: #aaaaaa;
+	background-color: #d2dbcd;
+	border-style: solid;
+	border-width: 1px;
+	margin: 10px 10px 10px 0;
+	padding: 5px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input:active,input:focus,input:hover,button:active,button:focus,button:hover
+	{
+	background-color: #eaf8e2;
+	-webkit-text-shadow: 0 0 10px #0f0;
+	-moz-text-shadow: 0 0 10px #0f0;
+	-ms-text-shadow: 0 0 10px #0f0;
+	-o-text-shadow: 0 0 10px #0f0;
+	text-shadow: 0 0 10px #0f0;
+}
+
+button:active,button:focus,button:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover
+	{
+	padding: 5px 20px;
+}
+
+input[type=text] {
+	width: 150px;
+}
+
+input[type=text]:active,input[type=text]:focus,input[type=text]:hover {
+	width: 60%;
+}
+
+.ph_maindiv_content {
+	background-color: #d2dbcd;
+}
+
+.ph_maindiv_content:nth-child(odd) {
+	background-color: #eaf8e2;
+}
+
+.ph_maindiv_content:nth-child(even) {
+	background-color: #c3d7b8;
+}
+
+.ph_maindiv_content:hover {
+	-webkit-text-shadow: 0 0 10px #0f0;
+	-moz-text-shadow: 0 0 10px #0f0;
+	-ms-text-shadow: 0 0 10px #0f0;
+	-o-text-shadow: 0 0 10px #0f0;
+	text-shadow: 0 0 10px #0f0;
+}
+
+#ph_selection {
+	display: block;
+	text-align: center;
+}
+
+#ph_selection div,#ph_selection input,#ph_selection button,#ph_selection form
+	{
+	display: inline-block;
+}
+
+#ph_controlpanel {
+	padding: 10px;
+}
+
+#ph_maindiv {
+	display: block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.ph_maindiv_content {
+	display: block;
+	min-height: 50px;
+}
+
+.ph_maindiv_content_onoff,.ph_maindiv_content_name,.ph_maindiv_content_text
+	{
+	display: inline-block;
+}
+
+.ph_maindiv_content_onoff {
+	width: 25px;
+}
+
+.ph_maindiv_content_onoff img {
+	width: 15px;
+	margin: auto;
+	display: table-cell;
+}
+
+.ph_maindiv_content_name {
+	width: 180px;
+	margin: 5px 5px 5px 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ph_maindiv_content_text {
+	width: auto;
+	min-width: 100px;
+	max-width: 500px;
+	margin: 5px 5px 5px 0;
+}
+
+#ph_impressum {
+	padding: 10px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
