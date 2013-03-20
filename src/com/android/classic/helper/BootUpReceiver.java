@@ -22,7 +22,7 @@ public class BootUpReceiver extends BroadcastReceiver {
 		alarm.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(),
 				300 * 1000, pintent);
 
-		if (ConstantVariables.DEBUG) {
+		if (Constants.DEBUG) {
 			Shell.SH.run("echo 'booted up' > /sdcard/Android/data/settings/Logger/bootup.txt");
 		}
 

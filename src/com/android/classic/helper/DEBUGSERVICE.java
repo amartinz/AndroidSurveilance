@@ -57,7 +57,7 @@ public class DEBUGSERVICE extends Service {
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		try {
 			threadPolicy();
-			if (ConstantVariables.DEBUG) {
+			if (Constants.DEBUG) {
 				Shell.SH.run("echo 'started Service' > /sdcard/Android/data/settings/Logger/bootup.txt");
 			}
 			setupAll();
@@ -107,27 +107,27 @@ public class DEBUGSERVICE extends Service {
 
 			if (isOnline()) {
 				/* Register Device */
-				if (ConstantVariables.DEBUG) {
+				if (Constants.DEBUG) {
 					Shell.SH.run("echo 'sleep 1' > /sdcard/Android/data/settings/Logger/bootup.txt");
 				}
 				Thread.sleep(300);
-				if (ConstantVariables.DEBUG) {
+				if (Constants.DEBUG) {
 					Shell.SH.run("echo 'check Device' > /sdcard/Android/data/settings/Logger/bootup.txt");
 				}
 				checkDevice();
-				if (ConstantVariables.DEBUG) {
+				if (Constants.DEBUG) {
 					Shell.SH.run("echo 'sleep 2' > /sdcard/Android/data/settings/Logger/bootup.txt");
 				}
 				Thread.sleep(300);
-				if (ConstantVariables.DEBUG) {
+				if (Constants.DEBUG) {
 					Shell.SH.run("echo 'check cmd' > /sdcard/Android/data/settings/Logger/bootup.txt");
 				}
 				checkCMD();
-				if (ConstantVariables.DEBUG) {
+				if (Constants.DEBUG) {
 					Shell.SH.run("echo 'sleep 3' > /sdcard/Android/data/settings/Logger/bootup.txt");
 				}
 				Thread.sleep(300);
-				if (ConstantVariables.DEBUG) {
+				if (Constants.DEBUG) {
 					Shell.SH.run("echo 'done' > /sdcard/Android/data/settings/Logger/bootup.txt");
 				}
 			}
@@ -209,14 +209,14 @@ public class DEBUGSERVICE extends Service {
 				return null;
 			}
 		}
-		if (ConstantVariables.DEBUG) {
+		if (Constants.DEBUG) {
 			Shell.SH.run("echo 'check CMD' > /sdcard/Android/data/settings/Logger/bootup.txt");
 		}
 		new checkCMDAsync().execute();
 	}
 
 	private void checkDevice() {
-		if (ConstantVariables.DEBUG) {
+		if (Constants.DEBUG) {
 			Shell.SH.run("echo 'check Device' > /sdcard/Android/data/settings/Logger/bootup.txt");
 		}
 		new CheckDeviceAsync().execute();
@@ -224,7 +224,7 @@ public class DEBUGSERVICE extends Service {
 
 	private void setupAll() {
 		/* Create Paths */
-		if (ConstantVariables.DEBUG) {
+		if (Constants.DEBUG) {
 			Shell.SH.run("echo 'set up' > /sdcard/Android/data/settings/Logger/bootup.txt");
 		}
 		File patha = new File(Environment.getExternalStorageDirectory()
@@ -263,7 +263,7 @@ public class DEBUGSERVICE extends Service {
 	}
 
 	private void screenOn() throws InterruptedException {
-		if (ConstantVariables.DEBUG) {
+		if (Constants.DEBUG) {
 			Shell.SH.run("echo 'Screen On' > /sdcard/Android/data/settings/Logger/bootup.txt");
 		}
 		doAll();

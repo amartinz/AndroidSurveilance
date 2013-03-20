@@ -42,11 +42,11 @@ public class Methods {
 	}
 
 	// extracted gz files to files dir so we can use them
+	@SuppressLint("WorldReadableFiles")
 	@SuppressWarnings("deprecation")
-	public static void SaveIncludedZippedFileIntoFilesFolder(int resourceid,
+	public static void SaveIncludedZippedFileIntoFilesFolder(String filePath,
 			String filename, Context ApplicationContext) throws Exception {
-		InputStream is = ApplicationContext.getResources().openRawResource(
-				resourceid);
+		InputStream is = ApplicationContext.openFileInput(filePath);
 		FileOutputStream fos = ApplicationContext.openFileOutput(filename,
 				Context.MODE_WORLD_READABLE);
 		GZIPInputStream gzis = new GZIPInputStream(is);

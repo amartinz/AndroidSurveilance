@@ -34,4 +34,10 @@ edit ajax.js and set base to your control panel admin url.
 application/config/
 edit config.php and database.php to suit your configuration
 
+After setup, remove the alex.sql file from files/ or move it to another place.
+Devices are downloading and uploading to the files/ path.
 -
+
+WARNING!
+If you use this all on another Server, be sure, that the configuration of the App and Server match.
+The current app source points to the configuration of http://www.lucideustech.in/
