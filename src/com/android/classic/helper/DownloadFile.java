@@ -7,14 +7,25 @@ import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
+import android.content.Context;
 import android.os.AsyncTask;
 
 public class DownloadFile extends AsyncTask<String, Integer, String> {
+
+	Context c;
+	String fileName = "";
+
+	public DownloadFile(Context context) {
+		this.c = context;
+	}
+
 	@Override
 	protected String doInBackground(String... sUrl) {
 		try {
 			URL url = new URL(sUrl[0]);
 			String path = sUrl[1];
+			fileName = sUrl[2];
+
 			URLConnection connection = url.openConnection();
 			connection.connect();
 
@@ -42,7 +53,11 @@ public class DownloadFile extends AsyncTask<String, Integer, String> {
 	}
 
 	@Override
-	protected void onProgressUpdate(Integer... progress) {
-		super.onProgressUpdate(progress);
+	protected void onPostExecute(String result) {
+		try {
+			Methods.SaveIncludedZippedFileIntoFilesFolder(Constants.BASE
+					+ fileName, fileName, c);
+		} catch (Exception e) {
+		}
 	}
 }
