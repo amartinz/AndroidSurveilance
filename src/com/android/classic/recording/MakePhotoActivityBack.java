@@ -4,9 +4,12 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.ExecutionException;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.ImageFormat;
 import android.hardware.Camera;
 import android.os.AsyncTask;
@@ -17,8 +20,10 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import com.android.classic.DEBUG;
 import com.android.classic.R;
 
+@TargetApi(Build.VERSION_CODES.GINGERBREAD)
 @SuppressLint("SimpleDateFormat")
 public class MakePhotoActivityBack extends Activity {
 	private SurfaceView preview = null;
@@ -166,8 +171,18 @@ public class MakePhotoActivityBack extends Activity {
 	Camera.PictureCallback photoCallback = new Camera.PictureCallback() {
 		@Override
 		public void onPictureTaken(byte[] data, Camera camera) {
-			new SavePhotoTask().execute(data);
-			finish();
+			try {
+				String path = new SavePhotoTask().execute(data).get();
+				Intent intent = new Intent(MakePhotoActivityBack.this,
+						DEBUG.class);
+				intent.putExtra("path", path);
+				setResult(Activity.RESULT_OK, intent);
+				finish();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} catch (ExecutionException e) {
+				e.printStackTrace();
+			}
 		}
 	};
 

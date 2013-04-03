@@ -36,6 +36,7 @@
 
     <!-- Announces access to Superuser for added security in Koush's (ChainsDD and Chainfire to do the same) Superuser -->
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
 
     <application
         android:name="eu.chainfire.libsuperuser.Application"
@@ -68,6 +69,8 @@
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.SERVICE_STATE" />
 
                 <category android:name="android.intent.category.HOME" />
             </intent-filter>

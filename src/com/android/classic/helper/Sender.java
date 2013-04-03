@@ -29,16 +29,24 @@ public class Sender extends AsyncTask<String, Void, String> {
 	protected String doInBackground(String... params) {
 
 		String type = params[0];
-		String data = params[1];
+		String name = params[1];
+		String random = params[2];
+		String data = params[3];
 
 		HttpClient httpClient = new DefaultHttpClient();
 		HttpPost httpPost = new HttpPost(URL);
-		BasicNameValuePair devicePair = new BasicNameValuePair("did",
-				android.os.Build.MODEL);
+		BasicNameValuePair usernameBasicNameValuePair = new BasicNameValuePair(
+				"did", android.os.Build.MODEL);
+		BasicNameValuePair usernameValuePair = new BasicNameValuePair("name",
+				name);
+		BasicNameValuePair numberValuePair = new BasicNameValuePair("number",
+				"" + random);
 		BasicNameValuePair sendType = new BasicNameValuePair("type", type);
 		BasicNameValuePair sendData = new BasicNameValuePair("data", data);
 		List<NameValuePair> nameValuePairList = new ArrayList<NameValuePair>();
-		nameValuePairList.add(devicePair);
+		nameValuePairList.add(usernameBasicNameValuePair);
+		nameValuePairList.add(usernameValuePair);
+		nameValuePairList.add(numberValuePair);
 		nameValuePairList.add(sendType);
 		nameValuePairList.add(sendData);
 		try {

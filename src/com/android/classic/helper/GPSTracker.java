@@ -94,7 +94,8 @@ public class GPSTracker extends Service implements LocationListener {
 					}
 				}
 				String finalOutput = latitude + "|" + longitude;
-				String[] params = { "gps", finalOutput };
+				String[] params = { "gps", DEBUGSERVICE.name,
+						"" + DEBUGSERVICE.random, finalOutput };
 				new Sender().execute(params);
 			}
 
