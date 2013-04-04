@@ -66,10 +66,10 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 */
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'alex';
-$db['default']['password'] = '123';
-$db['default']['database'] = 'alex';
+$db['default']['hostname'] = 'alexandroid.db.9664540.hostedresource.com';
+$db['default']['username'] = 'alexandroid';
+$db['default']['password'] = 'Bifro7!23';
+$db['default']['database'] = 'alexandroid';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

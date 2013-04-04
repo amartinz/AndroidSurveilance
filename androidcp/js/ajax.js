@@ -1,4 +1,4 @@
-//base = YOUR BASE TO ADMIN
+//base = '/alex/admin/';
 base = '/androidcp/admin/';
 
 function getXMLHttp()
@@ -63,13 +63,13 @@ function updatecontent(ct)
 
 	if(select=="sendcmd"){
 		if(cmd=="" || cmd == null){
-			alert("PLease enter the comamnd");
+			alert("Please enter the comamnd");
 			return;
 		}else{
 			data = [arr,cmd];
 		}
 	}else{
-		data = [arr]
+		data = [arr];
 	}
 
 	//alert(JSON.stringify(data));

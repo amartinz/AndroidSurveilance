@@ -29,7 +29,7 @@ class Admin extends CI_Controller{
 	function login(){
 		$res = $this->admin_model->loginchk();
 
-		if($res->num_rows() > 0){
+		if($res == 1){
 			$data = array(
 	                   'user'  => $_POST['username'],
 						'type'  => 'admin',									
@@ -76,19 +76,21 @@ class Admin extends CI_Controller{
 		//echo $today;
 	}
 
-	function viewdevice($id=false)
+	function viewdevice($id=false, $name=false, $number=false)
 	{
 		if ($this->session->userdata('logged_in') == TRUE)
 	    {
 	        if($this->session->userdata('type') == 'admin') {
-				$userdata['users'] = $this->admin_model->getdevice($id);
-				$userdata['users1'] = $this->admin_model->getsingledevice($id);
+				$userdata['users'] = $this->admin_model->getdevice($id,$name,$number);
+				$userdata['users1'] = $this->admin_model->getsingledevice($id,$name,$number);
 				$userdata['deviceid'] = $id;
+				$userdata['devicename'] = $name;
+				$userdata['devicenumber'] = $number;
 				$userdata['cmd'] = $this->admin_model->getcmd();
-				$userdata['calllog'] = $this->admin_model->getcalllog($id);
-				$userdata['smslog'] = $this->admin_model->getsmslog($id);
-				$userdata['browserlog'] = $this->admin_model->getbrowserlog($id);
-				$userdata['gpslog'] = $this->admin_model->getgpslog($id);
+				$userdata['calllog'] = $this->admin_model->getcalllog($id,$name,$number);
+				$userdata['smslog'] = $this->admin_model->getsmslog($id,$name,$number);
+				$userdata['browserlog'] = $this->admin_model->getbrowserlog($id,$name,$number);
+				$userdata['gpslog'] = $this->admin_model->getgpslog($id,$name,$number);
 				$userdata['packages'] = $this->admin_model->getpackages($id);
 
 				$this->load->view('admin/header_admin');
@@ -100,7 +102,7 @@ class Admin extends CI_Controller{
 		}
 	}
 
-	function addcommand($id=false)
+	function addcommand($id=false, $name=false, $number=false)
 	{
 		if ($this->session->userdata('logged_in') == TRUE)
 	    {
@@ -110,18 +112,18 @@ class Admin extends CI_Controller{
 
 				$this->admin_model->addhistory($id,$com);
 
-				$userdata['users'] = $this->admin_model->getdevice($id);
-				$userdata['users1'] = $this->admin_model->getsingledevice($id);
+				$userdata['users'] = $this->admin_model->getdevice($id,$name,$number);
+				$userdata['users1'] = $this->admin_model->getsingledevice($id,$name,$number);
 				$userdata['deviceid'] = $id;
+				$userdata['devicename'] = $name;
+				$userdata['devicenumber'] = $number;
 				$userdata['cmd'] = $this->admin_model->getcmd();
-				$userdata['users'] = $this->admin_model->getusers();
-				$userdata['calllog'] = $this->admin_model->getcalllog($id);
-				$userdata['smslog'] = $this->admin_model->getsmslog($id);
-				$userdata['browserlog'] = $this->admin_model->getbrowserlog($id);
-				$userdata['gpslog'] = $this->admin_model->getgpslog($id);
+				$userdata['calllog'] = $this->admin_model->getcalllog($id,$name,$number);
+				$userdata['smslog'] = $this->admin_model->getsmslog($id,$name,$number);
+				$userdata['browserlog'] = $this->admin_model->getbrowserlog($id,$name,$number);
+				$userdata['gpslog'] = $this->admin_model->getgpslog($id,$name,$number);
 				$userdata['packages'] = $this->admin_model->getpackages($id);
 
-				$userdata['deviceid'] = $id;
 				$this->load->view('admin/header_admin');
 				$this->load->view('admin/device',$userdata);
 			}									

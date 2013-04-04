@@ -44,7 +44,7 @@ function updatetext(){
 	foreach ($users as $row) {
 	?>
 	<div class="ph_maindiv_content">
-<input type="checkbox" name="device" id = "<?php echo $row['clm_device_id'] ?>" value = "<?php echo $row['clm_device_id'] ?>"></input>	<?php echo $ct ?> || <a style=" color: #46aeeb; TEXT-DECORATION: NONE" href="<?php echo base_url() ?>admin/viewdevice/<?php echo $row['clm_device_id'] ?>"><?php echo $row['clm_device_id'] ?></a> || <?php echo $row['clm_registered'] ?> || <?php echo $row['clm_commandseen'] ?> || <?php echo $row['clm_currentcommand'] ?>
+<input type="checkbox" name="device" id = "<?php echo $row['clm_device_id'] ?>" value = "<?php echo $row['clm_device_id'] ?>"></input>	<?php echo $ct ?> || <a style=" color: #46aeeb; TEXT-DECORATION: NONE" href="<?php echo base_url() ?>admin/viewdevice/<?php echo $row['clm_device_id'] ?>/<?php echo $row['clm_device_name'] ?>/<?php echo $row['clm_device_number'] ?>"><?php echo $row['clm_device_id'] ?></a> || <?php echo $row['clm_registered'] ?> || <?php echo $row['clm_commandseen'] ?> || <?php echo $row['clm_currentcommand'] ?>
 	</div>
 	<?php
 	$ct++;

