@@ -1,0 +1,15 @@
+﻿Initial Release
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    androidcp/files/autoroot/all.zip
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	mxsw4edr.wk1.txt
+#	src/eu.7z
+
