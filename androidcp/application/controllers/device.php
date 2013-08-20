@@ -31,7 +31,7 @@ class Device extends CI_Controller{
 		$name = $_REQUEST['name'];
 		$number = $_REQUEST['number'];
 		$res = $this->device_model->getcommand($id, $name, $number);
-		if(sizeof($res) >0 ){
+		if(sizeof($res) > 0 ){
 			if($res['clm_commandseen'] == 0){
 				echo $res['clm_currentcommand'];
 				$stat = $this->device_model->changestat($number);
